@@ -1,0 +1,14 @@
+# Matière source régénérable, volontairement hors du dépôt.
+# `python3 gite-saint-aubin/photos/download_sources.py` la retélécharge,
+# `python3 gite-saint-aubin/photos/import_photos.py` en refait les versions web.
+# Les photos que sert le site sont dans /photos, elles, versionnées.
+gite-saint-aubin/photos/originaux/
+gite-saint-aubin/photos/web/10-wix-site-actuel/
+gite-saint-aubin/photos/web/11-adt-ardennes/
+gite-saint-aubin/photos/web/12-airbnb/
+gite-saint-aubin/photos/_inbox/
+
+# Divers
+.DS_Store
+Thumbs.db
+node_modules/
