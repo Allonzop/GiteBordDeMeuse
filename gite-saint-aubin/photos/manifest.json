@@ -1,0 +1,494 @@
+{
+  "projet": "gite-saint-aubin",
+  "source": "13 mails de hugerotclaire@gmail.com, 04/09/2026 entre 19h18 et 20h22 (heure de Paris)",
+  "releve_le": "2026-09-09",
+  "avertissement": "Le contenu de chaque photo n'a PAS ete vu. Les categories viennent uniquement du sujet du mail. A verifier visuellement apres import.",
+  "mails": [
+    {
+      "gmail_id": "1a06d6e293c2f997",
+      "heure": "19:18",
+      "sujet": "Photos prises aujourd'hui",
+      "categorie": "a-trier",
+      "dossier": "01-a-trier",
+      "note": "Contenu non identifie - photos prises le 04/09 juste avant l'envoi. A trier visuellement.",
+      "fichiers": [
+        "1000042339.jpg",
+        "1000042342.jpg"
+      ]
+    },
+    {
+      "gmail_id": "1a06d6f09746a9ba",
+      "heure": "19:19",
+      "sujet": "Suite photos",
+      "categorie": "a-trier",
+      "dossier": "01-a-trier",
+      "note": "Suite du precedent. A trier visuellement.",
+      "fichiers": [
+        "1000042341.jpg",
+        "1000042338.jpg",
+        "1000042340.jpg"
+      ]
+    },
+    {
+      "gmail_id": "1a06d70162a57805",
+      "heure": "19:20",
+      "sujet": "Suite : cuisine",
+      "categorie": "cuisine",
+      "dossier": "02-cuisine",
+      "note": "",
+      "fichiers": [
+        "1000042337.jpg"
+      ]
+    },
+    {
+      "gmail_id": "1a06d705025299be",
+      "heure": "19:21",
+      "sujet": "Chambre parentale",
+      "categorie": "vide",
+      "dossier": null,
+      "note": "Mail SANS piece jointe - elle a oublie, corrige 45 s plus tard.",
+      "fichiers": []
+    },
+    {
+      "gmail_id": "1a06d711b4e42d49",
+      "heure": "19:21",
+      "sujet": "Chbre parentale avec photos",
+      "categorie": "chambre-parentale",
+      "dossier": "03-chambre-parentale",
+      "note": "",
+      "fichiers": [
+        "0ad22bb6-0436-497a-8e1d-6b5fe1db034d-1_all_11472.jpg",
+        "1000042332.jpg"
+      ]
+    },
+    {
+      "gmail_id": "1a06d7285d62b67f",
+      "heure": "19:23",
+      "sujet": "Chambre enfants",
+      "categorie": "chambre-enfants",
+      "dossier": "04-chambre-enfants",
+      "note": "",
+      "fichiers": [
+        "1788542582604.jpg",
+        "1788542582617.jpg"
+      ]
+    },
+    {
+      "gmail_id": "1a06d74ce534c146",
+      "heure": "19:25",
+      "sujet": "Photos d'hiver",
+      "categorie": "saison-hiver",
+      "dossier": "07-saison-hiver",
+      "note": "Photos d'archive, pas du 04/09.",
+      "fichiers": [
+        "1788542730026.jpg",
+        "1788542730037.jpg"
+      ]
+    },
+    {
+      "gmail_id": "1a06d76aeb55ecff",
+      "heure": "19:27",
+      "sujet": "Chambre enfants et sdb",
+      "categorie": "chambre-enfants-sdb",
+      "dossier": "05-chambre-enfants-sdb",
+      "note": "Contient la salle de bain - piece sensible (acces via la chambre parentale).",
+      "fichiers": [
+        "1788542849523.jpg",
+        "1788542849537.jpg",
+        "1788542849509.jpg"
+      ]
+    },
+    {
+      "gmail_id": "1a06d77a3c126005",
+      "heure": "19:28",
+      "sujet": "Automne",
+      "categorie": "saison-automne",
+      "dossier": "08-saison-automne",
+      "note": "Photos d'archive, pas du 04/09.",
+      "fichiers": [
+        "1788542917559.jpg",
+        "1788542917524.jpg",
+        "1788542917539.jpg"
+      ]
+    },
+    {
+      "gmail_id": "1a06d7993a254840",
+      "heure": "19:31",
+      "sujet": "Automne suite",
+      "categorie": "saison-automne",
+      "dossier": "08-saison-automne",
+      "note": "",
+      "fichiers": [
+        "1788543038947.jpg",
+        "1788543038938.jpg"
+      ]
+    },
+    {
+      "gmail_id": "1a06d7b38626cc5f",
+      "heure": "19:32",
+      "sujet": "Le jardin (c'est la derniere !)",
+      "categorie": "jardin",
+      "dossier": "06-jardin",
+      "note": "",
+      "fichiers": [
+        "1788543140153.jpg"
+      ]
+    },
+    {
+      "gmail_id": "1a06da8363dd8c0a",
+      "heure": "20:22",
+      "sujet": "Les pictos",
+      "categorie": "pictos",
+      "dossier": "09-pictos",
+      "note": "CE NE SONT PAS des icones pour le site. C'est le kit d'autocollants du programme Interreg 'Ardenne Ecotourisme' qu'elle appose dans le gite : sablier de douche, ne pas jeter de lingettes, carafe d'eau, contenants zero dechet, eteindre le chauffage avant d'ouvrir les fenetres, ampoules. Bandeau trilingue FR / EN / NL. C'est la matiere concrete de la page ecologie.",
+      "fichiers": [
+        "1000042357.jpg",
+        "1000042358.jpg",
+        "1000042356.jpg"
+      ]
+    },
+    {
+      "gmail_id": "1a06da8e02baacbc",
+      "heure": "20:22",
+      "sujet": "Explication des pictos",
+      "categorie": "pictos",
+      "dossier": "09-pictos",
+      "note": "CE NE SONT PAS des icones pour le site. C'est le kit d'autocollants du programme Interreg 'Ardenne Ecotourisme' qu'elle appose dans le gite : sablier de douche, ne pas jeter de lingettes, carafe d'eau, contenants zero dechet, eteindre le chauffage avant d'ouvrir les fenetres, ampoules. Bandeau trilingue FR / EN / NL. C'est la matiere concrete de la page ecologie.",
+      "fichiers": [
+        "0ad22bb6-0436-497a-8e1d-6b5fe1db034d-1_all_11495.jpg",
+        "1000042361.jpg",
+        "1000042360.jpg",
+        "1000042359.jpg"
+      ]
+    }
+  ],
+  "fichier_vers_dossier": {
+    "1000042339.jpg": {
+      "dossier": "01-a-trier",
+      "categorie": "a-trier",
+      "sujet_mail": "Photos prises aujourd'hui"
+    },
+    "1000042342.jpg": {
+      "dossier": "01-a-trier",
+      "categorie": "a-trier",
+      "sujet_mail": "Photos prises aujourd'hui"
+    },
+    "1000042341.jpg": {
+      "dossier": "01-a-trier",
+      "categorie": "a-trier",
+      "sujet_mail": "Suite photos"
+    },
+    "1000042338.jpg": {
+      "dossier": "01-a-trier",
+      "categorie": "a-trier",
+      "sujet_mail": "Suite photos"
+    },
+    "1000042340.jpg": {
+      "dossier": "01-a-trier",
+      "categorie": "a-trier",
+      "sujet_mail": "Suite photos"
+    },
+    "1000042337.jpg": {
+      "dossier": "02-cuisine",
+      "categorie": "cuisine",
+      "sujet_mail": "Suite : cuisine"
+    },
+    "0ad22bb6-0436-497a-8e1d-6b5fe1db034d-1_all_11472.jpg": {
+      "dossier": "03-chambre-parentale",
+      "categorie": "chambre-parentale",
+      "sujet_mail": "Chbre parentale avec photos"
+    },
+    "1000042332.jpg": {
+      "dossier": "03-chambre-parentale",
+      "categorie": "chambre-parentale",
+      "sujet_mail": "Chbre parentale avec photos"
+    },
+    "1788542582604.jpg": {
+      "dossier": "04-chambre-enfants",
+      "categorie": "chambre-enfants",
+      "sujet_mail": "Chambre enfants"
+    },
+    "1788542582617.jpg": {
+      "dossier": "04-chambre-enfants",
+      "categorie": "chambre-enfants",
+      "sujet_mail": "Chambre enfants"
+    },
+    "1788542730026.jpg": {
+      "dossier": "07-saison-hiver",
+      "categorie": "saison-hiver",
+      "sujet_mail": "Photos d'hiver"
+    },
+    "1788542730037.jpg": {
+      "dossier": "07-saison-hiver",
+      "categorie": "saison-hiver",
+      "sujet_mail": "Photos d'hiver"
+    },
+    "1788542849523.jpg": {
+      "dossier": "05-chambre-enfants-sdb",
+      "categorie": "chambre-enfants-sdb",
+      "sujet_mail": "Chambre enfants et sdb"
+    },
+    "1788542849537.jpg": {
+      "dossier": "05-chambre-enfants-sdb",
+      "categorie": "chambre-enfants-sdb",
+      "sujet_mail": "Chambre enfants et sdb"
+    },
+    "1788542849509.jpg": {
+      "dossier": "05-chambre-enfants-sdb",
+      "categorie": "chambre-enfants-sdb",
+      "sujet_mail": "Chambre enfants et sdb"
+    },
+    "1788542917559.jpg": {
+      "dossier": "08-saison-automne",
+      "categorie": "saison-automne",
+      "sujet_mail": "Automne"
+    },
+    "1788542917524.jpg": {
+      "dossier": "08-saison-automne",
+      "categorie": "saison-automne",
+      "sujet_mail": "Automne"
+    },
+    "1788542917539.jpg": {
+      "dossier": "08-saison-automne",
+      "categorie": "saison-automne",
+      "sujet_mail": "Automne"
+    },
+    "1788543038947.jpg": {
+      "dossier": "08-saison-automne",
+      "categorie": "saison-automne",
+      "sujet_mail": "Automne suite"
+    },
+    "1788543038938.jpg": {
+      "dossier": "08-saison-automne",
+      "categorie": "saison-automne",
+      "sujet_mail": "Automne suite"
+    },
+    "1788543140153.jpg": {
+      "dossier": "06-jardin",
+      "categorie": "jardin",
+      "sujet_mail": "Le jardin (c'est la derniere !)"
+    },
+    "1000042357.jpg": {
+      "dossier": "09-pictos",
+      "categorie": "pictos",
+      "sujet_mail": "Les pictos"
+    },
+    "1000042358.jpg": {
+      "dossier": "09-pictos",
+      "categorie": "pictos",
+      "sujet_mail": "Les pictos"
+    },
+    "1000042356.jpg": {
+      "dossier": "09-pictos",
+      "categorie": "pictos",
+      "sujet_mail": "Les pictos"
+    },
+    "0ad22bb6-0436-497a-8e1d-6b5fe1db034d-1_all_11495.jpg": {
+      "dossier": "09-pictos",
+      "categorie": "pictos",
+      "sujet_mail": "Explication des pictos"
+    },
+    "1000042361.jpg": {
+      "dossier": "09-pictos",
+      "categorie": "pictos",
+      "sujet_mail": "Explication des pictos"
+    },
+    "1000042360.jpg": {
+      "dossier": "09-pictos",
+      "categorie": "pictos",
+      "sujet_mail": "Explication des pictos"
+    },
+    "1000042359.jpg": {
+      "dossier": "09-pictos",
+      "categorie": "pictos",
+      "sujet_mail": "Explication des pictos"
+    },
+    "chambre-enfants-jeu-de-lumieres.jpg": {
+      "dossier": "13-allonzo-rdv",
+      "categorie": "allonzo-rdv",
+      "sujet_mail": "photo prise sur place par Allonzo"
+    },
+    "chambre-enfants-veilleuses.jpg": {
+      "dossier": "13-allonzo-rdv",
+      "categorie": "allonzo-rdv",
+      "sujet_mail": "photo prise sur place par Allonzo"
+    },
+    "veilleuse-lune.jpg": {
+      "dossier": "13-allonzo-rdv",
+      "categorie": "allonzo-rdv",
+      "sujet_mail": "photo prise sur place par Allonzo"
+    },
+    "cuisine-ensemble.jpg": {
+      "dossier": "13-allonzo-rdv",
+      "categorie": "allonzo-rdv",
+      "sujet_mail": "photo prise sur place par Allonzo"
+    },
+    "cuisine-cafetiere-bouilloire.jpg": {
+      "dossier": "13-allonzo-rdv",
+      "categorie": "allonzo-rdv",
+      "sujet_mail": "photo prise sur place par Allonzo"
+    }
+  },
+  "sources_externes": {
+    "wix": {
+      "base": "https://static.wixstatic.com/media/",
+      "note": "Photos du site actuel. URLs relevees le 09/09/2026, a verifier.",
+      "fichiers": [
+        "b4c381_a5b667ab271e4cdf872608f8a35ebd48~mv2_d_4032_3024_s_4_2.jpg",
+        "b4c381_4770a97ba85744909f7ecbae3b672ecd~mv2_d_2592_1728_s_2.jpg",
+        "b4c381_7886817601bb4400b10c3bbc9342f8bd~mv2_d_2592_1728_s_2.jpg",
+        "b4c381_3140fa35950d432284781da3be707818~mv2.jpg",
+        "b4c381_3ff71fb80908439dbb7963cbbec46d20~mv2_d_3057_2293_s_2.jpeg",
+        "b4c381_8ddf113563ee4a2b969e22f4af1696e0~mv2.jpg",
+        "b4c381_a252e92a862d45b198649bb9565ba99e~mv2.jpg"
+      ]
+    },
+    "adt_ardennes": {
+      "base": "https://cdn.iris-etourism.io/media/adt_ardennes/HLOCHA0080001023/",
+      "note": "Galerie de la fiche ADT Ardennes, 17 photos. Les URLs portent la taille en suffixe (-380x250, -800x520). Le script tente d'abord des variantes plus grandes avant de retomber sur la taille d'origine. Qualite de secours : utile en reference, pas pour un hero.",
+      "fichiers": [
+        "ff018b021c3fd2ab-800x520.webp",
+        "fbdf80cfc7dfab85-380x250.webp",
+        "6916ed22ae0d9f42-380x250.webp",
+        "280c7c905445c446-380x250.webp",
+        "596569d377c0979f-380x250.webp",
+        "c9eac8abd116eee8-380x250.webp",
+        "a74de4fafa573cae-380x250.webp",
+        "7853c474aeba202f-380x250.webp",
+        "d05311c6cfcc2b61-380x250.webp",
+        "f2b9f1d1dee40afb-380x250.webp",
+        "cb4664000ea67757-380x250.webp",
+        "985f7caf292b4212-380x250.webp",
+        "55391711b8d57226-380x250.webp",
+        "2e6e8a7fd92d42cc-380x250.webp",
+        "3f2b62b56aa947f1-380x250.webp",
+        "3c9e4b7657a62100-380x250.webp",
+        "09053739da668d80-380x250.webp"
+      ]
+    },
+    "airbnb": {
+      "url_annonce": "https://www.airbnb.fr/rooms/17429584",
+      "titre": "Gîte de charme en bord de Meuse",
+      "trouve_le": "2026-09-09",
+      "trouve_comment": "lien en bio de l'Instagram @gite_ardennes (lien abnb.me mort), puis recherche Google site:airbnb.fr",
+      "base": "https://a0.muscache.com/im/pictures/",
+      "note": "41 URLs relevees dans le HTML de l'annonce. Ajouter ?im_w=1920 pour la pleine resolution. Les chemins Hosting-17429584 sont certains ; les UUID nus sont les photos de l'ancien format, meme annonce.",
+      "fichiers": [
+        "dded3364-2736-42b5-88e8-8a480301d5b7.jpg",
+        "49995c83-4dce-41b6-b6a9-7d623fb79f61.jpg",
+        "hosting/Hosting-17429584/original/09abefaa-1f1b-4692-a07f-c32726ad89c0.jpeg",
+        "289cc2d9-bba5-40dc-aa08-6d7a0b60956b.jpg",
+        "hosting/Hosting-17429584/original/bfd65bb3-33ff-4faf-a9db-30beaf9c8e73.jpeg",
+        "miso/Hosting-17429584/original/d6a3795d-79be-42a2-821b-24ef221783ff.jpeg",
+        "miso/Hosting-17429584/original/d855bf56-7e6b-4370-bce6-14cb511b727e.jpeg",
+        "miso/Hosting-17429584/original/f56f7dc3-3f02-46c9-8864-f754ea31cd55.jpeg",
+        "bac0deb1-04bc-4a79-8d03-b5c09b9cb36c.jpg",
+        "819393a1-4d77-4de9-a771-5ae4321777fc.jpg",
+        "hosting/Hosting-17429584/original/ccdf23f2-13b2-4604-8ea9-f39439bd7b1e.jpeg",
+        "86f885d8-ee4a-4805-bd8e-3abbd4a4a8ad.jpg",
+        "hosting/Hosting-17429584/original/affb3f60-1cbd-44e8-bfbe-6ea8c1bf683c.jpeg",
+        "hosting/Hosting-17429584/original/ff39ddb1-f272-42c0-b9a5-d0379f92cfc3.jpeg",
+        "hosting/Hosting-17429584/original/4409823c-1dd7-47ef-bfbd-a7350fb0fbcf.jpeg",
+        "hosting/Hosting-17429584/original/11837269-b535-45b3-bc42-e9bbde65b9f4.jpeg",
+        "hosting/Hosting-17429584/original/7ae6a373-734a-4f09-b742-72f784fb2875.jpeg",
+        "8a1aa87e-01eb-42db-be3b-8a8caae544ab.jpg",
+        "hosting/Hosting-17429584/original/bab41638-5df7-4802-a07c-25955d858e7c.jpeg",
+        "f0c5b6d6-dd79-4dde-ac11-76e6ac7c1c0d.jpg",
+        "hosting/Hosting-17429584/original/20a71bae-3fd2-4a3f-9139-d2e9d80c0a7c.jpeg",
+        "a60eeba6-2559-4911-98b5-bbc8d2a244e6.jpg",
+        "hosting/Hosting-17429584/original/dad0daeb-4f7c-447c-bea5-f56fb2f8a285.jpeg",
+        "miso/Hosting-17429584/original/ee958dfb-1d16-4ffc-9158-b00f45188648.jpeg",
+        "miso/Hosting-17429584/original/cd242238-45ca-49c2-8cee-d6fd67b8bb67.jpeg",
+        "miso/Hosting-17429584/original/1c82c7ae-d9cf-4992-a431-c29c7b1d7372.jpeg",
+        "miso/Hosting-17429584/original/e9de34bd-ad48-49f7-9ffc-222b8240bc72.jpeg",
+        "hosting/Hosting-17429584/original/7b4834db-4dd0-419b-b1c5-a2b7fa532430.jpeg",
+        "hosting/Hosting-17429584/original/cca90af5-8f33-4e6d-8145-bb9f3612564c.jpeg",
+        "hosting/Hosting-17429584/original/96563bcf-fca1-4255-b52d-fc7eb764dbc5.jpeg",
+        "miso/Hosting-17429584/original/3b29bbf1-96ba-4d24-85c5-507c7f27a5cd.jpeg",
+        "miso/Hosting-17429584/original/57d41d58-e02d-47b7-93a1-1685494a3486.jpeg",
+        "miso/Hosting-17429584/original/93e45bb4-88ae-48af-9c79-0b2a7a76c058.jpeg",
+        "8cc49bcd-de62-4e9d-b0ad-a1fefb2a72b8.jpg",
+        "cd91cabe-1af9-428e-8871-2cfd7a206c36.jpg",
+        "58e76875-ab5d-4bf0-ae01-8a80c2d8ae11.jpg",
+        "1623c3a8-8b06-41ac-a96f-9143f17fbe28.jpg",
+        "26658fa2-a681-4f45-a246-9d3f50bc91a9.jpg",
+        "0e879360-07d4-4d21-b18e-6adfefe1781a.jpg",
+        "hosting/Hosting-17429584/original/22b26f7d-82fa-4258-b9af-195873ba0dca.jpeg",
+        "hosting/Hosting-17429584/original/b75f1873-5809-4af4-8df9-ce0b292c06d8.jpeg"
+      ]
+    },
+    "instagram": {
+      "compte": "https://www.instagram.com/gite_ardennes/",
+      "bio": "Gite a Charleville en bord de meuse, retrouvez nous sur Airbnb : abnb.me/EVmg/kPfEtfVwSB",
+      "audience": "437 abonnes / 1680 abonnements (releve 09/09/2026)",
+      "note": "Compte du gite, tenu par les proprietaires ('retrouvez nous'). Publications vues : le gite et Charleville, rien d'autre. Le lien Airbnb en bio est MORT (redirige vers l'accueil airbnb.fr). Photos non telechargeables sans connexion. Photos vues : facade de nuit, veranda, place Ducale."
+    },
+    "google_business": {
+      "note": "Sa fiche Google contient des photos d'hotes et 23 avis. Fiche mal geolocalisee (voir BRIEF). Photos a recuperer a la main si utile."
+    }
+  },
+  "photos_allonzo_rdv": {
+    "dossier": "13-allonzo-rdv",
+    "prises_par": "Allonzo, sur place, iPhone",
+    "fournies_le": "2026-09-09",
+    "note": "Photos deja presentes dans photos/originaux/13-allonzo-rdv/. Utilisables sur le site.",
+    "fichiers": {
+      "chambre-enfants-jeu-de-lumieres.jpg": {
+        "description": "Chambre enfants au 2e, avec le jeu de lumieres colorees allume : deux lits une personne, fenetre de toit, commode bordeaux, plafonnier orange.",
+        "usage": "INUTILISABLE TELLE QUELLE pour le site : la boule a facettes couvre les lits de taches vertes et rouges. Sert de preuve que la piece est pensee pour les enfants, pas de photo de chambre."
+      },
+      "chambre-enfants-veilleuses.jpg": {
+        "description": "Mur de la chambre enfants : applique coeur rouge lumineuse, applique lune orange, petite toile peinte d'un arbre en automne.",
+        "usage": "Excellent plan de detail pour l'angle famille. Format paysage, exploitable en bandeau."
+      },
+      "veilleuse-lune.jpg": {
+        "description": "Applique murale en forme de lune, allumee, lumiere chaude sur mur blanc.",
+        "usage": "Plan de detail. Bon candidat pour une vignette ou une transition de section."
+      },
+      "cuisine-ensemble.jpg": {
+        "description": "Cuisine equipee : plaque induction, hotte inox, lave-vaisselle, colonne four et micro-ondes, refrigerateur, evier sous fenetre, sol en pierre, mur orange.",
+        "usage": "Seule vue d'ensemble recente de la cuisine cote Allonzo. Cadrage un peu charge a droite."
+      },
+      "cuisine-cafetiere-bouilloire.jpg": {
+        "description": "Cafetiere filtre isotherme et bouilloire electrique sur le plan de travail, mur ocre.",
+        "usage": "Plan de detail, utile pour illustrer l'equipement sans photographier la piece entiere."
+      }
+    }
+  },
+  "descriptions": {
+    "chambre-enfants-jeu-de-lumieres.jpg": "Chambre enfants au 2e, avec le jeu de lumieres colorees allume : deux lits une personne, fenetre de toit, commode bordeaux, plafonnier orange.",
+    "chambre-enfants-veilleuses.jpg": "Mur de la chambre enfants : applique coeur rouge lumineuse, applique lune orange, petite toile peinte d'un arbre en automne.",
+    "veilleuse-lune.jpg": "Applique murale en forme de lune, allumee, lumiere chaude sur mur blanc.",
+    "cuisine-ensemble.jpg": "Cuisine equipee : plaque induction, hotte inox, lave-vaisselle, colonne four et micro-ondes, refrigerateur, evier sous fenetre, sol en pierre, mur orange.",
+    "cuisine-cafetiere-bouilloire.jpg": "Cafetiere filtre isotherme et bouilloire electrique sur le plan de travail, mur ocre.",
+    "1000042338.jpg": "Piece a vivre : longue table en bois et chaises paillees, cheminee, baies vitrees sur le jardin, sol en travertin. Panoramique.",
+    "1000042339.jpg": "Piece a vivre vers le salon : fauteuils, table basse, baies vitrees plein cadre sur le jardin. Panoramique.",
+    "1000042340.jpg": "Coin salon et grande table, mur en lambris de bois, banquette basse, fauteuils. Panoramique.",
+    "1000042341.jpg": "Vue d'ensemble depuis l'entree : escalier rouge, salle a manger, ouverture sur le salon et les baies. Panoramique.",
+    "1000042342.jpg": "Facade de la maison vue du jardin : bardage clair, extension vitree en rez-de-chaussee, allee pavee, vegetation.",
+    "1000042337.jpg": "Cuisine : mur ocre, four et micro-ondes en colonne, plan de travail, sol en travertin.",
+    "0ad22bb6-0436-497a-8e1d-6b5fe1db034d-1_all_11472.jpg": "Chambre du 1er : grande armoire ancienne en chene, porte ouverte vers la salle de bain, lit sur la droite. Panoramique.",
+    "1000042332.jpg": "Chambre du 1er : parquet large, armoire ancienne, bout de lit tapisse.",
+    "1788542582604.jpg": "Chambre du 2e sous les combles : deux lits une personne, fenetre de toit, placards bordeaux, lavabo, chaise a bascule. Jeu de lumieres allume.",
+    "1788542582617.jpg": "Chambre du 2e : lit, LIT PARAPLUIE BEBE installe, etagere a livres, petite table d'enfant, mur bordeaux. Jeu de lumieres allume.",
+    "1788542849509.jpg": "Chambre du 2e, autre angle : deux lits, fenetre cintree, radiateur, etagere a livres.",
+    "1788542849523.jpg": "Chambre du 2e : lits, commode blanche, miroir rond, fenetre cintree.",
+    "1788542849537.jpg": "Salle de bain sous les combles : douche a l'italienne, WC suspendu, lave-linge, poutre apparente.",
+    "1788543140153.jpg": "Jardin en ete : grande pelouse tondue, fauteuil rouge, massifs, mur de pierre en fond.",
+    "1788542730026.jpg": "Salon en hiver, vue par les baies sur le jardin enneige.",
+    "1788542730037.jpg": "Le jardin et la maison sous la neige.",
+    "1788542917524.jpg": "Salon en automne : fauteuils, table basse fleurie, baies vitrees, feuilles mortes sur l'allee.",
+    "1788542917539.jpg": "Salon vers la porte-fenetre, allee pavee jonchee de feuilles.",
+    "1788542917559.jpg": "La maison vue du jardin en automne, allee pavee, dependance au fond.",
+    "1788543038938.jpg": "Allee pavee et grand arbre, jardin en automne.",
+    "1788543038947.jpg": "Salon, banquette et fauteuils face aux baies, jardin d'automne.",
+    "0ad22bb6-0436-497a-8e1d-6b5fe1db034d-1_all_11495.jpg": "Planche d'autocollants Interreg Ardenne Ecotourisme : logo 'Ardenne = ?', animaux, pictos hygiene.",
+    "1000042356.jpg": "Planche d'autocollants Interreg : pictos dechets, thermostat OFF, ampoules, fenetres.",
+    "1000042357.jpg": "Planche d'autocollants Interreg : pictos dechets et economies d'energie.",
+    "1000042358.jpg": "Planche d'autocollants Interreg : bandeau trilingue 'LA NATURE COMMENCE ICI / NATURE STARTS HERE / DE NATUUR BEGINT HIER'.",
+    "1000042359.jpg": "Affiche 'Rien que de l'eau ! 100 % ARDENNE 0 % DECHET' — trilingue FR / EN / NL (Interreg).",
+    "1000042360.jpg": "Notice Interreg, pieces de vie : autocollants chauffage et fenetres, ampoules.",
+    "1000042361.jpg": "Notice Interreg, cuisine : carafe d'eau, contenants zero dechet."
+  },
+  "total_fichiers_gmail": 28
+}

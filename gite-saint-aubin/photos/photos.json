@@ -1,0 +1,929 @@
+{
+  "projet": "gite-saint-aubin",
+  "photos": [
+    {
+      "fichier": "1000042338.jpg",
+      "dossier": "01-a-trier",
+      "categorie": "a-trier",
+      "sujet_mail": "Suite photos",
+      "original": "originaux/01-a-trier/1000042338.jpg",
+      "w": 4000,
+      "h": 1800,
+      "orientation": "paysage",
+      "alt_fr": "Piece a vivre : longue table en bois et chaises paillees, cheminee, baies vitrees sur le jardin, sol en travertin. Panoramique.",
+      "alt_en": "",
+      "variantes": [
+        {
+          "largeur_max": 1600,
+          "jpg": "web/01-a-trier/1000042338-1600.jpg",
+          "webp": "web/01-a-trier/1000042338-1600.webp",
+          "w": 1600,
+          "h": 720
+        },
+        {
+          "largeur_max": 800,
+          "jpg": "web/01-a-trier/1000042338-800.jpg",
+          "webp": "web/01-a-trier/1000042338-800.webp",
+          "w": 800,
+          "h": 360
+        }
+      ]
+    },
+    {
+      "fichier": "1000042339.jpg",
+      "dossier": "01-a-trier",
+      "categorie": "a-trier",
+      "sujet_mail": "Photos prises aujourd'hui",
+      "original": "originaux/01-a-trier/1000042339.jpg",
+      "w": 4000,
+      "h": 1800,
+      "orientation": "paysage",
+      "alt_fr": "Piece a vivre vers le salon : fauteuils, table basse, baies vitrees plein cadre sur le jardin. Panoramique.",
+      "alt_en": "",
+      "variantes": [
+        {
+          "largeur_max": 1600,
+          "jpg": "web/01-a-trier/1000042339-1600.jpg",
+          "webp": "web/01-a-trier/1000042339-1600.webp",
+          "w": 1600,
+          "h": 720
+        },
+        {
+          "largeur_max": 800,
+          "jpg": "web/01-a-trier/1000042339-800.jpg",
+          "webp": "web/01-a-trier/1000042339-800.webp",
+          "w": 800,
+          "h": 360
+        }
+      ]
+    },
+    {
+      "fichier": "1000042340.jpg",
+      "dossier": "01-a-trier",
+      "categorie": "a-trier",
+      "sujet_mail": "Suite photos",
+      "original": "originaux/01-a-trier/1000042340.jpg",
+      "w": 4000,
+      "h": 1800,
+      "orientation": "paysage",
+      "alt_fr": "Coin salon et grande table, mur en lambris de bois, banquette basse, fauteuils. Panoramique.",
+      "alt_en": "",
+      "variantes": [
+        {
+          "largeur_max": 1600,
+          "jpg": "web/01-a-trier/1000042340-1600.jpg",
+          "webp": "web/01-a-trier/1000042340-1600.webp",
+          "w": 1600,
+          "h": 720
+        },
+        {
+          "largeur_max": 800,
+          "jpg": "web/01-a-trier/1000042340-800.jpg",
+          "webp": "web/01-a-trier/1000042340-800.webp",
+          "w": 800,
+          "h": 360
+        }
+      ]
+    },
+    {
+      "fichier": "1000042341.jpg",
+      "dossier": "01-a-trier",
+      "categorie": "a-trier",
+      "sujet_mail": "Suite photos",
+      "original": "originaux/01-a-trier/1000042341.jpg",
+      "w": 4000,
+      "h": 1800,
+      "orientation": "paysage",
+      "alt_fr": "Vue d'ensemble depuis l'entree : escalier rouge, salle a manger, ouverture sur le salon et les baies. Panoramique.",
+      "alt_en": "",
+      "variantes": [
+        {
+          "largeur_max": 1600,
+          "jpg": "web/01-a-trier/1000042341-1600.jpg",
+          "webp": "web/01-a-trier/1000042341-1600.webp",
+          "w": 1600,
+          "h": 720
+        },
+        {
+          "largeur_max": 800,
+          "jpg": "web/01-a-trier/1000042341-800.jpg",
+          "webp": "web/01-a-trier/1000042341-800.webp",
+          "w": 800,
+          "h": 360
+        }
+      ]
+    },
+    {
+      "fichier": "1000042342.jpg",
+      "dossier": "01-a-trier",
+      "categorie": "a-trier",
+      "sujet_mail": "Photos prises aujourd'hui",
+      "original": "originaux/01-a-trier/1000042342.jpg",
+      "w": 1800,
+      "h": 4000,
+      "orientation": "portrait",
+      "alt_fr": "Facade de la maison vue du jardin : bardage clair, extension vitree en rez-de-chaussee, allee pavee, vegetation.",
+      "alt_en": "",
+      "variantes": [
+        {
+          "largeur_max": 1600,
+          "jpg": "web/01-a-trier/1000042342-1600.jpg",
+          "webp": "web/01-a-trier/1000042342-1600.webp",
+          "w": 720,
+          "h": 1600
+        },
+        {
+          "largeur_max": 800,
+          "jpg": "web/01-a-trier/1000042342-800.jpg",
+          "webp": "web/01-a-trier/1000042342-800.webp",
+          "w": 360,
+          "h": 800
+        }
+      ]
+    },
+    {
+      "fichier": "1000042337.jpg",
+      "dossier": "02-cuisine",
+      "categorie": "cuisine",
+      "sujet_mail": "Suite : cuisine",
+      "original": "originaux/02-cuisine/1000042337.jpg",
+      "w": 1800,
+      "h": 4000,
+      "orientation": "portrait",
+      "alt_fr": "Cuisine : mur ocre, four et micro-ondes en colonne, plan de travail, sol en travertin.",
+      "alt_en": "",
+      "variantes": [
+        {
+          "largeur_max": 1600,
+          "jpg": "web/02-cuisine/1000042337-1600.jpg",
+          "webp": "web/02-cuisine/1000042337-1600.webp",
+          "w": 720,
+          "h": 1600
+        },
+        {
+          "largeur_max": 800,
+          "jpg": "web/02-cuisine/1000042337-800.jpg",
+          "webp": "web/02-cuisine/1000042337-800.webp",
+          "w": 360,
+          "h": 800
+        }
+      ]
+    },
+    {
+      "fichier": "0ad22bb6-0436-497a-8e1d-6b5fe1db034d-1_all_11472.jpg",
+      "dossier": "03-chambre-parentale",
+      "categorie": "chambre-parentale",
+      "sujet_mail": "Chbre parentale avec photos",
+      "original": "originaux/03-chambre-parentale/0ad22bb6-0436-497a-8e1d-6b5fe1db034d-1_all_11472.jpg",
+      "w": 4000,
+      "h": 1800,
+      "orientation": "paysage",
+      "alt_fr": "Chambre du 1er : grande armoire ancienne en chene, porte ouverte vers la salle de bain, lit sur la droite. Panoramique.",
+      "alt_en": "",
+      "variantes": [
+        {
+          "largeur_max": 1600,
+          "jpg": "web/03-chambre-parentale/0ad22bb6-0436-497a-8e1d-6b5fe1db034d-1_all_11472-1600.jpg",
+          "webp": "web/03-chambre-parentale/0ad22bb6-0436-497a-8e1d-6b5fe1db034d-1_all_11472-1600.webp",
+          "w": 1600,
+          "h": 720
+        },
+        {
+          "largeur_max": 800,
+          "jpg": "web/03-chambre-parentale/0ad22bb6-0436-497a-8e1d-6b5fe1db034d-1_all_11472-800.jpg",
+          "webp": "web/03-chambre-parentale/0ad22bb6-0436-497a-8e1d-6b5fe1db034d-1_all_11472-800.webp",
+          "w": 800,
+          "h": 360
+        }
+      ]
+    },
+    {
+      "fichier": "1000042332.jpg",
+      "dossier": "03-chambre-parentale",
+      "categorie": "chambre-parentale",
+      "sujet_mail": "Chbre parentale avec photos",
+      "original": "originaux/03-chambre-parentale/1000042332.jpg",
+      "w": 1800,
+      "h": 4000,
+      "orientation": "portrait",
+      "alt_fr": "Chambre du 1er : parquet large, armoire ancienne, bout de lit tapisse.",
+      "alt_en": "",
+      "variantes": [
+        {
+          "largeur_max": 1600,
+          "jpg": "web/03-chambre-parentale/1000042332-1600.jpg",
+          "webp": "web/03-chambre-parentale/1000042332-1600.webp",
+          "w": 720,
+          "h": 1600
+        },
+        {
+          "largeur_max": 800,
+          "jpg": "web/03-chambre-parentale/1000042332-800.jpg",
+          "webp": "web/03-chambre-parentale/1000042332-800.webp",
+          "w": 360,
+          "h": 800
+        }
+      ]
+    },
+    {
+      "fichier": "1788542582604.jpg",
+      "dossier": "04-chambre-enfants",
+      "categorie": "chambre-enfants",
+      "sujet_mail": "Chambre enfants",
+      "original": "originaux/04-chambre-enfants/1788542582604.jpg",
+      "w": 4000,
+      "h": 3000,
+      "orientation": "paysage",
+      "alt_fr": "Chambre du 2e sous les combles : deux lits une personne, fenetre de toit, placards bordeaux, lavabo, chaise a bascule. Jeu de lumieres allume.",
+      "alt_en": "",
+      "variantes": [
+        {
+          "largeur_max": 1600,
+          "jpg": "web/04-chambre-enfants/1788542582604-1600.jpg",
+          "webp": "web/04-chambre-enfants/1788542582604-1600.webp",
+          "w": 1600,
+          "h": 1200
+        },
+        {
+          "largeur_max": 800,
+          "jpg": "web/04-chambre-enfants/1788542582604-800.jpg",
+          "webp": "web/04-chambre-enfants/1788542582604-800.webp",
+          "w": 800,
+          "h": 600
+        }
+      ]
+    },
+    {
+      "fichier": "1788542582617.jpg",
+      "dossier": "04-chambre-enfants",
+      "categorie": "chambre-enfants",
+      "sujet_mail": "Chambre enfants",
+      "original": "originaux/04-chambre-enfants/1788542582617.jpg",
+      "w": 4000,
+      "h": 3000,
+      "orientation": "paysage",
+      "alt_fr": "Chambre du 2e : lit, LIT PARAPLUIE BEBE installe, etagere a livres, petite table d'enfant, mur bordeaux. Jeu de lumieres allume.",
+      "alt_en": "",
+      "variantes": [
+        {
+          "largeur_max": 1600,
+          "jpg": "web/04-chambre-enfants/1788542582617-1600.jpg",
+          "webp": "web/04-chambre-enfants/1788542582617-1600.webp",
+          "w": 1600,
+          "h": 1200
+        },
+        {
+          "largeur_max": 800,
+          "jpg": "web/04-chambre-enfants/1788542582617-800.jpg",
+          "webp": "web/04-chambre-enfants/1788542582617-800.webp",
+          "w": 800,
+          "h": 600
+        }
+      ]
+    },
+    {
+      "fichier": "1788542849509.jpg",
+      "dossier": "05-chambre-enfants-sdb",
+      "categorie": "chambre-enfants-sdb",
+      "sujet_mail": "Chambre enfants et sdb",
+      "original": "originaux/05-chambre-enfants-sdb/1788542849509.jpg",
+      "w": 4000,
+      "h": 3000,
+      "orientation": "paysage",
+      "alt_fr": "Chambre du 2e, autre angle : deux lits, fenetre cintree, radiateur, etagere a livres.",
+      "alt_en": "",
+      "variantes": [
+        {
+          "largeur_max": 1600,
+          "jpg": "web/05-chambre-enfants-sdb/1788542849509-1600.jpg",
+          "webp": "web/05-chambre-enfants-sdb/1788542849509-1600.webp",
+          "w": 1600,
+          "h": 1200
+        },
+        {
+          "largeur_max": 800,
+          "jpg": "web/05-chambre-enfants-sdb/1788542849509-800.jpg",
+          "webp": "web/05-chambre-enfants-sdb/1788542849509-800.webp",
+          "w": 800,
+          "h": 600
+        }
+      ]
+    },
+    {
+      "fichier": "1788542849523.jpg",
+      "dossier": "05-chambre-enfants-sdb",
+      "categorie": "chambre-enfants-sdb",
+      "sujet_mail": "Chambre enfants et sdb",
+      "original": "originaux/05-chambre-enfants-sdb/1788542849523.jpg",
+      "w": 4000,
+      "h": 3000,
+      "orientation": "paysage",
+      "alt_fr": "Chambre du 2e : lits, commode blanche, miroir rond, fenetre cintree.",
+      "alt_en": "",
+      "variantes": [
+        {
+          "largeur_max": 1600,
+          "jpg": "web/05-chambre-enfants-sdb/1788542849523-1600.jpg",
+          "webp": "web/05-chambre-enfants-sdb/1788542849523-1600.webp",
+          "w": 1600,
+          "h": 1200
+        },
+        {
+          "largeur_max": 800,
+          "jpg": "web/05-chambre-enfants-sdb/1788542849523-800.jpg",
+          "webp": "web/05-chambre-enfants-sdb/1788542849523-800.webp",
+          "w": 800,
+          "h": 600
+        }
+      ]
+    },
+    {
+      "fichier": "1788542849537.jpg",
+      "dossier": "05-chambre-enfants-sdb",
+      "categorie": "chambre-enfants-sdb",
+      "sujet_mail": "Chambre enfants et sdb",
+      "original": "originaux/05-chambre-enfants-sdb/1788542849537.jpg",
+      "w": 3000,
+      "h": 4000,
+      "orientation": "portrait",
+      "alt_fr": "Salle de bain sous les combles : douche a l'italienne, WC suspendu, lave-linge, poutre apparente.",
+      "alt_en": "",
+      "variantes": [
+        {
+          "largeur_max": 1600,
+          "jpg": "web/05-chambre-enfants-sdb/1788542849537-1600.jpg",
+          "webp": "web/05-chambre-enfants-sdb/1788542849537-1600.webp",
+          "w": 1200,
+          "h": 1600
+        },
+        {
+          "largeur_max": 800,
+          "jpg": "web/05-chambre-enfants-sdb/1788542849537-800.jpg",
+          "webp": "web/05-chambre-enfants-sdb/1788542849537-800.webp",
+          "w": 600,
+          "h": 800
+        }
+      ]
+    },
+    {
+      "fichier": "1788543140153.jpg",
+      "dossier": "06-jardin",
+      "categorie": "jardin",
+      "sujet_mail": "Le jardin (c'est la derniere !)",
+      "original": "originaux/06-jardin/1788543140153.jpg",
+      "w": 2464,
+      "h": 3280,
+      "orientation": "portrait",
+      "alt_fr": "Jardin en ete : grande pelouse tondue, fauteuil rouge, massifs, mur de pierre en fond.",
+      "alt_en": "",
+      "variantes": [
+        {
+          "largeur_max": 1600,
+          "jpg": "web/06-jardin/1788543140153-1600.jpg",
+          "webp": "web/06-jardin/1788543140153-1600.webp",
+          "w": 1202,
+          "h": 1600
+        },
+        {
+          "largeur_max": 800,
+          "jpg": "web/06-jardin/1788543140153-800.jpg",
+          "webp": "web/06-jardin/1788543140153-800.webp",
+          "w": 601,
+          "h": 800
+        }
+      ]
+    },
+    {
+      "fichier": "1788542730026.jpg",
+      "dossier": "07-saison-hiver",
+      "categorie": "saison-hiver",
+      "sujet_mail": "Photos d'hiver",
+      "original": "originaux/07-saison-hiver/1788542730026.jpg",
+      "w": 4000,
+      "h": 3000,
+      "orientation": "paysage",
+      "alt_fr": "Salon en hiver, vue par les baies sur le jardin enneige.",
+      "alt_en": "",
+      "variantes": [
+        {
+          "largeur_max": 1600,
+          "jpg": "web/07-saison-hiver/1788542730026-1600.jpg",
+          "webp": "web/07-saison-hiver/1788542730026-1600.webp",
+          "w": 1600,
+          "h": 1200
+        },
+        {
+          "largeur_max": 800,
+          "jpg": "web/07-saison-hiver/1788542730026-800.jpg",
+          "webp": "web/07-saison-hiver/1788542730026-800.webp",
+          "w": 800,
+          "h": 600
+        }
+      ]
+    },
+    {
+      "fichier": "1788542730037.jpg",
+      "dossier": "07-saison-hiver",
+      "categorie": "saison-hiver",
+      "sujet_mail": "Photos d'hiver",
+      "original": "originaux/07-saison-hiver/1788542730037.jpg",
+      "w": 3000,
+      "h": 4000,
+      "orientation": "portrait",
+      "alt_fr": "Le jardin et la maison sous la neige.",
+      "alt_en": "",
+      "variantes": [
+        {
+          "largeur_max": 1600,
+          "jpg": "web/07-saison-hiver/1788542730037-1600.jpg",
+          "webp": "web/07-saison-hiver/1788542730037-1600.webp",
+          "w": 1200,
+          "h": 1600
+        },
+        {
+          "largeur_max": 800,
+          "jpg": "web/07-saison-hiver/1788542730037-800.jpg",
+          "webp": "web/07-saison-hiver/1788542730037-800.webp",
+          "w": 600,
+          "h": 800
+        }
+      ]
+    },
+    {
+      "fichier": "1788542917524.jpg",
+      "dossier": "08-saison-automne",
+      "categorie": "saison-automne",
+      "sujet_mail": "Automne",
+      "original": "originaux/08-saison-automne/1788542917524.jpg",
+      "w": 4000,
+      "h": 3000,
+      "orientation": "paysage",
+      "alt_fr": "Salon en automne : fauteuils, table basse fleurie, baies vitrees, feuilles mortes sur l'allee.",
+      "alt_en": "",
+      "variantes": [
+        {
+          "largeur_max": 1600,
+          "jpg": "web/08-saison-automne/1788542917524-1600.jpg",
+          "webp": "web/08-saison-automne/1788542917524-1600.webp",
+          "w": 1600,
+          "h": 1200
+        },
+        {
+          "largeur_max": 800,
+          "jpg": "web/08-saison-automne/1788542917524-800.jpg",
+          "webp": "web/08-saison-automne/1788542917524-800.webp",
+          "w": 800,
+          "h": 600
+        }
+      ]
+    },
+    {
+      "fichier": "1788542917539.jpg",
+      "dossier": "08-saison-automne",
+      "categorie": "saison-automne",
+      "sujet_mail": "Automne",
+      "original": "originaux/08-saison-automne/1788542917539.jpg",
+      "w": 4000,
+      "h": 3000,
+      "orientation": "paysage",
+      "alt_fr": "Salon vers la porte-fenetre, allee pavee jonchee de feuilles.",
+      "alt_en": "",
+      "variantes": [
+        {
+          "largeur_max": 1600,
+          "jpg": "web/08-saison-automne/1788542917539-1600.jpg",
+          "webp": "web/08-saison-automne/1788542917539-1600.webp",
+          "w": 1600,
+          "h": 1200
+        },
+        {
+          "largeur_max": 800,
+          "jpg": "web/08-saison-automne/1788542917539-800.jpg",
+          "webp": "web/08-saison-automne/1788542917539-800.webp",
+          "w": 800,
+          "h": 600
+        }
+      ]
+    },
+    {
+      "fichier": "1788542917559.jpg",
+      "dossier": "08-saison-automne",
+      "categorie": "saison-automne",
+      "sujet_mail": "Automne",
+      "original": "originaux/08-saison-automne/1788542917559.jpg",
+      "w": 2464,
+      "h": 3280,
+      "orientation": "portrait",
+      "alt_fr": "La maison vue du jardin en automne, allee pavee, dependance au fond.",
+      "alt_en": "",
+      "variantes": [
+        {
+          "largeur_max": 1600,
+          "jpg": "web/08-saison-automne/1788542917559-1600.jpg",
+          "webp": "web/08-saison-automne/1788542917559-1600.webp",
+          "w": 1202,
+          "h": 1600
+        },
+        {
+          "largeur_max": 800,
+          "jpg": "web/08-saison-automne/1788542917559-800.jpg",
+          "webp": "web/08-saison-automne/1788542917559-800.webp",
+          "w": 601,
+          "h": 800
+        }
+      ]
+    },
+    {
+      "fichier": "1788543038938.jpg",
+      "dossier": "08-saison-automne",
+      "categorie": "saison-automne",
+      "sujet_mail": "Automne suite",
+      "original": "originaux/08-saison-automne/1788543038938.jpg",
+      "w": 3280,
+      "h": 2464,
+      "orientation": "paysage",
+      "alt_fr": "Allee pavee et grand arbre, jardin en automne.",
+      "alt_en": "",
+      "variantes": [
+        {
+          "largeur_max": 1600,
+          "jpg": "web/08-saison-automne/1788543038938-1600.jpg",
+          "webp": "web/08-saison-automne/1788543038938-1600.webp",
+          "w": 1600,
+          "h": 1202
+        },
+        {
+          "largeur_max": 800,
+          "jpg": "web/08-saison-automne/1788543038938-800.jpg",
+          "webp": "web/08-saison-automne/1788543038938-800.webp",
+          "w": 800,
+          "h": 601
+        }
+      ]
+    },
+    {
+      "fichier": "1788543038947.jpg",
+      "dossier": "08-saison-automne",
+      "categorie": "saison-automne",
+      "sujet_mail": "Automne suite",
+      "original": "originaux/08-saison-automne/1788543038947.jpg",
+      "w": 3280,
+      "h": 2464,
+      "orientation": "paysage",
+      "alt_fr": "Salon, banquette et fauteuils face aux baies, jardin d'automne.",
+      "alt_en": "",
+      "variantes": [
+        {
+          "largeur_max": 1600,
+          "jpg": "web/08-saison-automne/1788543038947-1600.jpg",
+          "webp": "web/08-saison-automne/1788543038947-1600.webp",
+          "w": 1600,
+          "h": 1202
+        },
+        {
+          "largeur_max": 800,
+          "jpg": "web/08-saison-automne/1788543038947-800.jpg",
+          "webp": "web/08-saison-automne/1788543038947-800.webp",
+          "w": 800,
+          "h": 601
+        }
+      ]
+    },
+    {
+      "fichier": "0ad22bb6-0436-497a-8e1d-6b5fe1db034d-1_all_11495.jpg",
+      "dossier": "09-pictos",
+      "categorie": "pictos",
+      "sujet_mail": "Explication des pictos",
+      "original": "originaux/09-pictos/0ad22bb6-0436-497a-8e1d-6b5fe1db034d-1_all_11495.jpg",
+      "w": 1818,
+      "h": 1602,
+      "orientation": "paysage",
+      "alt_fr": "Planche d'autocollants Interreg Ardenne Ecotourisme : logo 'Ardenne = ?', animaux, pictos hygiene.",
+      "alt_en": "",
+      "variantes": [
+        {
+          "largeur_max": 1600,
+          "jpg": "web/09-pictos/0ad22bb6-0436-497a-8e1d-6b5fe1db034d-1_all_11495-1600.jpg",
+          "webp": "web/09-pictos/0ad22bb6-0436-497a-8e1d-6b5fe1db034d-1_all_11495-1600.webp",
+          "w": 1600,
+          "h": 1410
+        },
+        {
+          "largeur_max": 800,
+          "jpg": "web/09-pictos/0ad22bb6-0436-497a-8e1d-6b5fe1db034d-1_all_11495-800.jpg",
+          "webp": "web/09-pictos/0ad22bb6-0436-497a-8e1d-6b5fe1db034d-1_all_11495-800.webp",
+          "w": 800,
+          "h": 705
+        }
+      ]
+    },
+    {
+      "fichier": "1000042356.jpg",
+      "dossier": "09-pictos",
+      "categorie": "pictos",
+      "sujet_mail": "Les pictos",
+      "original": "originaux/09-pictos/1000042356.jpg",
+      "w": 1753,
+      "h": 2127,
+      "orientation": "portrait",
+      "alt_fr": "Planche d'autocollants Interreg : pictos dechets, thermostat OFF, ampoules, fenetres.",
+      "alt_en": "",
+      "variantes": [
+        {
+          "largeur_max": 1600,
+          "jpg": "web/09-pictos/1000042356-1600.jpg",
+          "webp": "web/09-pictos/1000042356-1600.webp",
+          "w": 1319,
+          "h": 1600
+        },
+        {
+          "largeur_max": 800,
+          "jpg": "web/09-pictos/1000042356-800.jpg",
+          "webp": "web/09-pictos/1000042356-800.webp",
+          "w": 659,
+          "h": 800
+        }
+      ]
+    },
+    {
+      "fichier": "1000042357.jpg",
+      "dossier": "09-pictos",
+      "categorie": "pictos",
+      "sujet_mail": "Les pictos",
+      "original": "originaux/09-pictos/1000042357.jpg",
+      "w": 1805,
+      "h": 1477,
+      "orientation": "paysage",
+      "alt_fr": "Planche d'autocollants Interreg : pictos dechets et economies d'energie.",
+      "alt_en": "",
+      "variantes": [
+        {
+          "largeur_max": 1600,
+          "jpg": "web/09-pictos/1000042357-1600.jpg",
+          "webp": "web/09-pictos/1000042357-1600.webp",
+          "w": 1600,
+          "h": 1309
+        },
+        {
+          "largeur_max": 800,
+          "jpg": "web/09-pictos/1000042357-800.jpg",
+          "webp": "web/09-pictos/1000042357-800.webp",
+          "w": 800,
+          "h": 655
+        }
+      ]
+    },
+    {
+      "fichier": "1000042358.jpg",
+      "dossier": "09-pictos",
+      "categorie": "pictos",
+      "sujet_mail": "Les pictos",
+      "original": "originaux/09-pictos/1000042358.jpg",
+      "w": 2139,
+      "h": 1312,
+      "orientation": "paysage",
+      "alt_fr": "Planche d'autocollants Interreg : bandeau trilingue 'LA NATURE COMMENCE ICI / NATURE STARTS HERE / DE NATUUR BEGINT HIER'.",
+      "alt_en": "",
+      "variantes": [
+        {
+          "largeur_max": 1600,
+          "jpg": "web/09-pictos/1000042358-1600.jpg",
+          "webp": "web/09-pictos/1000042358-1600.webp",
+          "w": 1600,
+          "h": 981
+        },
+        {
+          "largeur_max": 800,
+          "jpg": "web/09-pictos/1000042358-800.jpg",
+          "webp": "web/09-pictos/1000042358-800.webp",
+          "w": 800,
+          "h": 491
+        }
+      ]
+    },
+    {
+      "fichier": "1000042359.jpg",
+      "dossier": "09-pictos",
+      "categorie": "pictos",
+      "sujet_mail": "Explication des pictos",
+      "original": "originaux/09-pictos/1000042359.jpg",
+      "w": 2564,
+      "h": 1759,
+      "orientation": "paysage",
+      "alt_fr": "Affiche 'Rien que de l'eau ! 100 % ARDENNE 0 % DECHET' — trilingue FR / EN / NL (Interreg).",
+      "alt_en": "",
+      "variantes": [
+        {
+          "largeur_max": 1600,
+          "jpg": "web/09-pictos/1000042359-1600.jpg",
+          "webp": "web/09-pictos/1000042359-1600.webp",
+          "w": 1600,
+          "h": 1098
+        },
+        {
+          "largeur_max": 800,
+          "jpg": "web/09-pictos/1000042359-800.jpg",
+          "webp": "web/09-pictos/1000042359-800.webp",
+          "w": 800,
+          "h": 549
+        }
+      ]
+    },
+    {
+      "fichier": "1000042360.jpg",
+      "dossier": "09-pictos",
+      "categorie": "pictos",
+      "sujet_mail": "Explication des pictos",
+      "original": "originaux/09-pictos/1000042360.jpg",
+      "w": 1788,
+      "h": 2744,
+      "orientation": "portrait",
+      "alt_fr": "Notice Interreg, pieces de vie : autocollants chauffage et fenetres, ampoules.",
+      "alt_en": "",
+      "variantes": [
+        {
+          "largeur_max": 1600,
+          "jpg": "web/09-pictos/1000042360-1600.jpg",
+          "webp": "web/09-pictos/1000042360-1600.webp",
+          "w": 1043,
+          "h": 1600
+        },
+        {
+          "largeur_max": 800,
+          "jpg": "web/09-pictos/1000042360-800.jpg",
+          "webp": "web/09-pictos/1000042360-800.webp",
+          "w": 521,
+          "h": 800
+        }
+      ]
+    },
+    {
+      "fichier": "1000042361.jpg",
+      "dossier": "09-pictos",
+      "categorie": "pictos",
+      "sujet_mail": "Explication des pictos",
+      "original": "originaux/09-pictos/1000042361.jpg",
+      "w": 2622,
+      "h": 1773,
+      "orientation": "paysage",
+      "alt_fr": "Notice Interreg, cuisine : carafe d'eau, contenants zero dechet.",
+      "alt_en": "",
+      "variantes": [
+        {
+          "largeur_max": 1600,
+          "jpg": "web/09-pictos/1000042361-1600.jpg",
+          "webp": "web/09-pictos/1000042361-1600.webp",
+          "w": 1600,
+          "h": 1082
+        },
+        {
+          "largeur_max": 800,
+          "jpg": "web/09-pictos/1000042361-800.jpg",
+          "webp": "web/09-pictos/1000042361-800.webp",
+          "w": 800,
+          "h": 541
+        }
+      ]
+    },
+    {
+      "fichier": "chambre-enfants-jeu-de-lumieres.jpg",
+      "dossier": "13-allonzo-rdv",
+      "categorie": "allonzo-rdv",
+      "sujet_mail": "photo prise sur place par Allonzo",
+      "original": "originaux/13-allonzo-rdv/chambre-enfants-jeu-de-lumieres.jpg",
+      "w": 1932,
+      "h": 2576,
+      "orientation": "portrait",
+      "alt_fr": "Chambre enfants au 2e, avec le jeu de lumieres colorees allume : deux lits une personne, fenetre de toit, commode bordeaux, plafonnier orange.",
+      "alt_en": "",
+      "variantes": [
+        {
+          "largeur_max": 1600,
+          "jpg": "web/13-allonzo-rdv/chambre-enfants-jeu-de-lumieres-1600.jpg",
+          "webp": "web/13-allonzo-rdv/chambre-enfants-jeu-de-lumieres-1600.webp",
+          "w": 1200,
+          "h": 1600
+        },
+        {
+          "largeur_max": 800,
+          "jpg": "web/13-allonzo-rdv/chambre-enfants-jeu-de-lumieres-800.jpg",
+          "webp": "web/13-allonzo-rdv/chambre-enfants-jeu-de-lumieres-800.webp",
+          "w": 600,
+          "h": 800
+        }
+      ]
+    },
+    {
+      "fichier": "chambre-enfants-veilleuses.jpg",
+      "dossier": "13-allonzo-rdv",
+      "categorie": "allonzo-rdv",
+      "sujet_mail": "photo prise sur place par Allonzo",
+      "original": "originaux/13-allonzo-rdv/chambre-enfants-veilleuses.jpg",
+      "w": 2576,
+      "h": 1932,
+      "orientation": "paysage",
+      "alt_fr": "Mur de la chambre enfants : applique coeur rouge lumineuse, applique lune orange, petite toile peinte d'un arbre en automne.",
+      "alt_en": "",
+      "variantes": [
+        {
+          "largeur_max": 1600,
+          "jpg": "web/13-allonzo-rdv/chambre-enfants-veilleuses-1600.jpg",
+          "webp": "web/13-allonzo-rdv/chambre-enfants-veilleuses-1600.webp",
+          "w": 1600,
+          "h": 1200
+        },
+        {
+          "largeur_max": 800,
+          "jpg": "web/13-allonzo-rdv/chambre-enfants-veilleuses-800.jpg",
+          "webp": "web/13-allonzo-rdv/chambre-enfants-veilleuses-800.webp",
+          "w": 800,
+          "h": 600
+        }
+      ]
+    },
+    {
+      "fichier": "cuisine-cafetiere-bouilloire.jpg",
+      "dossier": "13-allonzo-rdv",
+      "categorie": "allonzo-rdv",
+      "sujet_mail": "photo prise sur place par Allonzo",
+      "original": "originaux/13-allonzo-rdv/cuisine-cafetiere-bouilloire.jpg",
+      "w": 1932,
+      "h": 2576,
+      "orientation": "portrait",
+      "alt_fr": "Cafetiere filtre isotherme et bouilloire electrique sur le plan de travail, mur ocre.",
+      "alt_en": "",
+      "variantes": [
+        {
+          "largeur_max": 1600,
+          "jpg": "web/13-allonzo-rdv/cuisine-cafetiere-bouilloire-1600.jpg",
+          "webp": "web/13-allonzo-rdv/cuisine-cafetiere-bouilloire-1600.webp",
+          "w": 1200,
+          "h": 1600
+        },
+        {
+          "largeur_max": 800,
+          "jpg": "web/13-allonzo-rdv/cuisine-cafetiere-bouilloire-800.jpg",
+          "webp": "web/13-allonzo-rdv/cuisine-cafetiere-bouilloire-800.webp",
+          "w": 600,
+          "h": 800
+        }
+      ]
+    },
+    {
+      "fichier": "cuisine-ensemble.jpg",
+      "dossier": "13-allonzo-rdv",
+      "categorie": "allonzo-rdv",
+      "sujet_mail": "photo prise sur place par Allonzo",
+      "original": "originaux/13-allonzo-rdv/cuisine-ensemble.jpg",
+      "w": 1932,
+      "h": 2576,
+      "orientation": "portrait",
+      "alt_fr": "Cuisine equipee : plaque induction, hotte inox, lave-vaisselle, colonne four et micro-ondes, refrigerateur, evier sous fenetre, sol en pierre, mur orange.",
+      "alt_en": "",
+      "variantes": [
+        {
+          "largeur_max": 1600,
+          "jpg": "web/13-allonzo-rdv/cuisine-ensemble-1600.jpg",
+          "webp": "web/13-allonzo-rdv/cuisine-ensemble-1600.webp",
+          "w": 1200,
+          "h": 1600
+        },
+        {
+          "largeur_max": 800,
+          "jpg": "web/13-allonzo-rdv/cuisine-ensemble-800.jpg",
+          "webp": "web/13-allonzo-rdv/cuisine-ensemble-800.webp",
+          "w": 600,
+          "h": 800
+        }
+      ]
+    },
+    {
+      "fichier": "veilleuse-lune.jpg",
+      "dossier": "13-allonzo-rdv",
+      "categorie": "allonzo-rdv",
+      "sujet_mail": "photo prise sur place par Allonzo",
+      "original": "originaux/13-allonzo-rdv/veilleuse-lune.jpg",
+      "w": 1932,
+      "h": 2576,
+      "orientation": "portrait",
+      "alt_fr": "Applique murale en forme de lune, allumee, lumiere chaude sur mur blanc.",
+      "alt_en": "",
+      "variantes": [
+        {
+          "largeur_max": 1600,
+          "jpg": "web/13-allonzo-rdv/veilleuse-lune-1600.jpg",
+          "webp": "web/13-allonzo-rdv/veilleuse-lune-1600.webp",
+          "w": 1200,
+          "h": 1600
+        },
+        {
+          "largeur_max": 800,
+          "jpg": "web/13-allonzo-rdv/veilleuse-lune-800.jpg",
+          "webp": "web/13-allonzo-rdv/veilleuse-lune-800.webp",
+          "w": 600,
+          "h": 800
+        }
+      ]
+    }
+  ]
+}
