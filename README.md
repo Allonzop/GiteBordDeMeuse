@@ -6,7 +6,15 @@ Cinq pages, français et anglais, sans réservation en ligne.
 Le dossier de production (brief, contenus, photos sources) est dans
 [`gite-saint-aubin/`](gite-saint-aubin/).
 
-## Voir le site
+## En ligne
+
+<https://allonzop.github.io/GiteBordDeMeuse/>
+
+La maquette v0, celle que la cliente a validée le 04/09, reste consultable pour
+comparaison : [`maquette-v0.html`](https://allonzop.github.io/GiteBordDeMeuse/maquette-v0.html).
+Elle est en `noindex` pour ne pas concurrencer le site dans les moteurs de recherche.
+
+## Voir le site en local
 
 C’est du HTML statique : aucune dépendance, aucune étape de compilation.
 
