@@ -14,6 +14,11 @@ La maquette v0, celle que la cliente a validée le 04/09, reste consultable pour
 comparaison : [`maquette-v0.html`](https://allonzop.github.io/GiteBordDeMeuse/maquette-v0.html).
 Elle est en `noindex` pour ne pas concurrencer le site dans les moteurs de recherche.
 
+⚠️ **Sur GitHub Pages, le formulaire n’envoie rien** : il est écrit pour Netlify
+Forms, qui n’existe pas là-bas. L’envoi échoue et affiche le repli « écrivez-moi
+à… ou appelez le… ». C’est voulu, et sans conséquence tant que le site n’est pas
+sur Netlify.
+
 ## Voir le site en local
 
 C’est du HTML statique : aucune dépendance, aucune étape de compilation.
@@ -42,37 +47,52 @@ JSON hors d’un serveur. Passer par `http://` pour la tester.
 
 ```
 index.html · la-maison.html · le-jardin.html · ecologie.html · contact.html
-mentions-legales.html
+mentions-legales.html · maquette-v0.html
 assets/
   css/site.css        feuille de style unique
   js/i18n.js          bascule de langue
-  js/site.js          menu mobile, formulaire, dates
+  js/site.js          apparitions, menu mobile, formulaire, dates
   i18n/fr.json        dictionnaire français (référence)
   i18n/en.json        dictionnaire anglais
-  i18n/LISEZMOI.md    comment ajouter le néerlandais
-photos/               48 photos, 1600 px et 800 px, WebP + repli JPEG
+  i18n/LISEZMOI.md    procédure pour une langue supplémentaire
+photos/               48 photos, 800/1200/1600 px, WebP + repli JPEG
 ```
 
 ## Choix techniques
 
-**Langues.** Le français est écrit en clair dans le HTML : le site reste lisible
-sans JavaScript et les moteurs de recherche voient le vrai texte. Les autres
-langues vivent dans `assets/i18n/<code>.json`. Une clé absente d’un dictionnaire
-retombe sur le français — une traduction incomplète n’affiche jamais de clé brute.
-Ajouter le néerlandais demande trois gestes, décrits dans
-[`assets/i18n/LISEZMOI.md`](assets/i18n/LISEZMOI.md).
+**Qui parle.** Claire, seule, à la première personne du singulier. Les seuls
+pluriels du site sont ceux des voyageurs : les avis, et l’exemple de message
+dans le formulaire.
+
+**Langues.** Français et anglais. Le français est écrit en clair dans le HTML :
+le site reste lisible sans JavaScript et les moteurs de recherche voient le vrai
+texte. L’anglais vit dans `assets/i18n/en.json`. Une clé absente d’un
+dictionnaire retombe sur le français — une traduction incomplète n’affiche
+jamais de clé brute. Les deux dictionnaires portent exactement les mêmes clés,
+vérifié à chaque génération.
 
 La langue est choisie dans cet ordre : `?lang=` dans l’URL, puis le choix
 précédent du visiteur, puis la langue de son navigateur, puis le français.
 
-**Photos.** `<picture>` avec WebP et repli JPEG, deux largeurs (800 et 1600 px),
-`width`/`height` explicites pour éviter les sauts de mise en page, et
-`loading="lazy"` partout sauf sur la première image de chaque page.
+**Photos.** `<picture>` avec WebP en trois largeurs (800, 1200, 1600) et repli
+JPEG en deux (800, 1200). Le repli s’arrête à 1200 px : il ne sert qu’aux
+navigateurs sans WebP, trop rares pour justifier 14 Mo de fichiers
+supplémentaires. `width`/`height` explicites pour que la page ne sursaute pas au
+chargement, `loading="lazy"` partout sauf la première image de chaque page.
+
+**Animations.** Apparition en fondu au défilement, léger agrandissement des
+photos au survol, ombre de la barre haute une fois la page défilée. Uniquement
+`opacity` et `transform`, que le navigateur traite sur le GPU sans recalculer la
+mise en page ; aucun écouteur de défilement, un `IntersectionObserver` qui oublie
+chaque élément dès qu’il est apparu. Tout part de l’état visible : sans
+JavaScript, rien n’est caché. `prefers-reduced-motion` coupe l’ensemble.
+
+Ces animations tournent dans le navigateur du visiteur : elles ne coûtent rien à
+l’hébergement, sur Netlify comme ailleurs.
 
 **Formulaire.** Pas de réservation ni de paiement en ligne : c’est une demande.
-Le formulaire est prêt pour Netlify Forms (`data-netlify`, pot de miel
-anti-robots). En local l’envoi échoue et le message de repli affiche le téléphone
-et l’adresse électronique — c’est le comportement voulu, pas un bug.
+Prêt pour Netlify Forms (`data-netlify`, pot de miel anti-robots), avec repli
+téléphone et e-mail si l’envoi échoue.
 
 **Carte.** Coordonnées GPS réelles : `49.77913, 4.735605`.
 La fiche Google Business de Claire pointe encore au mauvais endroit : cela se
@@ -82,23 +102,39 @@ corrige chez Google, pas sur le site.
 et cœur rouges, lambris, travertin. Tous les contrastes texte/fond ont été
 vérifiés au niveau AA (≥ 4,5:1).
 
-## Avant la mise en ligne
+## Ce que l’audit photo a corrigé
 
-À faire confirmer par Claire :
+Les descriptions de `gite-saint-aubin/photos/photos.json` annonçaient avoir été
+« vérifiées à l’œil ». Pour les planches du kit Interreg, c’était faux. Après
+lecture de chaque image :
 
-- [ ] **Qui parle.** L’annonce Airbnb est au nom de « Claire et Olivier » et dit
-      « nous » ; la maquette qu’elle a validée fait parler Claire au « je ». Le
-      site reprend ce mélange tel qu’elle l’a approuvé — à trancher avec elle.
-- [ ] **La chambre du 2e.** Le site annonce trois lits une personne, d’après son
-      annonce Airbnb et une de ses photos. Deux lits seulement sont visibles sur
-      les photos du 04/09.
-- [ ] **Les tarifs.** Aucun tarif n’est affiché. Les fiches touristiques donnent
-      80–155 € la nuit, forfait ménage 50–70 €, taxe de séjour 0,80 € — non repris
-      faute de confirmation.
+- **quatre planches étaient mal orientées** — trois à 90°, une à 180° ;
+- **trois portaient un nom qui ne correspondait pas à leur contenu** : ce que le
+  manifeste appelait l’affiche « Rien que de l’eau ! » était la notice cuisine,
+  la notice cuisine était celle de la salle de bain, et le « bandeau trilingue
+  La nature commence ici » n’existe pas ;
+- la photo de la base nautique montrait des baigneurs sautant dans le port : le
+  cadre s’arrête maintenant avant eux ;
+- le geste « ne jetez pas de lingettes », repris du manifeste, ne figure sur
+  aucune planche. Il a été remplacé par le repère de baignoire, qui y figure.
+
+Toutes les photos ont été régénérées depuis la meilleure source disponible, en
+un seul ré-encodage, sans empiler les compressions.
+
+## Décisions prises
+
+- **Votre hôte : Claire seule.** Le « nous » de l’annonce Airbnb ne figure plus.
+- **Chambre du second : trois couchages.** Deux lits une personne installés en
+  permanence, un troisième monté à la demande.
+- **Pas de tarif.** Tant que l’annonce Airbnb n’en affiche pas, le site n’en
+  affiche pas non plus.
+- **Deux langues.** Pas de troisième pour l’instant. La procédure reste écrite
+  dans [`assets/i18n/LISEZMOI.md`](assets/i18n/LISEZMOI.md) si le besoin vient.
+
+## Reste à obtenir
+
 - [ ] **Le SIREN de l’éditeur.** Les mentions légales portent le SIREN de KRAON
       au titre de la conception. Le numéro de l’activité de Claire manque.
-- [ ] **La troisième langue.** Néerlandais plutôt qu’allemand : ses avis
-      étrangers sont néerlandais, et le kit de son label est édité en FR/EN/NL.
 - [ ] **Les avis.** Les trois extraits affichés sont reformulés et abrégés, ce que
       la page indique. À valider ou à remplacer par des citations exactes.
 - [ ] **Le nom de domaine.** Une fois choisi et acheté, renseigner `<link
@@ -115,11 +151,13 @@ vérifiés au niveau AA (≥ 4,5:1).
 
 ## Contrôles
 
-Le site a été vérifié avant livraison :
+Le site est vérifié à chaque génération :
 
 - typographie française (insécables avant `: ; ! ?`, guillemets `« »`,
   apostrophes typographiques, ligature `œ`, majuscules accentuées, unités) ;
-- dictionnaires FR et EN portant exactement les mêmes 380 clés ;
+- typographie anglaise (pas d’espace avant la ponctuation double, point décimal),
+  les citations françaises gardant leurs propres règles ;
+- dictionnaires FR et EN portant exactement les mêmes clés ;
 - aucun lien mort, aucune ancre morte, aucun identifiant dupliqué ;
-- chaque image avec `alt`, `width`, `height` ;
-- aucune erreur JavaScript, aucun débordement horizontal, de 390 px à 1280 px.
+- chaque image avec `alt`, `width`, `height`, `sizes` et `srcset` ;
+- aucune erreur JavaScript, aucun débordement horizontal, de 320 px à 2560 px.

@@ -1,6 +1,50 @@
-/* Gîte Saint-Aubin — menu mobile, formulaire de demande, dates par défaut. */
+/* Gîte Saint-Aubin — animations, menu mobile, formulaire, dates par défaut. */
 (function () {
   'use strict';
+
+  /* ---- apparitions au défilement ----
+     Le marqueur est posé tout de suite : sans JavaScript, ou si le visiteur
+     demande moins d'animation, rien n'est jamais caché.
+     IntersectionObserver ne coûte rien — pas d'écouteur de défilement — et
+     chaque élément est oublié dès qu'il est apparu. */
+  var doux = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  if (!doux && 'IntersectionObserver' in window) {
+    document.documentElement.classList.add('js-anim');
+
+    var aRevelerer = document.querySelectorAll(
+      '.tete, .duo > *, .gal figure, .equip > *, .gestes > *, .liste-a > *, ' +
+      '.grid-avis > *, .savoir, .bande, .rep, .savoir-court');
+    aRevelerer.forEach(function (el) { el.classList.add('revele'); });
+
+    var oeil = new IntersectionObserver(function (entrees) {
+      entrees.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        e.target.classList.add('vu');
+        oeil.unobserve(e.target);          /* une fois vu, on n'observe plus */
+      });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.05 });
+
+    aRevelerer.forEach(function (el) { oeil.observe(el); });
+
+    /* ce qui est déjà à l'écran au chargement apparaît sans attendre */
+    requestAnimationFrame(function () {
+      aRevelerer.forEach(function (el) {
+        if (el.getBoundingClientRect().top < window.innerHeight) el.classList.add('vu');
+      });
+    });
+
+    /* ombre de la barre haute, via une sentinelle : toujours pas de scroll */
+    var barre = document.querySelector('.topbar');
+    if (barre) {
+      var s = document.createElement('div');
+      s.className = 'sentinelle';
+      document.body.insertBefore(s, document.body.firstChild);
+      new IntersectionObserver(function (e) {
+        barre.classList.toggle('defile', !e[0].isIntersecting);
+      }).observe(s);
+    }
+  }
 
   /* ---- menu mobile ---- */
   var burger = document.querySelector('.burger');

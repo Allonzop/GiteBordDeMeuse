@@ -278,11 +278,13 @@ footer.pied{background:var(--nuit);color:var(--gris-clair);padding:48px 0 26px}
 .pied-grid{display:grid;gap:28px;margin-bottom:30px}
 .pied-grid h4{font-size:10px;letter-spacing:.17em;text-transform:uppercase;color:var(--ocre-c);margin-bottom:11px}
 .pied-grid p,.pied-grid li{font-size:14px;line-height:1.8;list-style:none}
-.pied-grid a{text-decoration:none}
+/* Les liens du pied sont une navigation, pas de la prose : ils doivent rester
+   attrapables au doigt, d'où la hauteur de touche plutôt que la seule ligne. */
+.pied-grid a{text-decoration:none;display:inline-block;padding:5px 0;min-height:26px}
 .pied-grid a:hover{color:var(--orange-c)}
 .pied-bas{border-top:1px solid rgba(255,255,255,.14);padding-top:19px;font-size:12px;
   display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between}
-.pied-bas a{color:var(--gris-clair)}
+.pied-bas a{color:var(--gris-clair);display:inline-block;padding:6px 0;min-height:26px}
 @media(min-width:760px){.pied-grid{grid-template-columns:repeat(3,1fr)}}
 
 /* ---------- barre mobile ---------- */
@@ -294,4 +296,48 @@ footer.pied{background:var(--nuit);color:var(--gris-clair);padding:48px 0 26px}
 body{padding-bottom:78px}
 @media(min-width:1000px){.barre{display:none}body{padding-bottom:0}}
 
-@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+
+/* ------------------------------------------------------------------
+   Animations
+   Uniquement « opacity » et « transform » : le navigateur les traite sur
+   le GPU, sans recalculer la mise en page. Aucun écouteur de défilement.
+   Tout part de l'état visible : sans JavaScript, rien n'est caché.
+------------------------------------------------------------------- */
+.js-anim .revele{opacity:0;transform:translateY(14px);
+  transition:opacity .55s ease-out,transform .55s ease-out}
+.js-anim .revele.vu{opacity:1;transform:none}
+/* dans une galerie, les vignettes arrivent l'une après l'autre */
+.js-anim .revele.vu:nth-child(2){transition-delay:.07s}
+.js-anim .revele.vu:nth-child(3){transition-delay:.14s}
+.js-anim .revele.vu:nth-child(4){transition-delay:.21s}
+.js-anim .revele.vu:nth-child(5){transition-delay:.28s}
+.js-anim .revele.vu:nth-child(6){transition-delay:.35s}
+
+/* la photo respire un peu sous le curseur, le cadre ne bouge pas */
+.gal .box,.duo .ph,.bande,.hero-ph{overflow:hidden}
+.gal .box img,.duo .ph img{transition:transform .6s cubic-bezier(.2,.6,.2,1)}
+@media(hover:hover){
+  .gal figure:hover .box img,.duo .ph:hover img{transform:scale(1.035)}
+  .gal img.doc{transition:none}
+  .gal figure:hover .box img.doc{transform:none}
+}
+
+/* boutons et cartes : un déplacement d'un pixel, pas une cabriole */
+.btn-p,.btn-g,.resa,.barre a{transition:background .2s,border-color .2s,color .2s,transform .15s}
+@media(hover:hover){.btn-p:hover,.resa:hover{transform:translateY(-1px)}}
+.a-item,.eq,.geste,.avis{transition:transform .2s,box-shadow .2s}
+@media(hover:hover){
+  .a-item:hover,.avis:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(43,23,18,.09)}
+}
+
+/* la barre haute se détache une fois la page défilée */
+.topbar{transition:box-shadow .25s}
+.topbar.defile{box-shadow:0 2px 14px rgba(43,23,18,.28)}
+.sentinelle{position:absolute;top:0;height:1px;width:1px;pointer-events:none}
+
+/* Quiconque a demandé moins d'animation n'en reçoit aucune. */
+@media(prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+  html{scroll-behavior:auto}
+  .js-anim .revele{opacity:1!important;transform:none!important}
+}

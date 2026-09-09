@@ -8,7 +8,11 @@ vivent ici, dans un fichier JSON par langue.
 |---|---|---|
 | `fr.json` | Français | Référence. Reflète le texte du HTML. |
 | `en.json` | Anglais | Livré. |
-| `nl.json` | Néerlandais | **À faire** — voir ci-dessous. |
+
+Le site est livré en deux langues. Une troisième n’est pas prévue pour l’instant ;
+si elle vient un jour, le néerlandais serait le bon choix — les avis étrangers du
+gîte sont néerlandais, et le kit du label écotouristique est édité en FR/EN/NL.
+La procédure ci-dessous tient en trois gestes.
 
 ## Ajouter une langue
 
