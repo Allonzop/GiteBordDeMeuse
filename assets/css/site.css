@@ -136,6 +136,13 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 .section.sombre .tete h2{color:#fff}
 .section.sombre .tete p{color:var(--gris-clair)}
 
+/* Sur tablette, une colonne de 60 caractères laisse un tiers d'écran vide à droite :
+   les largeurs de lecture ne s'appliquent qu'à partir de 1000 px. */
+@media(max-width:999px){
+  .tete,.hero p.lead,.reserver .lead,.texte,.duo>div{max-width:none}
+  .hero h1{max-width:none}
+}
+
 /* ---------- galeries ---------- */
 .gal{display:grid;gap:18px;align-items:start}
 .gal figure{margin:0}

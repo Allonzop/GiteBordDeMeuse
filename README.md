@@ -55,14 +55,15 @@ assets/
   i18n/fr.json        dictionnaire français (référence)
   i18n/en.json        dictionnaire anglais
   i18n/LISEZMOI.md    procédure pour une langue supplémentaire
-photos/               48 photos, 800/1200/1600 px, WebP + repli JPEG
+photos/               41 photos, 800/1200/1600 px, WebP + repli JPEG
 ```
 
 ## Choix techniques
 
-**Qui parle.** Claire, seule, à la première personne du singulier. Les seuls
-pluriels du site sont ceux des voyageurs : les avis, et l’exemple de message
-dans le formulaire.
+**Qui parle.** Le site est écrit à la voix impersonnelle. Claire, unique hôte,
+parle à la première personne dans le seul bloc « Votre hôte » de l’accueil.
+Les pluriels restants sont ceux des voyageurs : les avis, et l’exemple de
+message dans le formulaire. Les nombres sont en chiffres, jamais en lettres.
 
 **Langues.** Français et anglais. Le français est écrit en clair dans le HTML :
 le site reste lisible sans JavaScript et les moteurs de recherche voient le vrai
@@ -123,7 +124,11 @@ un seul ré-encodage, sans empiler les compressions.
 
 ## Décisions prises
 
-- **Votre hôte : Claire seule.** Le « nous » de l’annonce Airbnb ne figure plus.
+- **Votre hôte : Claire seule**, mais pas tout le site au « je » : voix
+      impersonnelle partout, sauf le bloc « Votre hôte » (review du 10/09).
+- **Barbecue et fibre non affirmés** tant qu’ils ne sont pas confirmés ; le
+      plancher chauffant au rez-de-chaussée, l’abri à vélos et le second WC
+      extérieur sont ajoutés (review du 10/09).
 - **Chambre du second : trois couchages.** Deux lits une personne installés en
   permanence, un troisième monté à la demande.
 - **Pas de tarif.** Tant que l’annonce Airbnb n’en affiche pas, le site n’en
@@ -132,6 +137,9 @@ un seul ré-encodage, sans empiler les compressions.
   dans [`assets/i18n/LISEZMOI.md`](assets/i18n/LISEZMOI.md) si le besoin vient.
 
 ## Reste à obtenir
+
+La liste complète des points à faire confirmer par Claire est dans
+[`QUESTIONS-POUR-CLAIRE.md`](QUESTIONS-POUR-CLAIRE.md).
 
 - [ ] **Le SIREN de l’éditeur.** Les mentions légales portent le SIREN de KRAON
       au titre de la conception. Le numéro de l’activité de Claire manque.
