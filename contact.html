@@ -6,15 +6,18 @@
 <meta name="theme-color" content="#2B1712">
 <title data-i18n="contact.titre">Contact et accès — Gîte Saint-Aubin, Charleville-Mézières</title>
 <meta name="description" data-i18n-content="contact.desc" content="Demandez vos dates directement : formulaire, téléphone, e-mail. Aucune commission de plateforme. 42C rue Saint-Aubin, 08000 Charleville-Mézières — plan d’accès et distances.">
-<!-- À compléter une fois le nom de domaine acheté : <link rel="canonical"> et <meta property="og:image"> en URL absolue. -->
+<!-- Une fois le nom de domaine acheté : changer BASE_URL dans le générateur, et ajouter ici <link rel="canonical">. -->
 <meta property="og:type" content="website">
+<meta property="og:url" content="https://allonzop.github.io/GiteBordDeMeuse/contact.html">
 <meta property="og:locale" content="fr_FR">
 <meta property="og:locale:alternate" content="en_GB">
 <meta property="og:site_name" content="Gîte Saint-Aubin">
 <meta property="og:title" data-i18n-content="contact.titre" content="Contact et accès — Gîte Saint-Aubin, Charleville-Mézières">
 <meta property="og:description" data-i18n-content="contact.desc" content="Demandez vos dates directement : formulaire, téléphone, e-mail. Aucune commission de plateforme. 42C rue Saint-Aubin, 08000 Charleville-Mézières — plan d’accès et distances.">
+<meta property="og:image" content="https://allonzop.github.io/GiteBordDeMeuse/photos/maison-facade-jardin-1200.jpg">
+<meta property="og:image:width" content="720">
+<meta property="og:image:height" content="1600">
 <meta name="twitter:card" content="summary_large_image">
-<!-- og:image : photos/maison-facade-jardin-1600.jpg — à passer en URL absolue une fois le domaine connu. -->
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%232B1712'/%3E%3Cpath d='M6 16 L16 7 L26 16 v9 a1 1 0 0 1-1 1 H7 a1 1 0 0 1-1-1z' fill='none' stroke='%23E28B4C' stroke-width='2.2' stroke-linejoin='round'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -62,7 +65,7 @@
       <div>
         <span class="sur" data-i18n="contact.hero.sur">Contact</span>
         <h1 data-i18n="contact.hero.titre">Réserver en direct, <em>sans intermédiaire</em></h1>
-        <p class="lead" data-i18n="contact.hero.lead">Pas de calendrier ni de paiement en ligne&nbsp;: une demande par formulaire, par téléphone ou par courriel, et une réponse avec les disponibilités et le tarif.</p>
+        <p class="lead" data-i18n="contact.hero.lead">Pas de calendrier ni de paiement en ligne&nbsp;: une demande par formulaire, par téléphone ou par e-mail, et une réponse avec les disponibilités et le tarif.</p>
       </div>
     </div>
   </div>
@@ -85,7 +88,7 @@
 
       <form class="demande" name="demande" method="POST" action="/" data-netlify="true" netlify-honeypot="societe">
         <input type="hidden" name="form-name" value="demande">
-        <p class="pot" aria-hidden="true"><label>Ne pas remplir&nbsp;: <input name="societe" tabindex="-1" autocomplete="off"></label></p>
+        <p class="pot" aria-hidden="true"><label>Ne pas remplir&nbsp;: <input type="text" name="societe" tabindex="-1" autocomplete="off"></label></p>
         <div class="trio">
           <div class="champ"><label for="champ-arrivee" data-i18n="contact.f.arrivee">Arrivée</label><input id="champ-arrivee" name="arrivee" type="date" required></div>
           <div class="champ"><label for="champ-depart" data-i18n="contact.f.depart">Départ</label><input id="champ-depart" name="depart" type="date" required></div>
@@ -172,11 +175,11 @@
   <div class="wrap">
     <div class="pied-grid">
       <div>
-        <h4>Gîte Saint-Aubin</h4>
+        <h2>Gîte Saint-Aubin</h2>
         <p>42C rue Saint-Aubin<br>08000 Charleville-Mézières<br>Ardennes, France</p>
       </div>
       <div>
-        <h4 data-i18n="pied.contact">Contact</h4>
+        <h2 data-i18n="pied.contact">Contact</h2>
         <ul>
           <li><a href="tel:+33648904509">06&nbsp;48&nbsp;90&nbsp;45&nbsp;09</a></li>
           <li><a href="mailto:hugerotclaire@gmail.com">hugerotclaire@gmail.com</a></li>
@@ -184,7 +187,7 @@
         </ul>
       </div>
       <div>
-        <h4 data-i18n="pied.pages">Le gîte</h4>
+        <h2 data-i18n="pied.pages">Le gîte</h2>
         <ul>
           <li><a href="la-maison.html" data-i18n="nav.maison">La maison</a></li>
           <li><a href="le-jardin.html" data-i18n="nav.jardin">Le jardin &amp; autour</a></li>

@@ -6,15 +6,18 @@
 <meta name="theme-color" content="#2B1712">
 <title data-i18n="accueil.titre">Gîte Saint-Aubin — maison de famille et grand jardin, Charleville-Mézières</title>
 <meta name="description" data-i18n-content="accueil.desc" content="Gîte de charme 3 étoiles à Charleville-Mézières, pour 2 à 5 personnes. Jardin clos de 500 m², à deux pas de la Voie Verte Trans-Ardennes et de la Meuse, à 10 minutes à pied de la place Ducale. Réservation en direct, sans commission.">
-<!-- À compléter une fois le nom de domaine acheté : <link rel="canonical"> et <meta property="og:image"> en URL absolue. -->
+<!-- Une fois le nom de domaine acheté : changer BASE_URL dans le générateur, et ajouter ici <link rel="canonical">. -->
 <meta property="og:type" content="website">
+<meta property="og:url" content="https://allonzop.github.io/GiteBordDeMeuse/index.html">
 <meta property="og:locale" content="fr_FR">
 <meta property="og:locale:alternate" content="en_GB">
 <meta property="og:site_name" content="Gîte Saint-Aubin">
 <meta property="og:title" data-i18n-content="accueil.titre" content="Gîte Saint-Aubin — maison de famille et grand jardin, Charleville-Mézières">
 <meta property="og:description" data-i18n-content="accueil.desc" content="Gîte de charme 3 étoiles à Charleville-Mézières, pour 2 à 5 personnes. Jardin clos de 500 m², à deux pas de la Voie Verte Trans-Ardennes et de la Meuse, à 10 minutes à pied de la place Ducale. Réservation en direct, sans commission.">
+<meta property="og:image" content="https://allonzop.github.io/GiteBordDeMeuse/photos/jardin-terrasse-ete-1200.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="800">
 <meta name="twitter:card" content="summary_large_image">
-<!-- og:image : photos/jardin-terrasse-ete-1600.jpg — à passer en URL absolue une fois le domaine connu. -->
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%232B1712'/%3E%3Cpath d='M6 16 L16 7 L26 16 v9 a1 1 0 0 1-1 1 H7 a1 1 0 0 1-1-1z' fill='none' stroke='%23E28B4C' stroke-width='2.2' stroke-linejoin='round'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -56,7 +59,7 @@
 </nav>
 <main id="contenu">
 
-<section class="hero">
+<section class="hero fond">
   <div class="wrap">
     <div class="hero-grid">
       <div>
@@ -74,9 +77,9 @@
           <small data-i18n="accueil.hero.avis">85&nbsp;avis, et 100&nbsp;% de demandes répondues</small></span>
         </div>
       </div>
-      <div class="hero-ph"><picture><source type="image/webp" srcset="photos/jardin-terrasse-ete-800.webp 800w, photos/jardin-terrasse-ete-1200.webp 1200w, photos/jardin-terrasse-ete-1600.webp 1600w" sizes="(min-width:900px) 540px, 100vw"><img src="photos/jardin-terrasse-ete-1200.jpg" srcset="photos/jardin-terrasse-ete-800.jpg 800w, photos/jardin-terrasse-ete-1200.jpg 1200w" sizes="(min-width:900px) 540px, 100vw" width="1600" height="1067" fetchpriority="high" decoding="async" alt="Le jardin fleuri du gîte en été : hémérocalles orange et rosiers au premier plan, allée pavée menant à la terrasse et aux baies vitrées de la maison." data-i18n-alt="alt.jardin-terrasse-ete"></picture></div>
     </div>
   </div>
+  <div class="hero-ph"><picture><source type="image/webp" srcset="photos/jardin-terrasse-ete-800.webp 800w, photos/jardin-terrasse-ete-1200.webp 1200w, photos/jardin-terrasse-ete-1600.webp 1600w, photos/jardin-terrasse-ete-1920.webp 1920w" sizes="100vw"><img src="photos/jardin-terrasse-ete-1200.jpg" srcset="photos/jardin-terrasse-ete-800.jpg 800w, photos/jardin-terrasse-ete-1200.jpg 1200w" sizes="100vw" width="1600" height="1067" fetchpriority="high" decoding="async" alt="Le jardin fleuri du gîte en été : hémérocalles orange et rosiers au premier plan, allée pavée menant à la terrasse et aux baies vitrées de la maison." data-i18n-alt="alt.jardin-terrasse-ete"></picture></div>
 </section>
 
 <section class="reperes" aria-label="Chiffres clés" data-i18n-aria="accueil.reperes.aria">
@@ -187,7 +190,7 @@
       <p class="lead" data-i18n="accueil.cta.p">Pour connaître les disponibilités et le tarif, indiquez vos dates et le nombre de personnes&nbsp;: la réponse arrive le plus souvent en quelques heures.</p>
       <div class="cta">
         <a class="btn-p" href="contact.html" data-i18n="commun.demander">Demander des dates</a>
-        <a class="btn-g" href="tel:+33648904509" data-i18n="accueil.cta.tel">Appeler le 06&nbsp;48&nbsp;90&nbsp;45&nbsp;09</a>
+        <a class="btn-g" href="tel:+33648904509" data-i18n="accueil.cta.tel">Appeler&nbsp;le&nbsp;06&nbsp;48&nbsp;90&nbsp;45&nbsp;09</a>
       </div>
       <p class="reassure" data-i18n="commun.reassure">Réponse en quelques heures, avec les disponibilités et le tarif.</p>
     </div>
@@ -230,11 +233,11 @@
   <div class="wrap">
     <div class="pied-grid">
       <div>
-        <h4>Gîte Saint-Aubin</h4>
+        <h2>Gîte Saint-Aubin</h2>
         <p>42C rue Saint-Aubin<br>08000 Charleville-Mézières<br>Ardennes, France</p>
       </div>
       <div>
-        <h4 data-i18n="pied.contact">Contact</h4>
+        <h2 data-i18n="pied.contact">Contact</h2>
         <ul>
           <li><a href="tel:+33648904509">06&nbsp;48&nbsp;90&nbsp;45&nbsp;09</a></li>
           <li><a href="mailto:hugerotclaire@gmail.com">hugerotclaire@gmail.com</a></li>
@@ -242,7 +245,7 @@
         </ul>
       </div>
       <div>
-        <h4 data-i18n="pied.pages">Le gîte</h4>
+        <h2 data-i18n="pied.pages">Le gîte</h2>
         <ul>
           <li><a href="la-maison.html" data-i18n="nav.maison">La maison</a></li>
           <li><a href="le-jardin.html" data-i18n="nav.jardin">Le jardin &amp; autour</a></li>

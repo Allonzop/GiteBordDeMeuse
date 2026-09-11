@@ -140,6 +140,30 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 @media(min-width:420px){.btn-p,.btn-g{flex:0 0 auto}}
 @media(min-width:900px){.hero h1{max-width:15ch}.hero-grid{grid-template-columns:1fr 1fr;gap:52px}}
 
+/* hero en fond photo (accueil). La photo couvre la section, deux dégradés
+   par-dessus — un pour la lisibilité, un pour la teinte brune depuis le haut
+   à gauche — et le texte au-dessus. Sous 900 px, la photo passe sous le texte,
+   pleine largeur : sur un téléphone, un fond sous un voile ne montre rien.
+   La couleur de fond reste celle du hero tant que la photo n'est pas arrivée. */
+.hero.fond{position:relative;overflow:hidden}
+@media(min-width:900px){
+  .hero.fond{min-height:620px;display:flex;align-items:center;padding:72px 0}
+  .hero.fond .wrap{position:relative;z-index:2;width:100%}
+  .hero.fond .hero-grid{grid-template-columns:1fr;max-width:620px}
+  .hero.fond .hero-ph{position:absolute;inset:0;z-index:0;border:0}
+  .hero.fond .hero-ph picture,.hero.fond .hero-ph img{width:100%;height:100%}
+  .hero.fond .hero-ph img{object-fit:cover;object-position:72% 62%}
+  .hero.fond::before{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;
+    background:linear-gradient(105deg,rgba(43,23,18,.95) 0%,rgba(43,23,18,.80) 40%,rgba(43,23,18,.32) 72%,rgba(43,23,18,.06) 100%),
+               radial-gradient(120% 90% at 0% 0%,rgba(58,33,27,.78),transparent 62%)}
+  .hero.fond p.lead,.hero.fond .reassure{color:var(--travertin)}
+  .hero.fond .note{background:rgba(43,23,18,.55)}
+}
+@media(max-width:899px){
+  .hero.fond{padding-bottom:0}
+  .hero.fond .hero-ph{margin-top:34px;border:0;border-top:1px solid rgba(255,255,255,.22)}
+}
+
 /* hero court, pour les pages intérieures */
 .hero.court{padding:48px 0 50px}
 .hero.court h1{font-size:clamp(28px,5.6vw,44px);max-width:20ch}
@@ -362,7 +386,7 @@ button[type=submit]:hover{background:var(--brique-c)}
 /* ---------- pied ---------- */
 footer.pied{background:var(--nuit);color:var(--gris-clair);padding:48px 0 26px}
 .pied-grid{display:grid;gap:28px;margin-bottom:30px}
-.pied-grid h4{font-size:10px;letter-spacing:.17em;text-transform:uppercase;color:var(--ocre-c);margin-bottom:11px}
+.pied-grid h2{font-family:var(--sans);font-weight:600;font-size:10px;letter-spacing:.17em;text-transform:uppercase;color:var(--ocre-c);margin-bottom:11px}
 .pied-grid p,.pied-grid li{font-size:14px;line-height:1.8;list-style:none}
 /* Les liens du pied sont une navigation, pas de la prose : ils doivent rester
    attrapables au doigt, d'où la hauteur de touche plutôt que la seule ligne. */

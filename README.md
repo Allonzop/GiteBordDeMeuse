@@ -55,7 +55,7 @@ assets/
   i18n/fr.json        dictionnaire français (référence)
   i18n/en.json        dictionnaire anglais
   i18n/LISEZMOI.md    procédure pour une langue supplémentaire
-photos/               37 photos, 800/1200/1600 px, WebP + repli JPEG
+photos/               37 photos, 800/1200/1600 px, WebP + repli JPEG (+ 1920 px pour le hero)
 ```
 
 ## Choix techniques
@@ -76,7 +76,7 @@ La langue est choisie dans cet ordre : `?lang=` dans l’URL, puis le choix
 précédent du visiteur, puis la langue de son navigateur, puis le français.
 
 **Photos.** `<picture>` avec WebP en trois largeurs (800, 1200, 1600) et repli
-JPEG en deux (800, 1200). Le repli s’arrête à 1200 px : il ne sert qu’aux
+JPEG en deux (800, 1200) ; la photo de fond du hero a en plus un WebP de 1920 px. Le repli s’arrête à 1200 px : il ne sert qu’aux
 navigateurs sans WebP, trop rares pour justifier 14 Mo de fichiers
 supplémentaires. `width`/`height` explicites pour que la page ne sursaute pas au
 chargement, `loading="lazy"` partout sauf la première image de chaque page.
@@ -116,6 +116,11 @@ l’hébergement, sur Netlify comme ailleurs.
 **Formulaire.** Pas de réservation ni de paiement en ligne : c’est une demande.
 Prêt pour Netlify Forms (`data-netlify`, pot de miel anti-robots), avec repli
 téléphone et e-mail si l’envoi échoue.
+
+**Partage.** Chaque page porte `og:url` et `og:image` en URL absolue, pour
+que le lien montre une photo quand il est envoyé par messagerie ou partagé.
+L’adresse vient d’une seule constante du générateur (`BASE_URL`), à changer
+le jour du nom de domaine, en même temps que `<link rel="canonical">`.
 
 **Carte.** Coordonnées GPS réelles : `49.77913, 4.735605`.
 La fiche Google Business de Claire pointe encore au mauvais endroit : cela se
@@ -181,12 +186,14 @@ Audit du 11/09, appliqué le même jour :
 - **La barrière d’escalier n’est pas affirmée** : l’audit proposait de la
   mettre en avant dans l’argument famille, mais rien ne la confirme. Elle est
   dans les questions pour Claire.
-- **Le hero reste en deux colonnes.** L’audit proposait une photo en fond
-  d’écran ; l’original du jardin en été fait 1 920 px de large, trop peu pour
-  un fond sur grand écran. L’essai existe quand même, hors site et en
-  `noindex` : [`essais/hero-fond.html`](https://allonzop.github.io/GiteBordDeMeuse/essais/hero-fond.html).
-  Joli sur ordinateur, sans intérêt sur téléphone (la photo disparaît sous le
-  voile). À reprendre si Claire a un original d’au moins 2 400 px.
+- **Le hero de l’accueil est en fond photo** à partir de 900 px de large,
+  décision d’Allonzo après essai : la photo du jardin couvre la section, deux
+  dégradés par-dessus (lisibilité, puis teinte brune depuis le haut à gauche),
+  le texte au-dessus. Contraste du titre et du sous-titre vérifié ≥ 4,5:1 sur
+  le pixel le plus clair, de 1 024 à 2 560 px. Sous 900 px, la photo passe sous
+  le texte, pleine largeur : sur un téléphone, un fond sous un voile ne montre
+  rien. L’original fait 1 920 px ; au-delà de 1 920 px d’écran il est agrandi.
+  Un original d’au moins 2 400 px est demandé à Claire.
 - **La Meuse à Vélo : 130 km jusqu’à Givet**, puis le réseau belge (et non
   « 85 km jusqu’à la frontière »). Rimbaud : le musée est dans le vieux moulin,
   la maison où il a vécu est sur le même quai ; sa tombe est au cimetière, pas
@@ -207,9 +214,9 @@ La liste complète des points à faire confirmer par Claire est dans
       au titre de la conception. Le numéro de l’activité de Claire manque.
 - [ ] **Les avis.** Les trois extraits affichés sont reformulés et abrégés, ce que
       la page indique. À valider ou à remplacer par des citations exactes.
-- [ ] **Le nom de domaine.** Une fois choisi et acheté, renseigner `<link
-      rel="canonical">` et `<meta property="og:image">` (marqués en commentaire
-      dans le `<head>` de chaque page), puis ajouter `robots.txt` et `sitemap.xml`.
+- [ ] **Le nom de domaine.** Une fois choisi et acheté, changer `BASE_URL`
+      dans le générateur, ajouter `<link rel="canonical">` (emplacement marqué
+      en commentaire dans le `<head>`), puis `robots.txt` et `sitemap.xml`.
 
 À signaler à Claire, indépendamment du site :
 
