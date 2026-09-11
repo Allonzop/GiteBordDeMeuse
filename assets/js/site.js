@@ -1,6 +1,7 @@
-/* Gîte Saint-Aubin — animations, menu mobile, formulaire, dates par défaut. */
+/* Gîte Saint-Aubin — animations, tiroir de navigation, saisons, formulaire, dates par défaut. */
 (function () {
   'use strict';
+  document.documentElement.classList.add('js');
 
   /* ---- apparitions au défilement ----
      Le marqueur est posé tout de suite : sans JavaScript, ou si le visiteur
@@ -14,7 +15,7 @@
 
     var aRevelerer = document.querySelectorAll(
       '.tete, .duo > *, .gal figure, .equip > *, .gestes > *, .liste-a > *, ' +
-      '.grid-avis > *, .savoir, .bande, .rep, .savoir-court');
+      '.grid-avis > *, .savoir, .bande, .rep, .savoir-court, .vues > *');
     aRevelerer.forEach(function (el) { el.classList.add('revele'); });
 
     var oeil = new IntersectionObserver(function (entrees) {
@@ -46,13 +47,91 @@
     }
   }
 
-  /* ---- menu mobile ---- */
+  /* ---- menu mobile : tiroir latéral ----
+     Ouvert : la page ne défile plus, le focus reste dans le tiroir (et sur le
+     burger, qui reste visible au-dessus), Échap ou le voile ferment, et le
+     focus revient au bouton. */
   var burger = document.querySelector('.burger');
-  var menu   = document.getElementById('menu-mobile');
-  if (burger && menu) {
-    burger.addEventListener('click', function () {
-      var ouvert = menu.classList.toggle('ouvert');
-      burger.setAttribute('aria-expanded', ouvert ? 'true' : 'false');
+  var tiroir = document.getElementById('menu-mobile');
+  var voile  = document.querySelector('.voile');
+  if (burger && tiroir && voile) {
+    var racine = document.documentElement;
+    var ouvert = false;
+    var focusables = function () {
+      return [burger].concat(Array.prototype.slice.call(tiroir.querySelectorAll('a[href]')));
+    };
+    var ouvrir = function () {
+      if (ouvert) return;
+      ouvert = true;
+      racine.style.setProperty('--sb', (window.innerWidth - racine.clientWidth) + 'px');
+      document.body.classList.add('menu-ouvert');
+      tiroir.classList.add('ouvert');
+      voile.classList.add('ouvert');
+      burger.setAttribute('aria-expanded', 'true');
+      var premier = tiroir.querySelector('a[href]');
+      if (premier) premier.focus();
+    };
+    var fermer = function (rendreFocus) {
+      if (!ouvert) return;
+      ouvert = false;
+      document.body.classList.remove('menu-ouvert');
+      tiroir.classList.remove('ouvert');
+      voile.classList.remove('ouvert');
+      burger.setAttribute('aria-expanded', 'false');
+      if (rendreFocus !== false) burger.focus();
+    };
+    burger.addEventListener('click', function () { if (ouvert) fermer(); else ouvrir(); });
+    voile.addEventListener('click', function () { fermer(); });
+    tiroir.addEventListener('click', function (e) {
+      if (e.target.closest && e.target.closest('a[href]')) fermer(false);
+    });
+    document.addEventListener('keydown', function (e) {
+      if (!ouvert) return;
+      if (e.key === 'Escape') { e.preventDefault(); fermer(); return; }
+      if (e.key !== 'Tab') return;
+      var f = focusables(), premier = f[0], dernier = f[f.length - 1];
+      if (e.shiftKey && document.activeElement === premier) { e.preventDefault(); dernier.focus(); }
+      else if (!e.shiftKey && document.activeElement === dernier) { e.preventDefault(); premier.focus(); }
+    });
+    /* la fenêtre s'élargit jusqu'au menu de bureau : le tiroir n'a plus lieu d'être */
+    var grand = window.matchMedia('(min-width: 1000px)');
+    var surChangement = function (m) { if (m.matches) fermer(false); };
+    if (grand.addEventListener) grand.addEventListener('change', surChangement);
+    else if (grand.addListener) grand.addListener(surChangement);
+  }
+
+  /* ---- saisons : la même vue, trois saisons ----
+     Un onglet par saison ; les trois vues basculent ensemble, en fondu (CSS).
+     Flèches, Début et Fin déplacent la sélection, comme dans tout tablist. */
+  var saisons = document.querySelector('.saisons');
+  if (saisons) {
+    var onglets = Array.prototype.slice.call(saisons.querySelectorAll('[role=tab]:not([hidden])'));
+    var panneau = saisons.querySelector('[role=tabpanel]');
+    var cadres  = Array.prototype.slice.call(saisons.querySelectorAll('.cadre'));
+    var choisir = function (onglet, focus) {
+      var s = onglet.getAttribute('data-saison');
+      onglets.forEach(function (o) {
+        var actif = o === onglet;
+        o.setAttribute('aria-selected', actif ? 'true' : 'false');
+        o.tabIndex = actif ? 0 : -1;
+      });
+      cadres.forEach(function (c) { c.classList.toggle('active', c.getAttribute('data-saison') === s); });
+      saisons.setAttribute('data-saison', s);
+      if (panneau) panneau.setAttribute('aria-labelledby', onglet.id);
+      if (focus) onglet.focus();
+    };
+    onglets.forEach(function (o, i) {
+      o.addEventListener('click', function () { choisir(o, false); });
+      o.addEventListener('keydown', function (e) {
+        var j = -1;
+        if (e.key === 'ArrowRight') j = (i + 1) % onglets.length;
+        else if (e.key === 'ArrowLeft') j = (i - 1 + onglets.length) % onglets.length;
+        else if (e.key === 'Home') j = 0;
+        else if (e.key === 'End') j = onglets.length - 1;
+        if (j < 0) return;
+        e.preventDefault();
+        choisir(onglets[j], true);
+      });
     });
   }
 

@@ -19,13 +19,28 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&family=Karla:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/site.css">
+<link rel="stylesheet" href="../assets/css/site.css">
+<style>
+.hero{position:relative;min-height:600px;display:flex;align-items:center;
+  background-color:var(--nuit);
+  background-image:
+    linear-gradient(105deg, rgba(43,23,18,.95) 0%, rgba(43,23,18,.80) 40%, rgba(43,23,18,.32) 72%, rgba(43,23,18,.06) 100%),
+    radial-gradient(120% 90% at 0% 0%, rgba(58,33,27,.78), transparent 62%),
+    url(hero-1920.webp);
+  background-size:auto,auto,cover;background-position:center,center,72% 62%;background-repeat:no-repeat}
+.hero .hero-grid{grid-template-columns:1fr!important;max-width:620px;margin:0}
+.hero .wrap{width:100%}
+@media(max-width:899px){.hero{min-height:560px;background-image:
+    linear-gradient(160deg, rgba(43,23,18,.94) 0%, rgba(43,23,18,.78) 55%, rgba(43,23,18,.45) 100%),
+    url(hero-1440.webp)}}
+</style>
+<meta name="robots" content="noindex">
 </head>
 <body>
 <a class="saut" href="#contenu" data-i18n="commun.saut">Aller au contenu</a>
 <header class="topbar">
   <div class="wrap">
-    <a href="index.html" class="marque">
+    <a href="../index.html" class="marque">
       <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M4 15 L16 5 L28 15 v11 a1 1 0 0 1-1 1 H5 a1 1 0 0 1-1-1z" fill="none" stroke="#E28B4C" stroke-width="2" stroke-linejoin="round"/></svg>
       <span class="txt"><b>Gîte Saint-Aubin</b><span class="sous">Charleville-Mézières</span></span>
     </a>
@@ -47,7 +62,7 @@
 <nav class="tiroir" id="menu-mobile" aria-label="Navigation" data-i18n-aria="commun.nav">
   <ul>
     
-<li><a href="index.html" aria-current="page" data-i18n="nav.accueil">Accueil</a></li>    <li><a href="la-maison.html" data-i18n="nav.maison">La maison</a></li>    <li><a href="le-jardin.html" data-i18n="nav.jardin">Le jardin &amp; autour</a></li>    <li><a href="ecologie.html" data-i18n="nav.ecologie">Écologie</a></li>    <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+<li><a href="../index.html" aria-current="page" data-i18n="nav.accueil">Accueil</a></li>    <li><a href="la-maison.html" data-i18n="nav.maison">La maison</a></li>    <li><a href="le-jardin.html" data-i18n="nav.jardin">Le jardin &amp; autour</a></li>    <li><a href="ecologie.html" data-i18n="nav.ecologie">Écologie</a></li>    <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
   </ul>
   <div class="bas">
     <a class="btn-p" href="contact.html" data-i18n="commun.demander">Demander des dates</a>
@@ -74,7 +89,7 @@
           <small data-i18n="accueil.hero.avis">85&nbsp;avis, et 100&nbsp;% de demandes répondues</small></span>
         </div>
       </div>
-      <div class="hero-ph"><picture><source type="image/webp" srcset="photos/jardin-terrasse-ete-800.webp 800w, photos/jardin-terrasse-ete-1200.webp 1200w, photos/jardin-terrasse-ete-1600.webp 1600w" sizes="(min-width:900px) 540px, 100vw"><img src="photos/jardin-terrasse-ete-1200.jpg" srcset="photos/jardin-terrasse-ete-800.jpg 800w, photos/jardin-terrasse-ete-1200.jpg 1200w" sizes="(min-width:900px) 540px, 100vw" width="1600" height="1067" fetchpriority="high" decoding="async" alt="Le jardin fleuri du gîte en été : hémérocalles orange et rosiers au premier plan, allée pavée menant à la terrasse et aux baies vitrées de la maison." data-i18n-alt="alt.jardin-terrasse-ete"></picture></div>
+      
     </div>
   </div>
 </section>
@@ -96,9 +111,9 @@
       <p data-i18n="accueil.jardin.intro">C’est ce que les voyageurs citent en premier, bien avant la maison elle-même&nbsp;: un jardin arboré, fleuri, entièrement clos, avec une terrasse de plain-pied. De quoi prendre le petit-déjeuner dehors, laisser courir les enfants ou ne rien faire du tout.</p>
     </div>
     <div class="gal trois">
-      <figure><div class="box"><picture><source type="image/webp" srcset="photos/jardin-roses-mur-800.webp 800w, photos/jardin-roses-mur-1200.webp 1200w, photos/jardin-roses-mur-1600.webp 1600w" sizes="(min-width:1000px) 356px, (min-width:700px) 50vw, 100vw"><img src="photos/jardin-roses-mur-1200.jpg" srcset="photos/jardin-roses-mur-800.jpg 800w, photos/jardin-roses-mur-1200.jpg 1200w" sizes="(min-width:1000px) 356px, (min-width:700px) 50vw, 100vw" width="1600" height="1200" loading="lazy" decoding="async" alt="Le jardin en juin : pelouse, massifs de bourrache et rosier rose grimpant devant le vieux mur de pierre." data-i18n-alt="alt.jardin-roses-mur"></picture></div><figcaption data-i18n="accueil.jardin.cap1">Le jardin en juin</figcaption></figure>
-      <figure><div class="box"><picture><source type="image/webp" srcset="photos/jardin-fauteuil-rouge-800.webp 800w, photos/jardin-fauteuil-rouge-1200.webp 1200w, photos/jardin-fauteuil-rouge-1600.webp 1202w" sizes="(min-width:1000px) 356px, (min-width:700px) 50vw, 100vw"><img src="photos/jardin-fauteuil-rouge-1200.jpg" srcset="photos/jardin-fauteuil-rouge-800.jpg 800w, photos/jardin-fauteuil-rouge-1200.jpg 1200w" sizes="(min-width:1000px) 356px, (min-width:700px) 50vw, 100vw" width="1202" height="1600" loading="lazy" decoding="async" alt="Grande pelouse tondue avec un fauteuil rouge posé au milieu, massifs fleuris et mur de pierre au fond." data-i18n-alt="alt.jardin-fauteuil-rouge"></picture></div><figcaption data-i18n="accueil.jardin.cap2">Un coin pour ne rien faire</figcaption></figure>
-      <figure><div class="box"><picture><source type="image/webp" srcset="photos/ecureuil-jardin-800.webp 800w, photos/ecureuil-jardin-1200.webp 1200w, photos/ecureuil-jardin-1600.webp 1600w" sizes="(min-width:1000px) 356px, (min-width:700px) 50vw, 100vw"><img class="bas" src="photos/ecureuil-jardin-1200.jpg" srcset="photos/ecureuil-jardin-800.jpg 800w, photos/ecureuil-jardin-1200.jpg 1200w" sizes="(min-width:1000px) 356px, (min-width:700px) 50vw, 100vw" width="1600" height="2133" loading="lazy" decoding="async" alt="Un écureuil roux sur la vieille terrasse en pierre du jardin, à côté d’une pompe à eau en fonte." data-i18n-alt="alt.ecureuil-jardin"></picture></div><figcaption data-i18n="accueil.jardin.cap3">Les écureuils sont chez eux</figcaption></figure>
+      <figure><div class="box"><picture><source type="image/webp" srcset="../photos/jardin-roses-mur-800.webp 800w, ../photos/jardin-roses-mur-1200.webp 1200w, ../photos/jardin-roses-mur-1600.webp 1600w" sizes="(min-width:1000px) 356px, (min-width:700px) 50vw, 100vw"><img src="../photos/jardin-roses-mur-1200.jpg" srcset="../photos/jardin-roses-mur-800.jpg 800w, ../photos/jardin-roses-mur-1200.jpg 1200w" sizes="(min-width:1000px) 356px, (min-width:700px) 50vw, 100vw" width="1600" height="1200" loading="lazy" decoding="async" alt="Le jardin en juin : pelouse, massifs de bourrache et rosier rose grimpant devant le vieux mur de pierre." data-i18n-alt="alt.jardin-roses-mur"></picture></div><figcaption data-i18n="accueil.jardin.cap1">Le jardin en juin</figcaption></figure>
+      <figure><div class="box"><picture><source type="image/webp" srcset="../photos/jardin-fauteuil-rouge-800.webp 800w, ../photos/jardin-fauteuil-rouge-1200.webp 1200w, ../photos/jardin-fauteuil-rouge-1600.webp 1202w" sizes="(min-width:1000px) 356px, (min-width:700px) 50vw, 100vw"><img src="../photos/jardin-fauteuil-rouge-1200.jpg" srcset="../photos/jardin-fauteuil-rouge-800.jpg 800w, ../photos/jardin-fauteuil-rouge-1200.jpg 1200w" sizes="(min-width:1000px) 356px, (min-width:700px) 50vw, 100vw" width="1202" height="1600" loading="lazy" decoding="async" alt="Grande pelouse tondue avec un fauteuil rouge posé au milieu, massifs fleuris et mur de pierre au fond." data-i18n-alt="alt.jardin-fauteuil-rouge"></picture></div><figcaption data-i18n="accueil.jardin.cap2">Un coin pour ne rien faire</figcaption></figure>
+      <figure><div class="box"><picture><source type="image/webp" srcset="../photos/ecureuil-jardin-800.webp 800w, ../photos/ecureuil-jardin-1200.webp 1200w, ../photos/ecureuil-jardin-1600.webp 1600w" sizes="(min-width:1000px) 356px, (min-width:700px) 50vw, 100vw"><img class="bas" src="../photos/ecureuil-jardin-1200.jpg" srcset="../photos/ecureuil-jardin-800.jpg 800w, ../photos/ecureuil-jardin-1200.jpg 1200w" sizes="(min-width:1000px) 356px, (min-width:700px) 50vw, 100vw" width="1600" height="2133" loading="lazy" decoding="async" alt="Un écureuil roux sur la vieille terrasse en pierre du jardin, à côté d’une pompe à eau en fonte." data-i18n-alt="alt.ecureuil-jardin"></picture></div><figcaption data-i18n="accueil.jardin.cap3">Les écureuils sont chez eux</figcaption></figure>
     </div>
     <p style="margin-top:26px"><a href="le-jardin.html" class="btn-p" data-i18n="accueil.jardin.lien">Le jardin et les environs</a></p>
   </div>
@@ -107,7 +122,7 @@
 <section class="section" id="emplacement">
   <div class="wrap">
     <div class="duo">
-      <div class="ph"><picture><source type="image/webp" srcset="photos/meuse-bateaux-800.webp 800w, photos/meuse-bateaux-1200.webp 1200w, photos/meuse-bateaux-1600.webp 1600w" sizes="(min-width:880px) 520px, 100vw"><img src="photos/meuse-bateaux-1200.jpg" srcset="photos/meuse-bateaux-800.jpg 800w, photos/meuse-bateaux-1200.jpg 1200w" sizes="(min-width:880px) 520px, 100vw" width="1600" height="1065" loading="lazy" decoding="async" alt="Des péniches et des bateaux de plaisance amarrés sur la Meuse, entre les arbres." data-i18n-alt="alt.meuse-bateaux"></picture></div>
+      <div class="ph"><picture><source type="image/webp" srcset="../photos/meuse-bateaux-800.webp 800w, ../photos/meuse-bateaux-1200.webp 1200w, ../photos/meuse-bateaux-1600.webp 1600w" sizes="(min-width:880px) 520px, 100vw"><img src="../photos/meuse-bateaux-1200.jpg" srcset="../photos/meuse-bateaux-800.jpg 800w, ../photos/meuse-bateaux-1200.jpg 1200w" sizes="(min-width:880px) 520px, 100vw" width="1600" height="1065" loading="lazy" decoding="async" alt="Des péniches et des bateaux de plaisance amarrés sur la Meuse, entre les arbres." data-i18n-alt="alt.meuse-bateaux"></picture></div>
       <div>
         <span class="sur" data-i18n="accueil.lieu.sur">L’emplacement</span>
         <h2 data-i18n="accueil.lieu.titre">Une rue qui ne mène qu’aux berges</h2>
@@ -123,7 +138,7 @@
 <section class="section claire" id="hote">
   <div class="wrap">
     <div class="duo inverse">
-      <div class="ph"><picture><source type="image/webp" srcset="photos/salle-a-manger-lambris-800.webp 800w, photos/salle-a-manger-lambris-1200.webp 1200w, photos/salle-a-manger-lambris-1600.webp 1600w" sizes="(min-width:880px) 520px, 100vw"><img src="photos/salle-a-manger-lambris-1200.jpg" srcset="photos/salle-a-manger-lambris-800.jpg 800w, photos/salle-a-manger-lambris-1200.jpg 1200w" sizes="(min-width:880px) 520px, 100vw" width="1600" height="1200" loading="lazy" decoding="async" alt="La salle à manger le soir : longue table en bois, chaises paillées, mur en lambris de bois clair et lampes allumées." data-i18n-alt="alt.salle-a-manger-lambris"></picture></div>
+      <div class="ph"><picture><source type="image/webp" srcset="../photos/salle-a-manger-lambris-800.webp 800w, ../photos/salle-a-manger-lambris-1200.webp 1200w, ../photos/salle-a-manger-lambris-1600.webp 1600w" sizes="(min-width:880px) 520px, 100vw"><img src="../photos/salle-a-manger-lambris-1200.jpg" srcset="../photos/salle-a-manger-lambris-800.jpg 800w, ../photos/salle-a-manger-lambris-1200.jpg 1200w" sizes="(min-width:880px) 520px, 100vw" width="1600" height="1200" loading="lazy" decoding="async" alt="La salle à manger le soir : longue table en bois, chaises paillées, mur en lambris de bois clair et lampes allumées." data-i18n-alt="alt.salle-a-manger-lambris"></picture></div>
       <div>
         <span class="sur" data-i18n="accueil.hote.sur">Votre hôte</span>
         <h2 data-i18n="accueil.hote.titre">Claire</h2>
@@ -143,10 +158,10 @@
       <p data-i18n="accueil.maison.intro">Une maison indépendante du début du XX<sup>e</sup>&nbsp;siècle, entièrement rénovée&nbsp;: 70&nbsp;m², deux chambres, une salle de bain, une cuisine équipée et une cheminée. Le salon donne de plain-pied sur la terrasse par de grandes baies vitrées.</p>
     </div>
     <div class="gal">
-      <figure><div class="box"><picture><source type="image/webp" srcset="photos/salon-baies-jardin-800.webp 800w, photos/salon-baies-jardin-1200.webp 1200w, photos/salon-baies-jardin-1600.webp 1600w" sizes="(min-width:1000px) 260px, (min-width:700px) 50vw, 100vw"><img src="photos/salon-baies-jardin-1200.jpg" srcset="photos/salon-baies-jardin-800.jpg 800w, photos/salon-baies-jardin-1200.jpg 1200w" sizes="(min-width:1000px) 260px, (min-width:700px) 50vw, 100vw" width="1600" height="1200" loading="lazy" decoding="async" alt="Le salon : fauteuils bleus autour d’une table basse en bois, sol en travertin, baies vitrées ouvrant sur le jardin." data-i18n-alt="alt.salon-baies-jardin"></picture></div><figcaption data-i18n="accueil.maison.cap1">Le salon</figcaption></figure>
-      <figure><div class="box"><picture><source type="image/webp" srcset="photos/veranda-table-800.webp 800w, photos/veranda-table-1200.webp 1200w, photos/veranda-table-1600.webp 1600w" sizes="(min-width:1000px) 260px, (min-width:700px) 50vw, 100vw"><img src="photos/veranda-table-1200.jpg" srcset="photos/veranda-table-800.jpg 800w, photos/veranda-table-1200.jpg 1200w" sizes="(min-width:1000px) 260px, (min-width:700px) 50vw, 100vw" width="1600" height="1200" loading="lazy" decoding="async" alt="La véranda et la salle à manger : table en bois dressée, chaises anciennes, baies vitrées d’angle sur le jardin." data-i18n-alt="alt.veranda-table"></picture></div><figcaption data-i18n="accueil.maison.cap2">La salle à manger</figcaption></figure>
-      <figure><div class="box"><picture><source type="image/webp" srcset="photos/escalier-rouge-800.webp 800w, photos/escalier-rouge-1200.webp 1200w, photos/escalier-rouge-1600.webp 1600w" sizes="(min-width:1000px) 260px, (min-width:700px) 50vw, 100vw"><img src="photos/escalier-rouge-1200.jpg" srcset="photos/escalier-rouge-800.jpg 800w, photos/escalier-rouge-1200.jpg 1200w" sizes="(min-width:1000px) 260px, (min-width:700px) 50vw, 100vw" width="1600" height="1067" loading="lazy" decoding="async" alt="L’escalier de la maison, peint en rouge framboise, avec sa rampe en bois et une étagère à livres en dessous." data-i18n-alt="alt.escalier-rouge"></picture></div><figcaption data-i18n="accueil.maison.cap3">L’escalier</figcaption></figure>
-      <figure><div class="box"><picture><source type="image/webp" srcset="photos/maison-roses-800.webp 800w, photos/maison-roses-1200.webp 1200w, photos/maison-roses-1600.webp 1600w" sizes="(min-width:1000px) 260px, (min-width:700px) 50vw, 100vw"><img src="photos/maison-roses-1200.jpg" srcset="photos/maison-roses-800.jpg 800w, photos/maison-roses-1200.jpg 1200w" sizes="(min-width:1000px) 260px, (min-width:700px) 50vw, 100vw" width="1600" height="1200" loading="lazy" decoding="async" alt="La maison vue du jardin derrière un grand rosier grimpant en fleurs." data-i18n-alt="alt.maison-roses"></picture></div><figcaption data-i18n="accueil.maison.cap4">La maison, vue du jardin</figcaption></figure>
+      <figure><div class="box"><picture><source type="image/webp" srcset="../photos/salon-baies-jardin-800.webp 800w, ../photos/salon-baies-jardin-1200.webp 1200w, ../photos/salon-baies-jardin-1600.webp 1600w" sizes="(min-width:1000px) 260px, (min-width:700px) 50vw, 100vw"><img src="../photos/salon-baies-jardin-1200.jpg" srcset="../photos/salon-baies-jardin-800.jpg 800w, ../photos/salon-baies-jardin-1200.jpg 1200w" sizes="(min-width:1000px) 260px, (min-width:700px) 50vw, 100vw" width="1600" height="1200" loading="lazy" decoding="async" alt="Le salon : fauteuils bleus autour d’une table basse en bois, sol en travertin, baies vitrées ouvrant sur le jardin." data-i18n-alt="alt.salon-baies-jardin"></picture></div><figcaption data-i18n="accueil.maison.cap1">Le salon</figcaption></figure>
+      <figure><div class="box"><picture><source type="image/webp" srcset="../photos/veranda-table-800.webp 800w, ../photos/veranda-table-1200.webp 1200w, ../photos/veranda-table-1600.webp 1600w" sizes="(min-width:1000px) 260px, (min-width:700px) 50vw, 100vw"><img src="../photos/veranda-table-1200.jpg" srcset="../photos/veranda-table-800.jpg 800w, ../photos/veranda-table-1200.jpg 1200w" sizes="(min-width:1000px) 260px, (min-width:700px) 50vw, 100vw" width="1600" height="1200" loading="lazy" decoding="async" alt="La véranda et la salle à manger : table en bois dressée, chaises anciennes, baies vitrées d’angle sur le jardin." data-i18n-alt="alt.veranda-table"></picture></div><figcaption data-i18n="accueil.maison.cap2">La salle à manger</figcaption></figure>
+      <figure><div class="box"><picture><source type="image/webp" srcset="../photos/escalier-rouge-800.webp 800w, ../photos/escalier-rouge-1200.webp 1200w, ../photos/escalier-rouge-1600.webp 1600w" sizes="(min-width:1000px) 260px, (min-width:700px) 50vw, 100vw"><img src="../photos/escalier-rouge-1200.jpg" srcset="../photos/escalier-rouge-800.jpg 800w, ../photos/escalier-rouge-1200.jpg 1200w" sizes="(min-width:1000px) 260px, (min-width:700px) 50vw, 100vw" width="1600" height="1067" loading="lazy" decoding="async" alt="L’escalier de la maison, peint en rouge framboise, avec sa rampe en bois et une étagère à livres en dessous." data-i18n-alt="alt.escalier-rouge"></picture></div><figcaption data-i18n="accueil.maison.cap3">L’escalier</figcaption></figure>
+      <figure><div class="box"><picture><source type="image/webp" srcset="../photos/maison-roses-800.webp 800w, ../photos/maison-roses-1200.webp 1200w, ../photos/maison-roses-1600.webp 1600w" sizes="(min-width:1000px) 260px, (min-width:700px) 50vw, 100vw"><img src="../photos/maison-roses-1200.jpg" srcset="../photos/maison-roses-800.jpg 800w, ../photos/maison-roses-1200.jpg 1200w" sizes="(min-width:1000px) 260px, (min-width:700px) 50vw, 100vw" width="1600" height="1200" loading="lazy" decoding="async" alt="La maison vue du jardin derrière un grand rosier grimpant en fleurs." data-i18n-alt="alt.maison-roses"></picture></div><figcaption data-i18n="accueil.maison.cap4">La maison, vue du jardin</figcaption></figure>
     </div>
     <div class="savoir-court">
       <strong data-i18n="accueil.maison.savoir.t">Deux choses à savoir avant de réserver&nbsp;:</strong>
@@ -264,7 +279,7 @@
   <span class="masque" id="reassure-barre" data-i18n="commun.reassure">Réponse en quelques heures, avec les disponibilités et le tarif. Sans engagement.</span>
 </nav>
 
-<script src="assets/js/i18n.js"></script>
-<script src="assets/js/site.js"></script>
+<script src="../assets/js/i18n.js"></script>
+<script src="../assets/js/site.js"></script>
 </body>
 </html>

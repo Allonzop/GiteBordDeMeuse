@@ -51,11 +51,11 @@ mentions-legales.html · maquette-v0.html
 assets/
   css/site.css        feuille de style unique
   js/i18n.js          bascule de langue
-  js/site.js          apparitions, menu mobile, formulaire, dates
+  js/site.js          apparitions, tiroir de navigation, saisons, formulaire, dates
   i18n/fr.json        dictionnaire français (référence)
   i18n/en.json        dictionnaire anglais
   i18n/LISEZMOI.md    procédure pour une langue supplémentaire
-photos/               41 photos, 800/1200/1600 px, WebP + repli JPEG
+photos/               37 photos, 800/1200/1600 px, WebP + repli JPEG
 ```
 
 ## Choix techniques
@@ -80,6 +80,28 @@ JPEG en deux (800, 1200). Le repli s’arrête à 1200 px : il ne sert qu’aux
 navigateurs sans WebP, trop rares pour justifier 14 Mo de fichiers
 supplémentaires. `width`/`height` explicites pour que la page ne sursaute pas au
 chargement, `loading="lazy"` partout sauf la première image de chaque page.
+
+**Largeurs.** Le conteneur fait 1 320 px et le texte s’arrête à 78 caractères
+par ligne : au-delà de 90, l’œil perd la ligne au retour. Ce sont les blocs
+visuels — galeries, bandeaux, cartes, chiffres clés — qui s’élargissent jusqu’à
+1 560 px sur grand écran, et passé 1 600 px de large c’est la police qui monte
+d’un cran, pas la mesure. Sous 1 000 px, tout prend la largeur de l’écran.
+
+**Menu mobile.** Un tiroir fixé au bord droit, qui s’ouvre depuis n’importe
+quel point de la page : glissement sur `transform` seulement, voile cliquable,
+page bloquée pendant l’ouverture (largeur de l’ascenseur compensée), focus
+gardé dans le tiroir et rendu au bouton, fermeture par Échap, par le voile ou
+par un lien. Fermé, il est `visibility:hidden`, donc hors du parcours clavier.
+Le bouton « Demander des dates » et sa ligne de réassurance sont en bas du tiroir.
+
+**Saisons.** Sur Le jardin, un comparateur « la même vue, à trois saisons » :
+trois points de vue (le séjour vers le jardin, la maison depuis le jardin,
+l’allée), trois onglets Été · Automne · Hiver. Les trois saisons sont empilées
+dans un cadre au format fixe, seule l’active est opaque : changer d’onglet est
+un fondu de 400 ms, sans chargement ni saut. Onglets pilotables aux flèches.
+Sans JavaScript, l’été s’affiche et les onglets restent cachés. Un quatrième
+onglet « Printemps » est écrit dans le HTML, caché (`hidden`) : il suffit de
+retirer l’attribut et d’ajouter les trois photos quand Claire les envoie.
 
 **Animations.** Apparition en fondu au défilement, léger agrandissement des
 photos au survol, ombre de la barre haute une fois la page défilée. Uniquement
@@ -117,7 +139,8 @@ lecture de chaque image :
 - la photo de la base nautique montrait des baigneurs sautant dans le port : le
   cadre s’arrête maintenant avant eux ;
 - le geste « ne jetez pas de lingettes », repris du manifeste, ne figure sur
-  aucune planche. Il a été remplacé par le repère de baignoire, qui y figure.
+  aucune planche. Il avait été remplacé par le repère de baignoire ; l’audit du
+  11/09 a relevé que la maison n’a pas de baignoire. Il reste cinq gestes.
 
 Toutes les photos ont été régénérées depuis la meilleure source disponible, en
 un seul ré-encodage, sans empiler les compressions.
@@ -135,6 +158,45 @@ un seul ré-encodage, sans empiler les compressions.
   affiche pas non plus.
 - **Deux langues.** Pas de troisième pour l’instant. La procédure reste écrite
   dans [`assets/i18n/LISEZMOI.md`](assets/i18n/LISEZMOI.md) si le besoin vient.
+
+Audit du 11/09, appliqué le même jour :
+
+- **Les notes sont données séparément** dès le hero : 4,8/5 sur Google, 4,77/5
+  sur Airbnb, 85 avis en tout. Plus de moyenne qui laisse croire à 4,8 sur 85.
+- **Les avis sont cités une fois avec des chiffres**, deux fois en passant. Le
+  jardin est l’argument, l’accueil vient ensuite ; « 500 m² » ne fait plus deux
+  titres identiques.
+- **Une ligne de réassurance sous chaque « Demander des dates »** — « Réponse en
+  quelques heures, avec les disponibilités et le tarif. Sans engagement. » —
+  y compris dans le tiroir et, en texte masqué relié par `aria-describedby`,
+  sur la barre mobile.
+- **La salle de bain est au premier étage** partout (elle était « sous les
+  combles » à un endroit). Il n’y a pas de baignoire : le geste correspondant
+  est retiré de la page Écologie.
+- **Le barbecue est parti aussi des `<meta description>` et du JSON-LD**, où il
+  avait survécu à la review du 10/09.
+- **Chaque photo n’apparaît qu’une fois par page.** L’emplacement, sur
+  l’accueil, montre la Meuse et ses bateaux ; la galerie de La maison ne répète
+  plus le séjour ; quatre photos redondantes sont retirées (41 → 37).
+- **La barrière d’escalier n’est pas affirmée** : l’audit proposait de la
+  mettre en avant dans l’argument famille, mais rien ne la confirme. Elle est
+  dans les questions pour Claire.
+- **Le hero reste en deux colonnes.** L’audit proposait une photo en fond
+  d’écran ; l’original du jardin en été fait 1 920 px de large, trop peu pour
+  un fond sur grand écran. L’essai existe quand même, hors site et en
+  `noindex` : [`essais/hero-fond.html`](https://allonzop.github.io/GiteBordDeMeuse/essais/hero-fond.html).
+  Joli sur ordinateur, sans intérêt sur téléphone (la photo disparaît sous le
+  voile). À reprendre si Claire a un original d’au moins 2 400 px.
+- **La Meuse à Vélo : 130 km jusqu’à Givet**, puis le réseau belge (et non
+  « 85 km jusqu’à la frontière »). Rimbaud : le musée est dans le vieux moulin,
+  la maison où il a vécu est sur le même quai ; sa tombe est au cimetière, pas
+  sur la promenade.
+- **Crédit photo réduit à ce qui est sûr** : « Photographies : Claire Hugerot,
+  et Allonzo Pensa pour les vues d’intérieur prises sur place. » La provenance
+  des vues extérieures est à confirmer.
+- **Anglais** : `%` collé au nombre, contractions d’usage (`it’s`, `you’ll`,
+  `doesn’t`) sauf dans les mentions légales et le « bon à savoir », calques du
+  français réécrits, `contact.f.ok` aligné sur le français.
 
 ## Reste à obtenir
 
@@ -165,7 +227,16 @@ Le site est vérifié à chaque génération :
   apostrophes typographiques, ligature `œ`, majuscules accentuées, unités) ;
 - typographie anglaise (pas d’espace avant la ponctuation double, point décimal),
   les citations françaises gardant leurs propres règles ;
-- dictionnaires FR et EN portant exactement les mêmes clés ;
+- dictionnaires FR et EN portant exactement les mêmes clés, aucune valeur
+  vide, chaque clé du HTML présente, et la liste des valeurs identiques dans les
+  deux langues (noms propres attendus, traduction oubliée sinon) ;
 - aucun lien mort, aucune ancre morte, aucun identifiant dupliqué ;
-- chaque image avec `alt`, `width`, `height`, `sizes` et `srcset` ;
-- aucune erreur JavaScript, aucun débordement horizontal, de 320 px à 2560 px.
+- chaque image avec `alt`, `width`, `height`, `sizes` et `srcset`, et aucune
+  photo utilisée deux fois sur une même page ;
+- aucune erreur JavaScript, aucun débordement horizontal, de 320 px à 2560 px ;
+- le tiroir mobile ouvert depuis le milieu de la page la plus longue (focus,
+  Échap, voile, lien), les onglets de saisons (fondu, clavier, défilement sur
+  téléphone) et les largeurs sur grand écran, en navigateur automatisé.
+
+Le formulaire, lui, n’est pas testable ici : il ne fonctionnera que sur Netlify.
+Il reste à essayer le menu sur un vrai téléphone, iOS et Android.

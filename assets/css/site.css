@@ -34,7 +34,7 @@
 
   --serif:'Newsreader',Georgia,'Times New Roman',serif;
   --sans:'Karla',system-ui,-apple-system,'Segoe UI',sans-serif;
-  --wrap:1130px;
+  --wrap:1320px;
   --barre:72px;
 }
 
@@ -54,7 +54,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
   background:var(--orange);color:#fff;padding:12px 18px;border-radius:3px;font-weight:600}
 
 /* ---------- barre haute ---------- */
-.topbar{position:sticky;top:0;z-index:60;background:var(--nuit);color:#fff;border-bottom:1px solid var(--ligne-sombre)}
+.topbar{position:sticky;top:0;z-index:100;background:var(--nuit);color:#fff;border-bottom:1px solid var(--ligne-sombre)}
 .topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:var(--barre);gap:10px}
 .marque{display:flex;align-items:center;gap:9px;text-decoration:none;color:#fff;min-width:0}
 .marque svg{width:24px;height:24px;flex:0 0 auto}
@@ -72,17 +72,45 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 .nav a{text-decoration:none;padding:4px 0;border-bottom:2px solid transparent;white-space:nowrap}
 .nav a:hover{color:var(--orange-c);border-bottom-color:var(--orange)}
 .nav a[aria-current=page]{color:#fff;border-bottom-color:var(--orange-c)}
-.burger{background:none;border:1px solid rgba(255,255,255,.32);border-radius:3px;color:#fff;
-  min-width:46px;min-height:44px;cursor:pointer;font-size:18px;line-height:1}
-.menu{display:none;background:var(--nuit-2);border-bottom:1px solid var(--ligne-sombre)}
-.menu.ouvert{display:block}
-.menu ul{list-style:none;padding:8px 0}
-.menu a{display:block;padding:14px 20px;text-decoration:none;color:var(--gris-clair);font-size:16px;
+/* burger : trois barres, qui deviennent une croix à l'ouverture */
+.burger{display:inline-flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;
+  background:none;border:1px solid rgba(255,255,255,.32);border-radius:3px;
+  min-width:46px;min-height:44px;padding:0 12px;cursor:pointer}
+.burger span{display:block;width:20px;height:2px;background:#fff;border-radius:1px;
+  transition:transform .24s cubic-bezier(.22,.61,.36,1),opacity .24s}
+.burger[aria-expanded=true] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.burger[aria-expanded=true] span:nth-child(2){opacity:0}
+.burger[aria-expanded=true] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+/* menu mobile : un tiroir fixé au bord droit, accessible depuis n'importe où
+   dans la page. Il glisse (transform), il ne se déplie pas (jamais height).
+   inset 0 en position fixe suit la fenêtre visible d'iOS, barre d'adresse
+   comprise — c'est l'équivalent de 100dvh, sans dépendre de son support.
+   Fermé, il est visibility:hidden : hors du parcours clavier et des lecteurs d'écran. */
+.tiroir{position:fixed;inset:0 0 0 auto;width:min(360px,84vw);z-index:90;
+  background:var(--nuit-2);color:#fff;border-left:1px solid var(--ligne-sombre);
+  display:flex;flex-direction:column;overflow-y:auto;
+  padding:calc(var(--barre) + 8px) 0 calc(20px + env(safe-area-inset-bottom));
+  visibility:hidden;transform:translateX(100%);
+  transition:transform .24s cubic-bezier(.22,.61,.36,1),visibility 0s linear .24s}
+.tiroir.ouvert{visibility:visible;transform:none;
+  transition:transform .24s cubic-bezier(.22,.61,.36,1),visibility 0s}
+.tiroir ul{list-style:none;padding:8px 0;flex:1}
+.tiroir li a{display:block;padding:15px 24px;text-decoration:none;color:var(--gris-clair);font-size:17px;
   border-bottom:1px solid rgba(255,255,255,.08)}
-.menu a[aria-current=page]{color:var(--orange-c);font-weight:600}
+.tiroir li a[aria-current=page]{color:var(--orange-c);font-weight:600}
+.tiroir .bas{padding:18px 24px 0;border-top:1px solid var(--ligne-sombre)}
+.tiroir .bas .btn-p{display:block;text-align:center}
+.voile{position:fixed;inset:0;z-index:80;background:rgba(0,0,0,.45);
+  opacity:0;visibility:hidden;transition:opacity .24s,visibility 0s linear .24s}
+.voile.ouvert{opacity:1;visibility:visible;transition:opacity .24s,visibility 0s}
+/* pendant l'ouverture, la page ne défile plus ; la largeur de l'ascenseur est
+   rendue en marge pour que rien ne saute, barre haute comprise */
+.menu-ouvert{overflow:hidden;padding-right:var(--sb,0px)}
+.menu-ouvert .topbar{margin-right:calc(-1 * var(--sb,0px));padding-right:var(--sb,0px)}
 @media(min-width:430px){.marque b{font-size:17px}.marque span.sous{display:block}}
 @media(min-width:1000px){.nav{display:flex}.resa{display:inline-flex;align-items:center}
-  .burger{display:none}.menu{display:none!important}.marque b{font-size:18px}}
+  .burger,.tiroir,.voile{display:none!important}.marque b{font-size:18px}}
 
 /* ---------- hero ---------- */
 .hero{background:var(--nuit);color:#fff;padding:56px 0 60px}
@@ -90,7 +118,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 .hero .sur{color:var(--ocre-c);display:block;margin-bottom:16px}
 .hero h1{font-size:clamp(30px,7vw,52px);color:#fff;max-width:22ch}
 .hero h1 em{font-style:italic;color:var(--orange-c)}
-.hero p.lead{margin-top:18px;max-width:44ch;font-size:16.5px;color:var(--gris-clair)}
+.hero p.lead{margin-top:18px;max-width:52ch;font-size:16.5px;color:var(--gris-clair)}
 .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
 .btn-p,.btn-g{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;font-weight:600;
   font-size:15.5px;padding:15px 22px;border-radius:3px;transition:.2s;flex:1 1 auto;min-width:0;text-align:center}
@@ -98,11 +126,15 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 .btn-p:hover{background:var(--brique)}
 .btn-g{border:1px solid rgba(255,255,255,.42);color:#fff}
 .btn-g:hover{border-color:var(--orange-c);color:var(--orange-c)}
+.reassure{margin-top:12px;font-size:13.5px;line-height:1.5;color:var(--gris);max-width:48ch}
+.hero .reassure,.reserver .reassure,.section.sombre .reassure,.tiroir .reassure{color:var(--gris-clair)}
+.masque{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
 .note{display:inline-flex;align-items:center;gap:11px;margin-top:26px;padding:10px 14px;
   border:1px solid rgba(255,255,255,.26);border-radius:3px;background:rgba(255,255,255,.06)}
 .note .n{font-family:var(--serif);font-size:21px;line-height:1}
 .note .et{color:var(--ocre-c);font-size:12.5px;letter-spacing:1.5px}
 .note small{display:block;font-size:11.5px;color:var(--gris-clair);margin-top:1px}
+@media(max-width:430px){.note .n{font-size:18px}.note .et{display:block;margin-bottom:3px}}
 .hero-ph{border:1px solid rgba(255,255,255,.22);overflow:hidden}
 .hero-ph img{width:100%}
 @media(min-width:420px){.btn-p,.btn-g{flex:0 0 auto}}
@@ -126,7 +158,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 /* ---------- sections ---------- */
 .section{padding:70px 0}
 .section.serree{padding:52px 0}
-.tete{max-width:60ch;margin-bottom:38px}
+.tete{max-width:78ch;margin-bottom:38px}
 .tete .sur{color:var(--orange-txt);display:block;margin-bottom:12px}
 .tete h2{font-size:clamp(26px,4.6vw,38px)}
 .tete p{margin-top:13px;color:var(--gris);font-size:17px}
@@ -141,6 +173,23 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 @media(max-width:999px){
   .tete,.hero p.lead,.reserver .lead,.texte,.duo>div{max-width:none}
   .hero h1{max-width:none}
+}
+
+/* Grands écrans : le conteneur fait 1320 px et le texte s'arrête à 78 caractères
+   (au-delà de 90, l'œil perd la ligne au retour). Ce sont les blocs visuels —
+   galeries, bandeaux, cartes, chiffres — qui s'élargissent jusqu'à 1560 px,
+   en débordant du conteneur par une marge négative. Passé 1600 px, on ne
+   grandit plus la mesure : c'est la police qui monte d'un cran. */
+@media(min-width:1400px){
+  .gal,.bande,.equip,.gestes,.liste-a,.grid-avis,.saisons{
+    width:min(1560px,92vw);margin-left:calc((100% - min(1560px,92vw)) / 2)}
+  .reperes .wrap{max-width:min(1560px,92vw)}
+}
+@media(min-width:1600px){
+  .tete p,.duo p,.hero p.lead,.reserver .lead{font-size:18px}
+  .texte p,.texte li,.savoir dd,.savoir dt,.savoir .intro{font-size:16.5px}
+  .eq p,.a-item p,.geste p,.infos dl{font-size:15.5px}
+  .tete{max-width:82ch}
 }
 
 /* ---------- galeries ---------- */
@@ -159,9 +208,11 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 .gal .pano{aspect-ratio:16/9}
 @media(min-width:700px){.gal{grid-template-columns:repeat(2,1fr)}}
 @media(min-width:1000px){.gal{grid-template-columns:repeat(4,1fr)}.gal.trois{grid-template-columns:repeat(3,1fr)}}
+@media(min-width:500px){.gal.deux{grid-template-columns:repeat(2,1fr)}}
 
 .bande{overflow:hidden;border:1px solid var(--ligne);margin-bottom:38px;background:var(--travertin-2)}
 .bande img{width:100%}
+.bande img.large{aspect-ratio:16/9;object-fit:cover;object-position:center 45%}
 .section.sombre .bande{border-color:var(--ligne-sombre)}
 
 /* deux colonnes texte + photo */
@@ -178,6 +229,34 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 .section.sombre .duo .sur{color:var(--ocre-c)}
 .section.sombre .duo .ph{border-color:var(--ligne-sombre)}
 @media(min-width:880px){.duo{grid-template-columns:1fr 1fr;gap:48px}.duo.inverse .ph{order:2}}
+
+/* ---------- saisons : la même vue, trois saisons ----------
+   Les trois saisons sont empilées dans un cadre au format fixe ; seule l'active
+   est opaque. Changer d'onglet ne charge rien et ne déplace rien : c'est un
+   fondu d'opacité de 400 ms. Sans JavaScript, les onglets restent cachés et
+   l'été est affiché. Sur téléphone, les trois vues défilent horizontalement,
+   avec accroche. */
+.onglets{display:none;flex-wrap:wrap;gap:6px;margin-bottom:22px}
+.js .onglets{display:flex}
+.onglets button{font:inherit;font-size:14px;font-weight:600;letter-spacing:.04em;min-height:42px;
+  padding:8px 18px;border:1px solid var(--ligne);border-radius:3px;background:#fff;color:var(--gris);
+  cursor:pointer;transition:background .2s,color .2s,border-color .2s}
+.onglets button[aria-selected=true]{background:var(--nuit);color:#fff;border-color:var(--nuit)}
+@media(hover:hover){.onglets button:not([aria-selected=true]):hover{border-color:var(--orange);color:var(--orange-txt)}}
+.vues{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:6px;
+  -webkit-overflow-scrolling:touch;scrollbar-width:thin}
+.vues figure{flex:0 0 82%;scroll-snap-align:start;margin:0}
+.vues figcaption{margin-top:8px;font-size:12.5px;color:var(--gris);letter-spacing:.03em}
+.pile{position:relative;aspect-ratio:4/3;overflow:hidden;border:1px solid var(--ligne);background:var(--travertin-2)}
+.cadre{position:absolute;inset:0;opacity:0;transition:opacity .4s ease}
+.cadre.active{opacity:1}
+.cadre picture,.cadre img{width:100%;height:100%}
+.cadre img{object-fit:cover}
+.cadre img.haut-cadre{object-position:center 28%}
+@media(min-width:700px){
+  .vues{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;overflow:visible;padding-bottom:0}
+  .vues figure{flex:none}
+}
 
 /* ---------- cartes ---------- */
 .equip{display:grid;gap:1px;background:var(--ligne);border:1px solid var(--ligne)}
@@ -229,7 +308,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 .res-grid{display:grid;gap:36px}
 .reserver h2{font-size:clamp(26px,4.6vw,38px);color:#fff}
 .reserver .sur{color:var(--ocre-c);display:block;margin-bottom:12px}
-.reserver .lead{color:var(--gris-clair);margin-top:14px;font-size:16.5px;max-width:42ch}
+.reserver .lead{color:var(--gris-clair);margin-top:14px;font-size:16.5px;max-width:52ch}
 .direct{margin-top:26px;display:grid;gap:11px}
 .direct a{display:block;text-decoration:none;border:1px solid rgba(255,255,255,.24);padding:14px 16px;border-radius:3px;transition:.2s}
 .direct a:hover{border-color:var(--orange-c);background:rgba(226,139,76,.16)}
@@ -272,7 +351,7 @@ button[type=submit]:hover{background:var(--brique-c)}
 @media(min-width:860px){.infos{grid-template-columns:1fr 1fr}}
 
 /* ---------- texte long (mentions légales) ---------- */
-.texte{max-width:72ch}
+.texte{max-width:78ch}
 .texte h2{font-size:24px;margin:34px 0 12px}
 .texte h2:first-child{margin-top:0}
 .texte p,.texte li{font-size:15.5px;color:var(--gris);margin-bottom:11px}
@@ -298,7 +377,7 @@ footer.pied{background:var(--nuit);color:var(--gris-clair);padding:48px 0 26px}
 .barre{position:fixed;bottom:0;left:0;right:0;z-index:70;display:flex;background:var(--nuit);
   border-top:1px solid rgba(255,255,255,.2);padding:9px 10px calc(9px + env(safe-area-inset-bottom));gap:9px}
 .barre a{flex:1;text-align:center;text-decoration:none;font-weight:600;font-size:15px;padding:13px 8px;border-radius:3px}
-.barre .app{background:var(--orange);color:#fff}
+.barre .app{flex:0 1 auto;padding-inline:26px;background:var(--orange);color:#fff}
 .barre .res{border:1px solid rgba(255,255,255,.34);color:#fff}
 body{padding-bottom:78px}
 @media(min-width:1000px){.barre{display:none}body{padding-bottom:0}}
@@ -339,7 +418,8 @@ body{padding-bottom:78px}
 
 /* la barre haute se détache une fois la page défilée */
 .topbar{transition:box-shadow .25s}
-.topbar.defile{box-shadow:0 2px 14px rgba(43,23,18,.28)}
+.topbar.defile{box-shadow:0 2px 14px rgba(43,23,18,.28);background:rgba(43,23,18,.92);
+  -webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
 .sentinelle{position:absolute;top:0;height:1px;width:1px;pointer-events:none}
 
 /* Quiconque a demandé moins d'animation n'en reçoit aucune. */
@@ -347,4 +427,6 @@ body{padding-bottom:78px}
   *{animation:none!important;transition:none!important}
   html{scroll-behavior:auto}
   .js-anim .revele{opacity:1!important;transform:none!important}
+  .tiroir{transform:none;opacity:0}
+  .tiroir.ouvert{opacity:1}
 }

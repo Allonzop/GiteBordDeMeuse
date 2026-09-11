@@ -39,15 +39,20 @@
         <button type="button" data-lang="en" aria-pressed="false">EN</button>
       </div>
       <a class="resa" href="contact.html" data-i18n="commun.demander">Demander des dates</a>
-      <button class="burger" type="button" aria-expanded="false" aria-controls="menu-mobile" aria-label="Ouvrir le menu" data-i18n-aria="commun.ouvrirmenu">☰</button>
+      <button class="burger" type="button" aria-expanded="false" aria-controls="menu-mobile" aria-label="Ouvrir le menu" data-i18n-aria="commun.ouvrirmenu"><span></span><span></span><span></span></button>
     </div>
   </div>
 </header>
-<nav class="menu" id="menu-mobile" aria-label="Navigation" data-i18n-aria="commun.nav">
+<div class="voile"></div>
+<nav class="tiroir" id="menu-mobile" aria-label="Navigation" data-i18n-aria="commun.nav">
   <ul>
     
 <li><a href="index.html" data-i18n="nav.accueil">Accueil</a></li>    <li><a href="la-maison.html" data-i18n="nav.maison">La maison</a></li>    <li><a href="le-jardin.html" data-i18n="nav.jardin">Le jardin &amp; autour</a></li>    <li><a href="ecologie.html" data-i18n="nav.ecologie">Écologie</a></li>    <li><a href="contact.html" aria-current="page" data-i18n="nav.contact">Contact</a></li>
   </ul>
+  <div class="bas">
+    <a class="btn-p" href="contact.html" data-i18n="commun.demander">Demander des dates</a>
+    <p class="reassure" data-i18n="commun.reassure">Réponse en quelques heures, avec les disponibilités et le tarif. Sans engagement.</p>
+  </div>
 </nav>
 <main id="contenu">
 
@@ -80,7 +85,7 @@
 
       <form class="demande" name="demande" method="POST" action="/" data-netlify="true" netlify-honeypot="societe">
         <input type="hidden" name="form-name" value="demande">
-        <p class="pot"><label>Ne pas remplir&nbsp;: <input name="societe" tabindex="-1" autocomplete="off"></label></p>
+        <p class="pot" aria-hidden="true"><label>Ne pas remplir&nbsp;: <input name="societe" tabindex="-1" autocomplete="off"></label></p>
         <div class="trio">
           <div class="champ"><label for="champ-arrivee" data-i18n="contact.f.arrivee">Arrivée</label><input id="champ-arrivee" name="arrivee" type="date" required></div>
           <div class="champ"><label for="champ-depart" data-i18n="contact.f.depart">Départ</label><input id="champ-depart" name="depart" type="date" required></div>
@@ -197,7 +202,8 @@
 
 <nav class="barre" aria-label="Actions rapides" data-i18n-aria="commun.actions">
   <a class="app" href="tel:+33648904509" data-i18n="commun.appeler">Appeler</a>
-  <a class="res" href="contact.html" data-i18n="commun.demander">Demander des dates</a>
+  <a class="res" href="contact.html" data-i18n="commun.demander" aria-describedby="reassure-barre">Demander des dates</a>
+  <span class="masque" id="reassure-barre" data-i18n="commun.reassure">Réponse en quelques heures, avec les disponibilités et le tarif. Sans engagement.</span>
 </nav>
 
 <script src="assets/js/i18n.js"></script>

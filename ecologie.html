@@ -39,15 +39,20 @@
         <button type="button" data-lang="en" aria-pressed="false">EN</button>
       </div>
       <a class="resa" href="contact.html" data-i18n="commun.demander">Demander des dates</a>
-      <button class="burger" type="button" aria-expanded="false" aria-controls="menu-mobile" aria-label="Ouvrir le menu" data-i18n-aria="commun.ouvrirmenu">☰</button>
+      <button class="burger" type="button" aria-expanded="false" aria-controls="menu-mobile" aria-label="Ouvrir le menu" data-i18n-aria="commun.ouvrirmenu"><span></span><span></span><span></span></button>
     </div>
   </div>
 </header>
-<nav class="menu" id="menu-mobile" aria-label="Navigation" data-i18n-aria="commun.nav">
+<div class="voile"></div>
+<nav class="tiroir" id="menu-mobile" aria-label="Navigation" data-i18n-aria="commun.nav">
   <ul>
     
 <li><a href="index.html" data-i18n="nav.accueil">Accueil</a></li>    <li><a href="la-maison.html" data-i18n="nav.maison">La maison</a></li>    <li><a href="le-jardin.html" data-i18n="nav.jardin">Le jardin &amp; autour</a></li>    <li><a href="ecologie.html" aria-current="page" data-i18n="nav.ecologie">Écologie</a></li>    <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
   </ul>
+  <div class="bas">
+    <a class="btn-p" href="contact.html" data-i18n="commun.demander">Demander des dates</a>
+    <p class="reassure" data-i18n="commun.reassure">Réponse en quelques heures, avec les disponibilités et le tarif. Sans engagement.</p>
+  </div>
 </nav>
 <main id="contenu">
 
@@ -56,7 +61,7 @@
     <div class="hero-grid">
       <div>
         <span class="sur" data-i18n="eco.hero.sur">Écologie</span>
-        <h1 data-i18n="eco.hero.titre">Des petits gestes, <em>comme un jeu</em></h1>
+        <h1 data-i18n="eco.hero.titre">De petits gestes, <em>comme un jeu</em></h1>
         <p class="lead" data-i18n="eco.hero.lead">Le gîte participe au programme européen Interreg «&nbsp;Ardenne Écotourisme&nbsp;». Concrètement, quelques autocollants dans les pièces rappellent des gestes simples pour la nature. À prendre comme un petit défi, le temps du séjour.</p>
       </div>
     </div>
@@ -72,8 +77,7 @@
     </div>
     <div class="gestes">
       <div class="geste"><span class="ou" data-i18n="eco.g1.ou">Salle de bain</span><h3 data-i18n="eco.g1.t">Un sablier de douche</h3><p data-i18n="eco.g1.p">5&nbsp;minutes, le temps d’une douche. À retourner en entrant, pour voir si l’on tient le défi.</p></div>
-      <div class="geste"><span class="ou" data-i18n="eco.g2.ou">Salle de bain</span><h3 data-i18n="eco.g2.t">Un repère dans la baignoire</h3><p data-i18n="eco.g2.p">Un autocollant marque la hauteur d’eau suffisante. Posé bas, exprès&nbsp;: placé trop haut, il ferait consommer davantage.</p></div>
-      <div class="geste"><span class="ou" data-i18n="eco.g3.ou">Cuisine</span><h3 data-i18n="eco.g3.t">Une carafe d’eau du robinet</h3><p data-i18n="eco.g3.p">«&nbsp;Rien que de l’eau&nbsp;! 100&nbsp;% Ardenne, 0&nbsp;% déchet&nbsp;» — l’eau d’ici se boit au verre, pas à la bouteille en plastique.</p></div>
+      <div class="geste"><span class="ou" data-i18n="eco.g3.ou">Cuisine</span><h3 data-i18n="eco.g3.t">Une carafe d’eau du robinet</h3><p data-i18n="eco.g3.p">«&nbsp;Rien que de l’eau&nbsp;! 100&nbsp;% Ardenne, 0&nbsp;% déchet&nbsp;» — ici, l’eau du robinet se boit au verre, pas à la bouteille en plastique.</p></div>
       <div class="geste"><span class="ou" data-i18n="eco.g4.ou">Cuisine</span><h3 data-i18n="eco.g4.t">Des contenants réutilisables</h3><p data-i18n="eco.g4.p">Boîtes et bocaux pour emporter le pique-nique sur la Voie Verte sans emballage jetable.</p></div>
       <div class="geste"><span class="ou" data-i18n="eco.g5.ou">Pièces de vie</span><h3 data-i18n="eco.g5.t">Le chauffage avant les fenêtres</h3><p data-i18n="eco.g5.p">Couper le chauffage avant d’aérer&nbsp;: le geste est écrit sur l’autocollant, à côté du thermostat.</p></div>
       <div class="geste"><span class="ou" data-i18n="eco.g6.ou">Partout</span><h3 data-i18n="eco.g6.t">Le tri, et le compost au fond du jardin</h3><p data-i18n="eco.g6.p">Une planche d’autocollants indique quoi mettre où. Les épluchures vont au composteur, et elles reviennent en massifs.</p></div>
@@ -90,7 +94,7 @@
         <h2 data-i18n="eco.label.titre">Ardenne Écotourisme</h2>
         <p data-i18n="eco.label.p1">C’est un programme Interreg, mené de part et d’autre de la frontière avec Accueil Champêtre en Wallonie, Ardennes de France et le réseau RND Pierre&nbsp;+&nbsp;Bois. Il fournit aux hébergements un kit de signalétique et un cadre commun.</p>
         <p data-i18n="eco.label.p2">Le gîte est également référencé dans la rubrique écotourisme de VisitArdenne.</p>
-        <p data-i18n="eco.label.p3"><strong>Le kit est édité en français, en anglais et en néerlandais</strong> — comme une bonne part des hôtes, qui viennent de Belgique et des Pays-Bas.</p>
+        <p data-i18n="eco.label.p3"><strong>Le kit est édité en français, en anglais et en néerlandais</strong> — comme une bonne part des voyageurs, qui viennent de Belgique et des Pays-Bas.</p>
       </div>
     </div>
   </div>
@@ -112,6 +116,7 @@
       <div class="eq"><h3 data-i18n="eco.m6.t">Circuits courts</h3><p data-i18n="eco.m6.p">Le gîte est adhérent de l’épicerie biologique La Marcasserie, et les marchés de pays vous sont indiqués volontiers.</p></div>
     </div>
     <p style="margin-top:30px"><a href="contact.html" class="btn-p" data-i18n="commun.demander">Demander des dates</a></p>
+    <p class="reassure" data-i18n="commun.reassure">Réponse en quelques heures, avec les disponibilités et le tarif. Sans engagement.</p>
   </div>
 </section>
 
@@ -151,7 +156,8 @@
 
 <nav class="barre" aria-label="Actions rapides" data-i18n-aria="commun.actions">
   <a class="app" href="tel:+33648904509" data-i18n="commun.appeler">Appeler</a>
-  <a class="res" href="contact.html" data-i18n="commun.demander">Demander des dates</a>
+  <a class="res" href="contact.html" data-i18n="commun.demander" aria-describedby="reassure-barre">Demander des dates</a>
+  <span class="masque" id="reassure-barre" data-i18n="commun.reassure">Réponse en quelques heures, avec les disponibilités et le tarif. Sans engagement.</span>
 </nav>
 
 <script src="assets/js/i18n.js"></script>

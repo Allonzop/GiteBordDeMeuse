@@ -6,6 +6,17 @@ figure pas sur le site tant que la réponse n’est pas arrivée.
 
 ## La maison
 
+- **Y a-t-il une baignoire ?** La page Écologie parlait d’un repère de niveau
+  dans la baignoire, alors que la page La maison ne décrit qu’une douche à
+  l’italienne. Le geste a été retiré ; s’il existe une baignoire, dites-le nous
+  et il revient. **Bloquant.**
+- **La salle de bain est au premier étage, et l’on y accède par la chambre.**
+  Le site le disait à deux endroits de deux façons (« sous les combles » et
+  « au premier ») ; il dit maintenant « premier étage » partout. Exact ?
+  **Bloquant.**
+- **La barrière de sécurité d’escalier** : existe-t-elle ? En place en permanence
+  ou fournie à la demande ? En haut, en bas, ou aux deux ? **Non affichée** tant
+  que ce n’est pas confirmé — l’argument « famille » n’en parle donc pas.
 - **Le plancher chauffant** au rez-de-chaussée — affiché sur le site sur la foi
   d’Allonzo (review du 10/09). À confirmer.
 - **La fibre** : la connexion Wi-Fi est-elle bien en fibre ? **Non affiché.**
@@ -30,14 +41,27 @@ figure pas sur le site tant que la réponse n’est pas arrivée.
 
 ## Écologie — le kit Interreg « Ardenne Écotourisme »
 
-- Le site présente six gestes, d’après les planches photographiées le 04/09 :
-  sablier de douche 5 min, repère de niveau dans la baignoire, carafe d’eau du
-  robinet, contenants réutilisables, chauffage coupé avant d’aérer, tri et
-  compost. **Avons-nous bien compris ce que le programme demande, et ce qui est
+- Le site présente cinq gestes, d’après les planches photographiées le 04/09 :
+  sablier de douche 5 min, carafe d’eau du robinet, contenants réutilisables,
+  chauffage coupé avant d’aérer, tri et compost. (Le repère de baignoire a été
+  retiré, voir plus haut.) **Avons-nous bien compris ce que le programme demande, et ce qui est
   réellement en place dans le gîte ?**
 - Le kit est édité en français, anglais et **néerlandais**. Vos hôtes étrangers
   sont majoritairement néerlandophones : si une troisième langue vient un jour
   sur le site, ce serait le néerlandais plutôt que l’allemand. D’accord ?
+
+## Les photos
+
+- **Provenance des photos extérieures** (Voie Verte, place Ducale, port de
+  plaisance, bords de Meuse) : sont-elles bien les vôtres ? Les mentions légales
+  les créditent à votre nom ; si l’une vient d’ailleurs, il faut le savoir avant
+  la mise en ligne.
+- **Photos à envoyer, si vous en avez** : le jardin au **printemps** (les trois
+  mêmes vues qu’en été, automne et hiver : le séjour vers le jardin, la maison
+  depuis le jardin, l’allée — le comparateur de saisons a déjà sa place pour
+  elles) ; un oiseau dans le jardin ; la barrière d’escalier si elle existe ; et,
+  si possible, l’original haute définition du jardin en été (au moins
+  2 400 px de large) pour un jour passer le hero en plein écran.
 
 ## Le site et sa présence en ligne
 
