@@ -154,9 +154,16 @@ un seul ré-encodage, sans empiler les compressions.
 
 - **Votre hôte : Claire seule**, mais pas tout le site au « je » : voix
       impersonnelle partout, sauf le bloc « Votre hôte » (review du 10/09).
-- **Barbecue et fibre non affirmés** tant qu’ils ne sont pas confirmés ; le
-      plancher chauffant au rez-de-chaussée, l’abri à vélos et le second WC
-      extérieur sont ajoutés (review du 10/09).
+- **Réponses de Claire du 18/09, intégrées** : Wi-Fi par la fibre, barbecue
+  (sauf en période de canicule), portillon de sécurité en haut de l’escalier,
+  détecteur de monoxyde de carbone, maison des années 1920, fraises et
+  framboises en plus des groseilles, pas de baignoire. **La cheminée n’est pas
+  utilisable** : elle n’est plus citée nulle part, ni dans les textes, ni dans
+  les meta, ni dans le JSON-LD ; si elle apparaît sur une photo, c’est du
+  décor. Les mentions légales portent maintenant le SIREN de Claire
+  (entrepreneur individuel), KRAON restant crédité pour la conception.
+- Plancher chauffant, abri à vélos et second WC extérieur ajoutés d’après la
+  visite du 09/09, confirmés depuis.
 - **Chambre du second : trois couchages.** Deux lits une personne installés en
   permanence, un troisième monté à la demande.
 - **Pas de tarif.** Tant que l’annonce Airbnb n’en affiche pas, le site n’en
@@ -210,8 +217,6 @@ Audit du 11/09, appliqué le même jour :
 La liste complète des points à faire confirmer par Claire est dans
 [`QUESTIONS-POUR-CLAIRE.md`](QUESTIONS-POUR-CLAIRE.md).
 
-- [ ] **Le SIREN de l’éditeur.** Les mentions légales portent le SIREN de KRAON
-      au titre de la conception. Le numéro de l’activité de Claire manque.
 - [ ] **Les avis.** Les trois extraits affichés sont reformulés et abrégés, ce que
       la page indique. À valider ou à remplacer par des citations exactes.
 - [ ] **Le nom de domaine.** Une fois choisi et acheté, changer `BASE_URL`
@@ -222,9 +227,8 @@ La liste complète des points à faire confirmer par Claire est dans
 
 - **Le lien Airbnb de sa bio Instagram est mort** : il renvoie sur l’accueil
   d’airbnb.fr. C’est son seul appel à l’action public.
-- **Airbnb signale l’absence de détecteur de monoxyde de carbone**, alors que la
-  maison a une cheminée. Cela s’installe, ça ne se rédige pas — le site n’en parle
-  donc pas.
+- **Airbnb signale l’absence de détecteur de monoxyde de carbone.** Claire
+  confirme qu’il y en a un : c’est sa fiche Airbnb qui est à mettre à jour.
 
 ## Contrôles
 
