@@ -24,10 +24,11 @@ mémoire, ce qui a été confirmé.
 - **Votre fiche Google Business** pointe au mauvais endroit. Le site utilise
   les bonnes coordonnées (49.77913, 4.735605) ; la fiche, elle, se corrige
   depuis votre compte Google.
-- **Photos, si vous en avez** : le jardin au printemps (les trois mêmes vues
-  qu’en été, automne et hiver : le séjour vers le jardin, la maison depuis
-  le jardin, l’allée), un oiseau dans le jardin, l’original haute définition
-  du jardin en été (au moins 2 400 px de large) pour le fond de l’accueil.
+- **Photos, si vous en avez** : le printemps pour le comparateur de saisons
+  (les trois mêmes vues qu’en été, automne et hiver : le séjour vers le
+  jardin, la maison depuis le jardin, l’allée), un oiseau dans le jardin, et
+  l’original haute définition du jardin en été (au moins 2 400 px de large)
+  pour le fond de l’accueil. Vos 17 photos du 18 et du 21/09 sont intégrées.
 - **La grande chambre** : sur la photo reçue le 18/09, le lit est coupé à
   droite du cadre (on en voit le pied et la moitié du couchage). Elle est en
   place ; une prise de vue où le lit est entier serait mieux.

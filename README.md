@@ -55,7 +55,7 @@ assets/
   i18n/fr.json        dictionnaire français (référence)
   i18n/en.json        dictionnaire anglais
   i18n/LISEZMOI.md    procédure pour une langue supplémentaire
-photos/               37 photos, 800/1200/1600 px, WebP + repli JPEG (+ 1920 px pour le hero)
+photos/               43 photos, 800/1200/1600 px, WebP + repli JPEG (+ 1920 px pour le hero)
 ```
 
 ## Choix techniques
@@ -174,17 +174,20 @@ un seul ré-encodage, sans empiler les compressions.
 Retours de Claire du 22/09, appliqués le même jour (textes, puis photos au
 fur et à mesure de l’arrivée des fichiers) :
 
-- **Photos du 22/09 intégrées** : grande chambre, chambre du 2e, séjour en
-  automne (comparateur de saisons), aire de jeux du Mont-Olympe et Vieux
-  Moulin (cartes d’activités, une photo par carte), le tiroir de la cuisine
-  (avec une phrase sur son contenu, écrite d’après la photo), la salle de bain
-  (douche, sèche-serviettes et vasque, sous la poutre), la salle à manger
-  (pièce à vivre), le jardin au printemps (galerie du jardin) et le portillon
-  (section famille, sous le texte) et la salle de bain vue depuis le lit
-  (sous le « bon à savoir », à la place du panoramique), le port de plaisance
-  et la Meuse avec sa péniche (galerie des environs, à la place des deux vues
-  Airbnb), le second WC (dans la carte « La salle de bain »). Reçues mais non
-  placées, une seule photo par sujet : la plaque à induction, six autres vues de la salle de bain, une
+- **Les 17 photos de l’index du 22/09 sont reçues et intégrées, sauf doublons.**
+  La maison : grande chambre, chambre du 2e, salon en fin de journée (bandeau
+  de la pièce à vivre, à la place du panoramique), salle à manger, tiroir de
+  la cuisine (avec une phrase sur son contenu, écrite d’après la photo), salle
+  de bain sous la poutre, salle de bain vue du lit (sous le « bon à savoir »),
+  second WC (carte « La salle de bain »), portillon (section famille). Le
+  jardin et les environs : jardin au printemps, séjour en automne (comparateur
+  de saisons), Voie Verte au saule (bandeau « Autour du gîte ») et Voie Verte
+  le long de la Meuse, port de plaisance, Meuse et sa péniche (galerie des
+  environs, à quatre colonnes), Vieux Moulin (carte Rimbaud), aire de jeux
+  (carte Mont-Olympe). Les vues Airbnb de la Voie Verte, du chemin des berges,
+  de la base nautique et des bateaux sont retirées au profit de celles de
+  Claire ; 43 photos au total. Reçues mais non placées, une seule photo par
+  sujet : la plaque à induction, six autres vues de la salle de bain, une
   seconde vue du tiroir, la passerelle du musée Rimbaud.
 
 - **« Le jardin et les environs »** partout (menu, titres, meta).
