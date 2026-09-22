@@ -180,8 +180,9 @@ fur et à mesure de l’arrivée des fichiers) :
   (avec une phrase sur son contenu, écrite d’après la photo), la salle de bain
   (douche, sèche-serviettes et vasque, sous la poutre), la salle à manger
   (pièce à vivre), le jardin au printemps (galerie du jardin) et le portillon
-  (section famille, sous le texte). Reçues mais non placées, une seule photo
-  par sujet : la plaque à induction, six autres vues de la salle de bain, une
+  (section famille, sous le texte) et la salle de bain vue depuis le lit
+  (sous le « bon à savoir », à la place du panoramique). Reçues mais non
+  placées, une seule photo par sujet : la plaque à induction, six autres vues de la salle de bain, une
   seconde vue du tiroir, la passerelle du musée Rimbaud.
 
 - **« Le jardin et les environs »** partout (menu, titres, meta).
