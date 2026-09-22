@@ -175,11 +175,14 @@ Retours de Claire du 22/09, appliqués le même jour (textes, puis photos au
 fur et à mesure de l’arrivée des fichiers) :
 
 - **Photos du 22/09 intégrées** : grande chambre, chambre du 2e, séjour en
-  automne (comparateur de saisons), aire de jeux du Mont-Olympe (carte), le
-  tiroir de la cuisine (avec une phrase sur son contenu, écrite d’après la
-  photo) et la salle de bain (douche, sèche-serviettes et vasque, sous la
-  poutre). Reçues mais non placées, une seule photo par sujet : la plaque à
-  induction, six autres vues de la salle de bain, une seconde vue du tiroir.
+  automne (comparateur de saisons), aire de jeux du Mont-Olympe et Vieux
+  Moulin (cartes d’activités, une photo par carte), le tiroir de la cuisine
+  (avec une phrase sur son contenu, écrite d’après la photo), la salle de bain
+  (douche, sèche-serviettes et vasque, sous la poutre), la salle à manger
+  (pièce à vivre), le jardin au printemps (galerie du jardin) et le portillon
+  (section famille, sous le texte). Reçues mais non placées, une seule photo
+  par sujet : la plaque à induction, six autres vues de la salle de bain, une
+  seconde vue du tiroir, la passerelle du musée Rimbaud.
 
 - **« Le jardin et les environs »** partout (menu, titres, meta).
 - **Capacité « 2 à 5 personnes + 1 bébé »** partout, meta et JSON-LD compris.

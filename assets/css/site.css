@@ -303,6 +303,10 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 .a-item .d{display:block;margin:0 0 7px;font-size:12.5px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--orange-txt)}
 .a-item .box{overflow:hidden;aspect-ratio:16/9;margin:-20px -22px 16px;border-bottom:1px solid var(--ligne);background:var(--travertin-2)}
 .a-item .box img{width:100%;height:100%;object-fit:cover}
+.fig-texte{margin-top:24px}
+.fig-texte .box{overflow:hidden;border:1px solid var(--ligne);background:var(--travertin-2)}
+.fig-texte img{width:100%}
+.fig-texte figcaption{margin-top:8px;font-size:12.5px;color:var(--gris);letter-spacing:.03em}
 .liens-off{margin-top:26px;font-size:14.5px;color:var(--gris-clair)}
 .liens-off a{color:#fff;text-decoration-color:var(--orange-c)}
 @media(min-width:700px){.liste-a{grid-template-columns:repeat(2,1fr)}}
