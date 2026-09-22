@@ -10,9 +10,10 @@ mémoire, ce qui a été confirmé.
   bords de Meuse) : sont-elles bien les vôtres ? Les mentions légales les
   créditent à votre nom. À confirmer avant la mise en ligne définitive.
 - **Le compte Instagram @gite_ardennes** : est-il bien le vôtre ? Le site
-  n’y renvoie pas tant que ce n’est pas confirmé. Le lien Airbnb en bio est
-  mort (il renvoie sur l’accueil d’airbnb.fr) — à remplacer par le site une
-  fois en ligne.
+  y renvoie encore (pied de page et données structurées de l’accueil) ; le
+  lien sera retiré si le compte n’est pas le vôtre. Le lien Airbnb en bio
+  est mort (il renvoie sur l’accueil d’airbnb.fr) — à remplacer par le site
+  une fois en ligne.
 - **Les avis** : les trois extraits affichés sont reformulés et abrégés (la
   page le précise). Préférez-vous des citations exactes ? Lesquelles ?
 - **Le nom de domaine** : avez-vous une préférence ? (`gitesaintaubin.fr`,

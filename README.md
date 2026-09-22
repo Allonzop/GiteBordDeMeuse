@@ -232,13 +232,20 @@ Audit du 11/09, appliqué le même jour :
   mettre en avant dans l’argument famille, mais rien ne la confirme. Elle est
   dans les questions pour Claire.
 - **Le hero de l’accueil est en fond photo** à partir de 900 px de large.
-  À la demande de Claire (22/09), **aucun voile ni dégradé sur la photo** : la
-  lisibilité tient au cadrage (fenêtre basse de la photo, feuillage sombre sous
-  le texte), à une ombre portée sur le texte et à un sous-titre en graisse
-  moyenne. Sur les taches les plus claires de la photo (roses pâles), le
-  contraste mesuré descend sous 4,5:1 ; c’est le prix de l’absence de voile,
-  assumé. Sous 900 px, la photo vient **avant** le texte, pleine largeur.
-  L’original fait 1 920 px ; au-delà, il est agrandi.
+  Claire avait demandé (18/09) aucun voile ni dégradé sur la photo ; sans
+  rien, le texte tombait sur les roses pâles et le contraste descendait à
+  1:1 par endroits (illisible, constaté par Allonzo le 22/09). Compromis
+  retenu le 22/09 : **pas de voile général**, la photo reste intacte à droite
+  (maison, terrasse), mais un **dégradé brun ancré sur la colonne de texte**
+  (même rendu à toutes les largeurs, `.hero-grid::before`) s’ajoute à l’ombre
+  portée. Contraste mesuré sur le pire pixel de chaque bloc de texte, blanc
+  sur la photo rendue : 6:1 au moins de 1 024 à 1 920 px, 8:1 et plus sur
+  le titre ; le petit sur-titre ocre est éclairci (`#F3CD8E`) pour tenir
+  aussi (scripts `hero_var.js` + `hero_contraste.py`, hors dépôt). Un
+  cartouche translucide derrière le texte a été essayé aussi (10:1 partout)
+  et gardé en réserve, plus lourd visuellement. Sous 900 px, la photo vient
+  **avant** le texte, pleine largeur. L’original fait 1 920 px ; au-delà, il
+  est agrandi.
 - **La Meuse à Vélo : 130 km jusqu’à Givet**, puis le réseau belge (et non
   « 85 km jusqu’à la frontière »). Rimbaud : le musée est dans le vieux moulin,
   la maison où il a vécu est sur le même quai ; sa tombe est au cimetière, pas

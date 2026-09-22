@@ -140,11 +140,10 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 @media(min-width:420px){.btn-p,.btn-g{flex:0 0 auto}}
 @media(min-width:900px){.hero h1{max-width:15ch}.hero-grid{grid-template-columns:1fr 1fr;gap:52px}}
 
-/* hero en fond photo (accueil). La photo couvre la section, deux dégradés
-   par-dessus — un pour la lisibilité, un pour la teinte brune depuis le haut
-   à gauche — et le texte au-dessus. Sous 900 px, la photo passe sous le texte,
-   pleine largeur : sur un téléphone, un fond sous un voile ne montre rien.
-   La couleur de fond reste celle du hero tant que la photo n'est pas arrivée. */
+/* hero en fond photo (accueil). La photo couvre la section et le texte est
+   posé dessus, à gauche. Sous 900 px, la photo passe au-dessus du texte,
+   pleine largeur. La couleur de fond reste celle du hero tant que la photo
+   n'est pas arrivée. */
 .hero.fond{position:relative;overflow:hidden}
 @media(min-width:900px){
   .hero.fond{min-height:700px;display:flex;align-items:center;padding:72px 0}
@@ -153,10 +152,16 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
   .hero.fond .hero-ph{position:absolute;inset:0;z-index:0;border:0}
   .hero.fond .hero-ph picture,.hero.fond .hero-ph img{width:100%;height:100%}
   .hero.fond .hero-ph img{object-fit:cover;object-position:72% 62%}
-  /* pas de voile ni de dégradé sur la photo (demande de la cliente) : la
-     lisibilité tient au cadrage — le texte est sur la partie sombre, à gauche —
-     et à une ombre portée légère sur le texte. */
+  /* Lisibilité (22/09) : la photo reste intacte à droite, sans voile général.
+     Derrière la colonne de texte seulement, un dégradé brun ancré sur la
+     colonne (même rendu à toutes les largeurs) s'ajoute à l'ombre portée :
+     contraste mesuré sur le pire pixel de chaque bloc de texte, 6:1 au
+     moins de 1024 à 1920 px (8:1 et plus sur le titre) ; le petit sur-titre
+     ocre est éclairci pour la même raison. */
   .hero.fond .hero-ph img{object-position:50% 100%}
+  .hero.fond .hero-grid{position:relative}
+  .hero.fond .hero-grid::before{content:"";position:absolute;z-index:-1;top:-600px;bottom:-600px;left:-100vw;right:-440px;pointer-events:none;background:linear-gradient(90deg,rgba(43,23,18,.9) 0,rgba(43,23,18,.9) calc(100% - 1040px),rgba(43,23,18,.8) calc(100% - 640px),rgba(43,23,18,.45) calc(100% - 440px),rgba(43,23,18,0) 100%)}
+  .hero.fond .sur{color:#F3CD8E}
   .hero.fond .hero-grid{max-width:560px}
   .hero.fond p.lead{max-width:40ch;font-weight:500}
   .hero.fond .sur,.hero.fond h1,.hero.fond p,.hero.fond .note{text-shadow:0 0 2px rgba(0,0,0,.9),0 1px 3px rgba(0,0,0,.85),0 2px 18px rgba(0,0,0,.7)}
