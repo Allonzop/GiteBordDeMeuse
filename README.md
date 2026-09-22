@@ -181,7 +181,9 @@ fur et à mesure de l’arrivée des fichiers) :
   (douche, sèche-serviettes et vasque, sous la poutre), la salle à manger
   (pièce à vivre), le jardin au printemps (galerie du jardin) et le portillon
   (section famille, sous le texte) et la salle de bain vue depuis le lit
-  (sous le « bon à savoir », à la place du panoramique). Reçues mais non
+  (sous le « bon à savoir », à la place du panoramique), le port de plaisance
+  et la Meuse avec sa péniche (galerie des environs, à la place des deux vues
+  Airbnb), le second WC (dans la carte « La salle de bain »). Reçues mais non
   placées, une seule photo par sujet : la plaque à induction, six autres vues de la salle de bain, une
   seconde vue du tiroir, la passerelle du musée Rimbaud.
 

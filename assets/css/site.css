@@ -306,6 +306,8 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 .fig-texte{margin-top:24px}
 .fig-texte .box{overflow:hidden;border:1px solid var(--ligne);background:var(--travertin-2)}
 .fig-texte img{width:100%}
+.eq .fig-texte .box{aspect-ratio:4/3}
+.eq .fig-texte img{height:100%;object-fit:cover;object-position:center 42%}
 .fig-texte figcaption{margin-top:8px;font-size:12.5px;color:var(--gris);letter-spacing:.03em}
 .liens-off{margin-top:26px;font-size:14.5px;color:var(--gris-clair)}
 .liens-off a{color:#fff;text-decoration-color:var(--orange-c)}
