@@ -171,8 +171,15 @@ un seul ré-encodage, sans empiler les compressions.
 - **Deux langues.** Pas de troisième pour l’instant. La procédure reste écrite
   dans [`assets/i18n/LISEZMOI.md`](assets/i18n/LISEZMOI.md) si le besoin vient.
 
-Retours de Claire du 22/09, appliqués le même jour (première passe, textes
-et 4 photos ; les 13 autres photos attendent leurs fichiers) :
+Retours de Claire du 22/09, appliqués le même jour (textes, puis photos au
+fur et à mesure de l’arrivée des fichiers) :
+
+- **Photos du 22/09 intégrées** : grande chambre, chambre du 2e, séjour en
+  automne (comparateur de saisons), aire de jeux du Mont-Olympe (carte), le
+  tiroir de la cuisine (avec une phrase sur son contenu, écrite d’après la
+  photo) et la salle de bain (douche, sèche-serviettes et vasque, sous la
+  poutre). Reçues mais non placées, une seule photo par sujet : la plaque à
+  induction, six autres vues de la salle de bain, une seconde vue du tiroir.
 
 - **« Le jardin et les environs »** partout (menu, titres, meta).
 - **Capacité « 2 à 5 personnes + 1 bébé »** partout, meta et JSON-LD compris.
