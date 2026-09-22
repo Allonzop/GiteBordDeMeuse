@@ -253,6 +253,9 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 /* deux colonnes texte + photo */
 .duo{display:grid;gap:32px;align-items:center}
 .duo .ph{overflow:hidden;border:1px solid var(--ligne);background:var(--travertin-2)}
+.duo .ph.portrait{aspect-ratio:3/4}
+.duo .ph.portrait picture,.duo .ph.portrait img{width:100%;height:100%}
+.duo .ph.portrait img{object-fit:cover;object-position:center 42%}
 .duo h2{font-size:clamp(25px,4.2vw,34px);margin-bottom:16px}
 .duo h3{font-size:20px;margin-bottom:10px}
 .duo p{color:var(--gris);font-size:16.5px;margin-bottom:14px}
@@ -347,7 +350,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 .geste h3{font-size:17.5px;margin-bottom:7px}
 .geste p{font-size:14.5px;color:var(--gris)}
 @media(min-width:640px){.gestes{grid-template-columns:repeat(2,1fr)}}
-@media(min-width:980px){.gestes{grid-template-columns:repeat(3,1fr)}}
+@media(min-width:980px){.gestes{grid-template-columns:repeat(2,1fr)}}
 
 /* ---------- contact ---------- */
 .reserver{background:var(--nuit)}
@@ -425,8 +428,8 @@ footer.pied{background:var(--nuit);color:var(--gris-clair);padding:48px 0 26px}
 .barre a{flex:1;text-align:center;text-decoration:none;font-weight:600;font-size:15px;padding:13px 8px;border-radius:3px}
 .barre .app{flex:0 1 auto;padding-inline:26px;background:var(--orange);color:#fff}
 .barre .res{border:1px solid rgba(255,255,255,.34);color:#fff}
-body{padding-bottom:78px}
-@media(min-width:1000px){.barre{display:none}body{padding-bottom:0}}
+@media(max-width:999px){footer.pied{padding-bottom:104px}}  /* la place de la barre, sans liseré clair sous le pied */
+@media(min-width:1000px){.barre{display:none}}
 
 
 /* ------------------------------------------------------------------

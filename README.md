@@ -299,9 +299,33 @@ appliqué, sauf les écarts suivants, corrigés ce soir.
 - **Écologie** : sur-titre « Le programme » (le site n’affiche aucun label),
   carte Cuisine retitrée « Pique-nique, tri et compost » pour ne pas répéter
   la phrase de Claire placée dessous.
-- **Nombres en lettres** (« deux chambres », « trois niveaux ») : gardés.
-  Claire les a relus ligne par ligne le 18/09 sans les relever, et la règle
-  « nombres en chiffres » visait les mesures et les durées.
+- **Relecture française** (aucune faute avérée) : « Pas de circulation de
+  passage » (et non « Aucune circulation », les riverains roulent), « le
+  jardin fleurit » (le « il » n’avait pas d’antécédent clair), « la Voie
+  Verte au bout de la rue » dans le chapô du hero (le « à deux pas » y
+  était deux fois depuis la nouvelle phrase de Claire), « Les quais de
+  Meuse » (la photo montre une péniche et des bateaux), « au mauvais
+  endroit » pour la note GPS, « les langues d’une bonne part des voyageurs »
+  sur Écologie, « le cas échéant, jusqu’à la fin du séjour » dans les
+  mentions. Les phrases dictées par Claire ne bougent pas, même quand la
+  relecture proposait mieux (terrasse, table, salle de bain, contenants,
+  Contact, boucles de la Meuse).
+- **Nombres** : chiffres dès qu’une phrase en contient déjà (« 70 m² sur
+  3 niveaux », « 2 chambres » dans le chiffre clé, l’intro et les meta) ;
+  lettres gardées en tête de phrase et dans le titre « Deux chambres, deux
+  étages ».
+- **JSON-LD** : `petsAllowed` retiré, aucune source n’en parle.
+- **Technique** : favicon sans espaces bruts dans l’URL `data:`,
+  `data-netlify-honeypot` (valide), `srcset` sans largeur en double quand
+  l’original est plus petit que 1 600 px (portillon, cuisine…), image de
+  partage en paysage pour Contact (la maison depuis le jardin) et Écologie
+  (le jardin au printemps).
+- **Rendu** : le second WC quitte la carte « La salle de bain » (les deux
+  cartes voisines se vidaient) pour la galerie du bas, à côté de la salle de
+  bain vue de la chambre, qui était seule sur sa grille ; gestes d’Écologie
+  en 2 × 2 (le 4e était seul sur sa ligne) ; photo de la façade cadrée en
+  3:4 sur Contact (elle faisait trois fois la hauteur du texte) ; plus de
+  liseré clair entre le pied de page et la barre mobile.
 
 ## Reste à obtenir
 
