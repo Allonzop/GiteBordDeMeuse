@@ -257,6 +257,52 @@ Audit du 11/09, appliqué le même jour :
   `doesn’t`) sauf dans les mentions légales et le « bon à savoir », calques du
   français réécrits, `contact.f.ok` aligné sur le français.
 
+### 22/09 (soir) — vérification croisée avant l’envoi à Claire
+
+Audit croisé du site contre chaque source (mail de Claire du 22/09, réponses
+du 14/09, rapport du RDV du 18/09, spécification du 22/09) : tout est
+appliqué, sauf les écarts suivants, corrigés ce soir.
+
+- **« Ouverture : toute l’année »** restait dans le tableau « Le séjour » de
+  la page Contact ; Claire avait dit le 18/09 que ce n’est pas vrai (retouche
+  11, déjà appliquée sur les deux autres pages). Ligne retirée, FR et EN.
+- **Légendes sans virgule** : « La maison vue du jardin », « Les groseilliers
+  en juin », « La Place Ducale à 10 minutes », « Le second WC à côté de l’abri
+  à vélos ». La légende « Second étage : deux lits en place, un troisième à la
+  demande » garde sa virgule : Claire l’a relue et voulue telle quelle.
+- **Virgule avant « et »** retirée dans quatre énumérations : « 85 avis et
+  100 % de demandes répondues », « 23 avis sur Google, 62 sur Airbnb et un
+  taux de réponse de 100 % », « des entreprises des Ardennes et des matériaux
+  naturels… », « Ambiance village et tous les commerces… ».
+- **Avis** : « Extraits reformulés et abrégés » (et non « traduits », qui
+  n’est vrai que pour la version anglaise).
+- **Anglais** : « Airing the room » pour « Pour aérer » (l’anglais disait
+  « Before airing »), « stone wall at the far end » (plus de « behind »),
+  « 2 to 5 guests + 1 baby » partout.
+- **Mentions légales** : hébergeur réel (GitHub Pages, tant que le site n’est
+  pas sur Netlify), formulaire décrit sans nommer un service pas encore
+  branché, crédits photo exacts (Place Ducale et bateaux sur la Meuse repris
+  de l’annonce, libres de droits selon Claire).
+- **Relecture anglaise** : « aquatic centre » pour le centre aquatique (le
+  « water sports centre » reste la base nautique), « Aquatic centre and
+  wellness area » (plus de « spa » inventé), « guests are gladly pointed to
+  the local country markets », « recycling » (et non « sorting »), « living
+  areas », « business travellers », « a terrace level with the living room »,
+  « step-free terrace », « redcurrants », point-virgule dans l’intro des
+  saisons, « for the garden’s other residents », « permanently in place ».
+- **Formulaire en anglais** : les messages de réussite et d’échec (`data-ok`,
+  `data-ko`, affichés par `site.js`) restaient en français. `i18n.js` et
+  `extraire.py` connaissent maintenant `data-i18n-ok` et `data-i18n-ko`
+  (clés `contact.f.ok`, `contact.f.ko`). Même chose pour le numéro de
+  téléphone du pied de page et du bloc Contact (`commun.tel`) : « +33 6 48 90
+  45 09 » en anglais.
+- **Écologie** : sur-titre « Le programme » (le site n’affiche aucun label),
+  carte Cuisine retitrée « Pique-nique, tri et compost » pour ne pas répéter
+  la phrase de Claire placée dessous.
+- **Nombres en lettres** (« deux chambres », « trois niveaux ») : gardés.
+  Claire les a relus ligne par ligne le 18/09 sans les relever, et la règle
+  « nombres en chiffres » visait les mesures et les durées.
+
 ## Reste à obtenir
 
 La liste complète des points à faire confirmer par Claire est dans
@@ -267,6 +313,15 @@ La liste complète des points à faire confirmer par Claire est dans
 - [ ] **Le nom de domaine.** Une fois choisi et acheté, changer `BASE_URL`
       dans le générateur, ajouter `<link rel="canonical">` (emplacement marqué
       en commentaire dans le `<head>`), puis `robots.txt` et `sitemap.xml`.
+- [ ] **La bascule sur Netlify.** Le jour où le site quitte GitHub Pages,
+      remettre Netlify comme hébergeur dans les mentions légales (`ml.heb.p`,
+      FR et EN) et nommer Netlify Forms dans le paragraphe sur le formulaire
+      (`ml.rgpd.p3`) : depuis le 22/09, les mentions décrivent l’hébergeur
+      réel, GitHub Pages, et le formulaire sans nommer de service.
+- [ ] **Deux photos des environs** viennent de l’annonce Airbnb et non des
+      envois de Claire : la Place Ducale et les bateaux sur la Meuse. Elle les
+      dit libres de droits ; les mentions légales le précisent. À remplacer par
+      des photos à elle si elle en a.
 
 À signaler à Claire, indépendamment du site :
 

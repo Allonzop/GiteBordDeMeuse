@@ -27,7 +27,9 @@
     'data-i18n-ph':      'placeholder',
     'data-i18n-aria':    'aria-label',
     'data-i18n-title':   'title',
-    'data-i18n-content': 'content'
+    'data-i18n-content': 'content',
+    'data-i18n-ok':      'data-ok',       /* messages du formulaire (site.js) */
+    'data-i18n-ko':      'data-ko'
   };
 
   var SELECTEUR = Object.keys(CIBLES).map(function (a) { return '[' + a + ']'; }).join(',');

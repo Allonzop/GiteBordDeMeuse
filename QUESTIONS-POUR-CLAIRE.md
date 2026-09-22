@@ -6,9 +6,11 @@ mémoire, ce qui a été confirmé.
 
 ## Encore ouvert
 
-- **Les photos des environs** (Voie Verte, place Ducale, port de plaisance,
-  bords de Meuse) : sont-elles bien les vôtres ? Les mentions légales les
-  créditent à votre nom. À confirmer avant la mise en ligne définitive.
+- **Deux photos des environs** ne viennent pas de vos envois : la Place Ducale
+  (page Le jardin et les environs) et les bateaux sur la Meuse (accueil),
+  reprises de votre annonce Airbnb. Vous les avez dites libres de droits ; les
+  mentions légales le précisent. Si vous retrouvez le nom des auteurs, ils
+  seront crédités ; sinon, une photo de vous à la place serait plus simple.
 - **Le compte Instagram @gite_ardennes** : est-il bien le vôtre ? Le site
   y renvoie encore (pied de page et données structurées de l’accueil) ; le
   lien sera retiré si le compte n’est pas le vôtre. Le lien Airbnb en bio
@@ -33,6 +35,9 @@ mémoire, ce qui a été confirmé.
 - **La grande chambre** : sur la photo reçue le 18/09, le lit est coupé à
   droite du cadre (on en voit le pied et la moitié du couchage). Elle est en
   place ; une prise de vue où le lit est entier serait mieux.
+- **Le portillon** : le montage reçu le 14/09 fait 720 px de large, un peu
+  juste sur les écrans haute définition. Les deux photos d’origine, en
+  pleine taille, permettraient de le refaire net.
 
 ## Confirmé le 18/09, et intégré
 
