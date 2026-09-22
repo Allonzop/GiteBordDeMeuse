@@ -26,9 +26,12 @@ mémoire, ce qui a été confirmé.
   depuis votre compte Google.
 - **Photos, si vous en avez** : le jardin au printemps (les trois mêmes vues
   qu’en été, automne et hiver : le séjour vers le jardin, la maison depuis
-  le jardin, l’allée), le portillon d’escalier, un oiseau dans le jardin, et
-  l’original haute définition du jardin en été (au moins 2 400 px de large)
-  pour le fond de l’accueil.
+  le jardin, l’allée), un oiseau dans le jardin, l’original haute définition
+  du jardin en été (au moins 2 400 px de large) pour le fond de l’accueil, et
+  **la photo du tiroir à ustensiles et couverts** annoncée pour la cuisine.
+- **La grande chambre** : sur la photo reçue le 18/09, le lit est coupé à
+  droite du cadre (on en voit le pied et la moitié du couchage). Elle est en
+  place ; une prise de vue où le lit est entier serait mieux.
 
 ## Confirmé le 18/09, et intégré
 

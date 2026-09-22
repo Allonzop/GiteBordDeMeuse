@@ -38,7 +38,7 @@ JSON hors d’un serveur. Passer par `http://` pour la tester.
 |---|---|---|
 | `index.html` | Accueil | Accroche, chiffres, jardin → emplacement → accueil → maison, avis |
 | `la-maison.html` | La maison | Pièces, chambres, équipements, **« bon à savoir »** |
-| `le-jardin.html` | Le jardin & autour | Jardin 500 m², saisons, Voie Verte, place Ducale, Meuse |
+| `le-jardin.html` | Le jardin et les environs | Jardin 500 m², saisons, Voie Verte, Place Ducale, Meuse |
 | `ecologie.html` | Écologie | Kit Interreg « Ardenne Écotourisme », rénovation |
 | `contact.html` | Contact | Formulaire de demande, téléphone, accès, carte |
 | `mentions-legales.html` | Mentions légales | Obligation légale, hors forfait 5 pages |
@@ -171,6 +171,28 @@ un seul ré-encodage, sans empiler les compressions.
 - **Deux langues.** Pas de troisième pour l’instant. La procédure reste écrite
   dans [`assets/i18n/LISEZMOI.md`](assets/i18n/LISEZMOI.md) si le besoin vient.
 
+Retours de Claire du 22/09, appliqués le même jour (première passe, textes
+et 4 photos ; les 13 autres photos attendent leurs fichiers) :
+
+- **« Le jardin et les environs »** partout (menu, titres, meta).
+- **Capacité « 2 à 5 personnes + 1 bébé »** partout, meta et JSON-LD compris.
+- **Voie Verte : 130 km**, vers Sedan et Mouzon en amont, jusqu’à Givet en
+  aval ; « Place Ducale » avec majuscule ; « arrêt de bus de la ligne 7 ».
+- **Réassurance** : « Réponse rapide, avec les disponibilités et le tarif. »
+- **Hero** : « Une maison ouverte sur un grand jardin à deux pas de la Meuse »,
+  sans point final ; photo avant le texte sur téléphone.
+- **Jamais « vieux mur »** (toujours « mur de pierre »), jamais « derrière »
+  à propos du mur ou de la Meuse ; écureuil au singulier ; « fraises des bois ».
+- **La maison** : « années 20 », pièce à vivre réécrite, « bon à savoir »
+  raccourci (les escaliers, la salle de bain par la chambre, le lavabo du
+  second, l’accessibilité), section famille « Pour les familles ou les amis ».
+- **Écologie** : cinq gestes → quatre (« Partout » supprimé), « Pour aérer ».
+- **Liens officiels** en bas de « Autour du gîte » : ADT des Ardennes, Office
+  de tourisme de Charleville-Mézières, Ardenne Écotourisme (URL vérifiées).
+- **Cartes d’activités** : la mention orange (distance / temps) au-dessus du
+  titre ; les titres avaient une couleur héritée du fond sombre et étaient
+  invisibles, corrigé.
+
 Audit du 11/09, appliqué le même jour :
 
 - **Les notes sont données séparément** dès le hero : 4,8/5 sur Google, 4,77/5
@@ -193,14 +215,14 @@ Audit du 11/09, appliqué le même jour :
 - **La barrière d’escalier n’est pas affirmée** : l’audit proposait de la
   mettre en avant dans l’argument famille, mais rien ne la confirme. Elle est
   dans les questions pour Claire.
-- **Le hero de l’accueil est en fond photo** à partir de 900 px de large,
-  décision d’Allonzo après essai : la photo du jardin couvre la section, deux
-  dégradés par-dessus (lisibilité, puis teinte brune depuis le haut à gauche),
-  le texte au-dessus. Contraste du titre et du sous-titre vérifié ≥ 4,5:1 sur
-  le pixel le plus clair, de 1 024 à 2 560 px. Sous 900 px, la photo passe sous
-  le texte, pleine largeur : sur un téléphone, un fond sous un voile ne montre
-  rien. L’original fait 1 920 px ; au-delà de 1 920 px d’écran il est agrandi.
-  Un original d’au moins 2 400 px est demandé à Claire.
+- **Le hero de l’accueil est en fond photo** à partir de 900 px de large.
+  À la demande de Claire (22/09), **aucun voile ni dégradé sur la photo** : la
+  lisibilité tient au cadrage (fenêtre basse de la photo, feuillage sombre sous
+  le texte), à une ombre portée sur le texte et à un sous-titre en graisse
+  moyenne. Sur les taches les plus claires de la photo (roses pâles), le
+  contraste mesuré descend sous 4,5:1 ; c’est le prix de l’absence de voile,
+  assumé. Sous 900 px, la photo vient **avant** le texte, pleine largeur.
+  L’original fait 1 920 px ; au-delà, il est agrandi.
 - **La Meuse à Vélo : 130 km jusqu’à Givet**, puis le réseau belge (et non
   « 85 km jusqu’à la frontière »). Rimbaud : le musée est dans le vieux moulin,
   la maison où il a vécu est sur le même quai ; sa tombe est au cimetière, pas

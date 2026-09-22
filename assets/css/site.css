@@ -147,21 +147,26 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
    La couleur de fond reste celle du hero tant que la photo n'est pas arrivée. */
 .hero.fond{position:relative;overflow:hidden}
 @media(min-width:900px){
-  .hero.fond{min-height:620px;display:flex;align-items:center;padding:72px 0}
+  .hero.fond{min-height:700px;display:flex;align-items:center;padding:72px 0}
   .hero.fond .wrap{position:relative;z-index:2;width:100%}
   .hero.fond .hero-grid{grid-template-columns:1fr;max-width:620px}
   .hero.fond .hero-ph{position:absolute;inset:0;z-index:0;border:0}
   .hero.fond .hero-ph picture,.hero.fond .hero-ph img{width:100%;height:100%}
   .hero.fond .hero-ph img{object-fit:cover;object-position:72% 62%}
-  .hero.fond::before{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;
-    background:linear-gradient(105deg,rgba(43,23,18,.95) 0%,rgba(43,23,18,.80) 40%,rgba(43,23,18,.32) 72%,rgba(43,23,18,.06) 100%),
-               radial-gradient(120% 90% at 0% 0%,rgba(58,33,27,.78),transparent 62%)}
-  .hero.fond p.lead,.hero.fond .reassure{color:var(--travertin)}
-  .hero.fond .note{background:rgba(43,23,18,.55)}
+  /* pas de voile ni de dégradé sur la photo (demande de la cliente) : la
+     lisibilité tient au cadrage — le texte est sur la partie sombre, à gauche —
+     et à une ombre portée légère sur le texte. */
+  .hero.fond .hero-ph img{object-position:50% 100%}
+  .hero.fond .hero-grid{max-width:560px}
+  .hero.fond p.lead{max-width:40ch;font-weight:500}
+  .hero.fond .sur,.hero.fond h1,.hero.fond p,.hero.fond .note{text-shadow:0 0 2px rgba(0,0,0,.9),0 1px 3px rgba(0,0,0,.85),0 2px 18px rgba(0,0,0,.7)}
+  .hero.fond p.lead,.hero.fond .reassure{color:#fff}
+  .hero.fond .note{background:none;border-color:rgba(255,255,255,.45)}
 }
 @media(max-width:899px){
-  .hero.fond{padding-bottom:0}
-  .hero.fond .hero-ph{margin-top:34px;border:0;border-top:1px solid rgba(255,255,255,.22)}
+  /* sur téléphone, la photo vient avant le texte */
+  .hero.fond{display:flex;flex-direction:column;padding-top:0}
+  .hero.fond .hero-ph{order:-1;margin:0 0 30px;border:0;border-bottom:1px solid rgba(255,255,255,.22)}
 }
 
 /* hero court, pour les pages intérieures */
@@ -225,6 +230,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 /* point d'ancrage du recadrage, quand le sujet n'est pas au centre */
 .gal img.bas{object-position:center 72%}
 .gal img.haut-cadre{object-position:center 28%}
+.gal img.mi{object-position:center 58%}
 /* affiches et documents : on les montre en entier, on ne les recadre pas */
 .gal img.doc{object-fit:contain;background:var(--travertin-2)}
 .gal figcaption{margin-top:8px;font-size:12.5px;color:var(--gris);letter-spacing:.03em}
@@ -292,9 +298,13 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 
 .liste-a{display:grid;gap:16px}
 .a-item{background:#fff;border:1px solid var(--ligne);border-left:3px solid var(--ocre);padding:20px 22px}
-.a-item h3{font-size:18px;margin-bottom:7px}
+.a-item h3{font-size:18px;margin-bottom:7px;color:var(--encre)}
 .a-item p{font-size:14.5px;color:var(--gris)}
-.a-item .d{display:inline-block;margin-top:9px;font-size:12.5px;font-weight:600;color:var(--orange-txt)}
+.a-item .d{display:block;margin:0 0 7px;font-size:12.5px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--orange-txt)}
+.a-item .box{overflow:hidden;aspect-ratio:16/9;margin:-20px -22px 16px;border-bottom:1px solid var(--ligne);background:var(--travertin-2)}
+.a-item .box img{width:100%;height:100%;object-fit:cover}
+.liens-off{margin-top:26px;font-size:14.5px;color:var(--gris-clair)}
+.liens-off a{color:#fff;text-decoration-color:var(--orange-c)}
 @media(min-width:700px){.liste-a{grid-template-columns:repeat(2,1fr)}}
 
 /* ---------- bon à savoir ---------- */
@@ -304,6 +314,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 .savoir dl{display:grid;gap:18px}
 .savoir dt{font-weight:600;font-size:15.5px;margin-bottom:4px;color:var(--brique)}
 .savoir dd{font-size:15px;color:var(--gris)}
+.savoir dd.vide{display:none}
 @media(min-width:820px){.savoir dl{grid-template-columns:repeat(2,1fr);gap:22px 34px}}
 .savoir-court{margin-top:26px;padding:16px 18px;background:#fff;border:1px solid var(--ligne);
   border-left:3px solid var(--brique);font-size:14.5px;color:var(--gris)}
