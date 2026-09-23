@@ -152,19 +152,16 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
   .hero.fond .hero-ph{position:absolute;inset:0;z-index:0;border:0}
   .hero.fond .hero-ph picture,.hero.fond .hero-ph img{width:100%;height:100%}
   .hero.fond .hero-ph img{object-fit:cover;object-position:72% 62%}
-  /* Lisibilité (22/09) : la photo reste intacte à droite, sans voile général.
-     Derrière la colonne de texte seulement, un dégradé brun ancré sur la
-     colonne (même rendu à toutes les largeurs) s'ajoute à l'ombre portée :
-     contraste mesuré sur le pire pixel de chaque bloc de texte, 6:1 au
-     moins de 1024 à 1920 px (8:1 et plus sur le titre) ; le petit sur-titre
-     ocre est éclairci pour la même raison. */
+  /* Lisibilité (23/09) : rien sur la photo, ni voile ni dégradé (demande de la
+     cliente). Les lettres portent leur propre contour sombre (paint-order +
+     text-stroke), plus un halo : le texte se détache de n'importe quelle zone
+     de la photo, claire ou sombre, sans rien poser dessus. */
   .hero.fond .hero-ph img{object-position:50% 100%}
-  .hero.fond .hero-grid{position:relative}
-  .hero.fond .hero-grid::before{content:"";position:absolute;z-index:-1;top:-600px;bottom:-600px;left:-100vw;right:-440px;pointer-events:none;background:linear-gradient(90deg,rgba(43,23,18,.9) 0,rgba(43,23,18,.9) calc(100% - 1040px),rgba(43,23,18,.8) calc(100% - 640px),rgba(43,23,18,.45) calc(100% - 440px),rgba(43,23,18,0) 100%)}
-  .hero.fond .sur{color:#F3CD8E}
   .hero.fond .hero-grid{max-width:560px}
   .hero.fond p.lead{max-width:40ch;font-weight:500}
-  .hero.fond .sur,.hero.fond h1,.hero.fond p,.hero.fond .note{text-shadow:0 0 2px rgba(0,0,0,.9),0 1px 3px rgba(0,0,0,.85),0 2px 18px rgba(0,0,0,.7)}
+  .hero.fond .sur,.hero.fond h1,.hero.fond p,.hero.fond .note{paint-order:stroke fill;-webkit-text-stroke:2.5px rgba(30,16,10,.92);text-shadow:0 0 6px rgba(0,0,0,.8),0 1px 14px rgba(0,0,0,.6)}
+  .hero.fond .sur,.hero.fond p.lead,.hero.fond .reassure,.hero.fond .note{-webkit-text-stroke-width:1.6px}
+  .hero.fond .sur{color:#F3CD8E}
   .hero.fond p.lead,.hero.fond .reassure{color:#fff}
   .hero.fond .note{background:none;border-color:rgba(255,255,255,.45)}
 }

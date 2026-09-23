@@ -232,20 +232,16 @@ Audit du 11/09, appliqué le même jour :
   mettre en avant dans l’argument famille, mais rien ne la confirme. Elle est
   dans les questions pour Claire.
 - **Le hero de l’accueil est en fond photo** à partir de 900 px de large.
-  Claire avait demandé (18/09) aucun voile ni dégradé sur la photo ; sans
-  rien, le texte tombait sur les roses pâles et le contraste descendait à
-  1:1 par endroits (illisible, constaté par Allonzo le 22/09). Compromis
-  retenu le 22/09 : **pas de voile général**, la photo reste intacte à droite
-  (maison, terrasse), mais un **dégradé brun ancré sur la colonne de texte**
-  (même rendu à toutes les largeurs, `.hero-grid::before`) s’ajoute à l’ombre
-  portée. Contraste mesuré sur le pire pixel de chaque bloc de texte, blanc
-  sur la photo rendue : 6:1 au moins de 1 024 à 1 920 px, 8:1 et plus sur
-  le titre ; le petit sur-titre ocre est éclairci (`#F3CD8E`) pour tenir
-  aussi (scripts `hero_var.js` + `hero_contraste.py`, hors dépôt). Un
-  cartouche translucide derrière le texte a été essayé aussi (10:1 partout)
-  et gardé en réserve, plus lourd visuellement. Sous 900 px, la photo vient
-  **avant** le texte, pleine largeur. L’original fait 1 920 px ; au-delà, il
-  est agrandi.
+  Claire veut **rien sur la photo** : ni voile, ni dégradé, ni cartouche
+  (redit par Allonzo le 23/09). Sans rien, le texte tombait sur les roses
+  pâles et devenait illisible. Solution du 23/09 : la photo n’est pas
+  touchée, ce sont **les lettres qui portent leur propre contour sombre**
+  (`paint-order:stroke fill` + `-webkit-text-stroke`, 2,5 px sur le titre,
+  1,6 px sur le reste) avec un halo léger. Le texte se détache ainsi de
+  n’importe quelle zone, claire ou sombre. Un dégradé localisé (22/09) et un
+  cartouche translucide ont été essayés et écartés pour cette raison. Sous
+  900 px, la photo vient **avant** le texte, pleine largeur. L’original fait
+  1 920 px ; au-delà, il est agrandi.
 - **La Meuse à Vélo : 130 km jusqu’à Givet**, puis le réseau belge (et non
   « 85 km jusqu’à la frontière »). Rimbaud : le musée est dans le vieux moulin,
   la maison où il a vécu est sur le même quai ; sa tombe est au cimetière, pas
