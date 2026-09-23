@@ -163,7 +163,11 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
   .hero.fond .sur,.hero.fond p.lead,.hero.fond .reassure,.hero.fond .note{-webkit-text-stroke-width:1.6px}
   .hero.fond .sur{color:#F3CD8E}
   .hero.fond p.lead,.hero.fond .reassure{color:#fff}
-  .hero.fond .note{background:none;border-color:rgba(255,255,255,.45)}
+  /* le bouton clair et l'encadré des notes reçoivent un fond brun translucide :
+     sans lui, leur texte blanc se perdait dans la photo. */
+  .hero.fond .btn-g{background:rgba(43,23,18,.72);border-color:rgba(255,255,255,.5);-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px)}
+  .hero.fond .btn-g:hover{background:rgba(43,23,18,.86)}
+  .hero.fond .note{background:rgba(43,23,18,.72);border-color:rgba(255,255,255,.5);-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px);paint-order:normal;-webkit-text-stroke:0;text-shadow:none}
 }
 @media(max-width:899px){
   /* sur téléphone, la photo vient avant le texte */
