@@ -55,7 +55,7 @@ assets/
   i18n/fr.json        dictionnaire français (référence)
   i18n/en.json        dictionnaire anglais
   i18n/LISEZMOI.md    procédure pour une langue supplémentaire
-photos/               43 photos, 800/1200/1600 px, WebP + repli JPEG (+ 1920 px pour le hero)
+photos/               44 photos, 800/1200/1600 px, WebP + repli JPEG (+ 1920 px pour le hero)
 ```
 
 ## Choix techniques
@@ -306,6 +306,16 @@ appliqué, sauf les écarts suivants, corrigés ce soir.
   mentions. Les phrases dictées par Claire ne bougent pas, même quand la
   relecture proposait mieux (terrasse, table, salle de bain, contenants,
   Contact, boucles de la Meuse).
+- **23/09, retours d’Allonzo** : titre de l’accueil « Gîte Saint-Aubin — maison
+  et grand jardin au bord de la Meuse, Charleville-Mézières » (plus de
+  « maison de famille », le cadrage famille a quitté le site) ; quatrième
+  repère de l’accueil « 130 km de Voie Verte » à la place de « Pensée pour
+  les familles » ; « Pas de circulation : la rue… » ; dans le « Bon à
+  savoir », « La salle de bain » en sous-titre et la phrase complète dessous
+  (le sous-titre seul faisait un trou) ; section salle de bain : une seconde
+  photo de Claire (le meuble-vasque, `sdb-vasque`, cadrée en 4:3) sous le
+  titre, pour remplir la colonne vidée par la suppression des paragraphes.
+  44 photos.
 - **Nombres** : chiffres dès qu’une phrase en contient déjà (« 70 m² sur
   3 niveaux », « 2 chambres » dans le chiffre clé, l’intro et les meta) ;
   lettres gardées en tête de phrase et dans le titre « Deux chambres, deux
