@@ -55,7 +55,7 @@ assets/
   i18n/fr.json        dictionnaire français (référence)
   i18n/en.json        dictionnaire anglais
   i18n/LISEZMOI.md    procédure pour une langue supplémentaire
-photos/               43 photos, 800/1200/1600 px, WebP + repli JPEG (+ 1920 px pour le hero)
+photos/               45 photos, 800/1200/1600 px, WebP + repli JPEG (+ 1920 px pour le hero)
 ```
 
 ## Choix techniques
@@ -378,12 +378,17 @@ ligne définitive**.
   20 h, départ avant 11 h » (plus de boîte à clés, idem Contact).
 - **Hero** : grisé nettement éclairci (contour 2 px à 80 %, halo léger,
   fonds du bouton et des notes à 55 %), titre toujours lisible.
-- **En attente** : les 4 photos jointes au mail du 27/09 (tiroir complet,
-  tri/compost, jardin, capture de la chambre du 2e sur le site de l’Office de
-  tourisme) — le connecteur Gmail ne télécharge pas les pièces jointes.
-  La photo de l’OT ne se reprend pas sans l’original et son accord.
-  Claire se demande aussi si le bouton « Demander des dates » doit être dès
-  le hero : à trancher par Allonzo.
+- **Ses 4 photos du 27/09** (déposées par Allonzo le 29/09) : le tiroir
+  complet remplace l’ancienne photo du tiroir (`tiroir-couverts`, même nom,
+  boîte `libre` pour ne pas le recadrer, phrase du contenu réécrite d’après la
+  photo) ; la maison vue du jardin en fin de journée (`jardin-maison-soir`)
+  remplace la vue Airbnb dans la galerie du jardin (l’ancienne reste l’image de
+  partage de Contact) ; le bac à compost (`bac-compost`, cadré carré) sous le
+  paragraphe « En arrivant » d’Écologie ; la capture d’écran de l’Office de
+  tourisme (chambre du 2e) est gardée dans les originaux, **non utilisée** :
+  il faut l’original et l’accord de l’Office ou du photographe. 45 photos.
+- Le bouton « Demander des dates » reste dans le hero (tranché par Allonzo le
+  29/09) ; la question du kit trilingue n’est pas relevée dans la réponse.
 
 ## Reste à obtenir
 

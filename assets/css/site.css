@@ -314,6 +314,9 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 .a-item .box{overflow:hidden;aspect-ratio:16/9;margin:-20px -22px 16px;border-bottom:1px solid var(--ligne);background:var(--travertin-2)}
 .a-item .box img{width:100%;height:100%;object-fit:cover}
 .fig-texte{margin-top:24px}
+.fig-texte.petite{max-width:360px}
+.gal .box.libre{aspect-ratio:auto}
+.gal .box.libre img{height:auto}
 .fig-texte .box{overflow:hidden;border:1px solid var(--ligne);background:var(--travertin-2)}
 .fig-texte img{width:100%}
 .eq .fig-texte .box{aspect-ratio:4/3}
