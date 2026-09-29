@@ -32,6 +32,13 @@ mémoire, ce qui a été confirmé.
   jardin, la maison depuis le jardin, l’allée), un oiseau dans le jardin, et
   l’original haute définition du jardin en été (au moins 2 400 px de large)
   pour le fond de l’accueil. Vos 17 photos du 18 et du 21/09 sont intégrées.
+- **La photo de la chambre du second sur le site de l’Office de tourisme**
+  (capture envoyée le 27/09) : elle ne se reprend pas telle quelle. Il faut
+  l’original et l’accord de l’Office (ou du photographe).
+- **Le bouton « Demander des dates » dès le haut de l’accueil** : vous vous
+  demandez s’il ne serait pas mieux ailleurs. C’est l’usage sur les sites de
+  location, pour que le visiteur pressé trouve tout de suite ; il reste
+  discret dans la barre du haut sur les autres pages.
 - **La grande chambre** : sur la photo reçue le 18/09, le lit est coupé à
   droite du cadre (on en voit le pied et la moitié du couchage). Elle est en
   place ; une prise de vue où le lit est entier serait mieux.

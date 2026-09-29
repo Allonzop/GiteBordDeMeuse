@@ -55,7 +55,7 @@ assets/
   i18n/fr.json        dictionnaire français (référence)
   i18n/en.json        dictionnaire anglais
   i18n/LISEZMOI.md    procédure pour une langue supplémentaire
-photos/               44 photos, 800/1200/1600 px, WebP + repli JPEG (+ 1920 px pour le hero)
+photos/               43 photos, 800/1200/1600 px, WebP + repli JPEG (+ 1920 px pour le hero)
 ```
 
 ## Choix techniques
@@ -333,6 +333,58 @@ appliqué, sauf les écarts suivants, corrigés ce soir.
   3:4 sur Contact (elle faisait trois fois la hauteur du texte) ; plus de
   liseré clair entre le pied de page et la barre mobile.
 
+### 29/09 — mail de Claire du 27/09 et décisions d’Allonzo du 28/09
+
+Site **dépublié par Allonzo le 28/09** (Settings › Pages › source None) :
+Claire ne veut pas que la version en cours soit consultable. Les commits sur
+`main` ne remettent rien en ligne ; pour rouvrir, Settings › Pages › Branch
+`main` / `(root)`. Ajouté en attendant : `<meta name="robots"
+content="noindex">` sur les six pages, **à retirer le jour de la mise en
+ligne définitive**.
+
+- **Adresse affichée** : `gitesaintaubin@hotmail.com` partout (constante
+  `MAIL`, JSON-LD, mentions, formulaire, anglais). ⚠️ Avant toute
+  réouverture, vérifier avec Claire que le transfert Hotmail → Gmail est
+  actif, sinon les messages se perdent. Solution durable au nom de domaine :
+  `contact@gitesaintaubin.fr` redirigée vers son Gmail.
+- **Graphie** : « Club transfrontalier Ardenne Écotourism » (accueil),
+  « Ardenne Écotourism » sans e final partout en français, « Ardenne
+  Ecotourism » en anglais. Lien du programme → rubrique écotourisme de
+  VisitArdenne (`visitardenne.com/fr/preparez-votre-sejour/ecotourisme-ardenne`,
+  vérifiée, le gîte y figure), à la place de la page Interreg.
+- **La maison** : « Jeux, documentation et livres sont à disposition » ;
+  légendes de la cuisine retirées ; blocs « Au premier » / « Au second »
+  sous chaque photo de chambre (légendes retirées, elles répétaient les
+  blocs), « Possibilité de mettre un lit bébé », plus de phrase de capacité
+  au second ; salle de bain : la photo du meuble-vasque du 23/09 retirée
+  (doublon selon Claire), photo puis bloc dans un `.duo` (sur téléphone le
+  bloc est sous la photo) ; « décorée pour les enfants », « Les enfants
+  adorent et les adultes aussi ! » ; chauffage au sol « au rez-de-chaussée et
+  dans la salle de bain » (Écologie aussi) ; « Bon à savoir » : photos de
+  l’enfilade et du second WC remontées dans leurs points (carré 1:1), « Un
+  second WC est accessible du jardin », accessibilité réécrite dans son ordre,
+  points réordonnés (escaliers, accessibilité, puis les deux points à photo)
+  pour des lignes équilibrées ; galerie du bas retirée.
+- **Le jardin** : légende « Le jardin vu du fond de la parcelle » retirée ;
+  carte « Le quartier » en tête, texte de Claire (Montcy-Saint-Pierre) ;
+  carte Voie Verte : sa phrase (« à pied, à vélo ou en roller ») puis
+  l’EuroVelo 19 gardée ; Place Ducale avec sa photo, galerie du bas à trois ;
+  « Le port de plaisance et la piscine ».
+- **Écologie** : phrase « Le kit est édité… » retirée ; lien VisitArdenne
+  sur « rubrique écotourisme ». La phrase « Le kit du programme est
+  trilingue » (intro « En arrivant ») est gardée : Claire dit ne pas l’avoir
+  trouvée, l’affiche photographiée est bien en trois langues.
+- **Accueil** : « À découvrir autour → » ; bloc hôte « Arrivée entre 17 h et
+  20 h, départ avant 11 h » (plus de boîte à clés, idem Contact).
+- **Hero** : grisé nettement éclairci (contour 2 px à 80 %, halo léger,
+  fonds du bouton et des notes à 55 %), titre toujours lisible.
+- **En attente** : les 4 photos jointes au mail du 27/09 (tiroir complet,
+  tri/compost, jardin, capture de la chambre du 2e sur le site de l’Office de
+  tourisme) — le connecteur Gmail ne télécharge pas les pièces jointes.
+  La photo de l’OT ne se reprend pas sans l’original et son accord.
+  Claire se demande aussi si le bouton « Demander des dates » doit être dès
+  le hero : à trancher par Allonzo.
+
 ## Reste à obtenir
 
 La liste complète des points à faire confirmer par Claire est dans
@@ -343,6 +395,9 @@ La liste complète des points à faire confirmer par Claire est dans
 - [ ] **Le nom de domaine.** Une fois choisi et acheté, changer `BASE_URL`
       dans le générateur, ajouter `<link rel="canonical">` (emplacement marqué
       en commentaire dans le `<head>`), puis `robots.txt` et `sitemap.xml`.
+- [ ] **Retirer `<meta name="robots" content="noindex">`** (`commun.py`,
+      `tete()`) le jour de la mise en ligne définitive, sinon le site
+      n’apparaîtra jamais sur Google.
 - [ ] **La bascule sur Netlify.** Le jour où le site quitte GitHub Pages,
       remettre Netlify comme hébergeur dans les mentions légales (`ml.heb.p`,
       FR et EN) et nommer Netlify Forms dans le paragraphe sur le formulaire

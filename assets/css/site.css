@@ -159,15 +159,15 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
   .hero.fond .hero-ph img{object-position:50% 100%}
   .hero.fond .hero-grid{max-width:560px}
   .hero.fond p.lead{max-width:40ch;font-weight:500}
-  .hero.fond .sur,.hero.fond h1,.hero.fond p,.hero.fond .note{paint-order:stroke fill;-webkit-text-stroke:2.5px rgba(30,16,10,.92);text-shadow:0 0 6px rgba(0,0,0,.8),0 1px 14px rgba(0,0,0,.6)}
-  .hero.fond .sur,.hero.fond p.lead,.hero.fond .reassure,.hero.fond .note{-webkit-text-stroke-width:1.6px}
+  .hero.fond .sur,.hero.fond h1,.hero.fond p,.hero.fond .note{paint-order:stroke fill;-webkit-text-stroke:2px rgba(30,16,10,.8);text-shadow:0 0 4px rgba(0,0,0,.45),0 1px 10px rgba(0,0,0,.35)}
+  .hero.fond .sur,.hero.fond p.lead,.hero.fond .reassure,.hero.fond .note{-webkit-text-stroke-width:1.3px}
   .hero.fond .sur{color:#F3CD8E}
   .hero.fond p.lead,.hero.fond .reassure{color:#fff}
   /* le bouton clair et l'encadré des notes reçoivent un fond brun translucide :
      sans lui, leur texte blanc se perdait dans la photo. */
-  .hero.fond .btn-g{background:rgba(43,23,18,.72);border-color:rgba(255,255,255,.5);-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px)}
+  .hero.fond .btn-g{background:rgba(43,23,18,.55);border-color:rgba(255,255,255,.5);-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px)}
   .hero.fond .btn-g:hover{background:rgba(43,23,18,.86)}
-  .hero.fond .note{background:rgba(43,23,18,.72);border-color:rgba(255,255,255,.5);-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px);paint-order:normal;-webkit-text-stroke:0;text-shadow:none}
+  .hero.fond .note{background:rgba(43,23,18,.55);border-color:rgba(255,255,255,.5);-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px);paint-order:normal;-webkit-text-stroke:0;text-shadow:none}
 }
 @media(max-width:899px){
   /* sur téléphone, la photo vient avant le texte */
@@ -302,6 +302,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 .eq{background:#fff;padding:24px 22px}
 .eq h3{font-size:19px;margin-bottom:9px}
 .eq p{font-size:14.5px;color:var(--gris)}
+.gal figure .eq{margin-top:14px;border:1px solid var(--ligne)}
 @media(min-width:640px){.equip{grid-template-columns:repeat(2,1fr)}}
 @media(min-width:980px){.equip{grid-template-columns:repeat(3,1fr)}}
 
@@ -330,6 +331,10 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 .savoir dt{font-weight:600;font-size:15.5px;margin-bottom:4px;color:var(--brique)}
 .savoir dd{font-size:15px;color:var(--gris)}
 .savoir dd.vide{display:none}
+.savoir dd figure{margin:14px 0 0}
+.savoir dd .box{overflow:hidden;border:1px solid var(--ligne);aspect-ratio:1/1;background:var(--travertin-2)}
+.savoir dd .box picture{display:block;height:100%}
+.savoir dd .box img{width:100%;height:100%;object-fit:cover;object-position:center 40%}
 @media(min-width:820px){.savoir dl{grid-template-columns:repeat(2,1fr);gap:22px 34px}}
 .savoir-court{margin-top:26px;padding:16px 18px;background:#fff;border:1px solid var(--ligne);
   border-left:3px solid var(--brique);font-size:14.5px;color:var(--gris)}
