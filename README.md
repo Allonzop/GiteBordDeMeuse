@@ -379,9 +379,10 @@ ligne définitive**.
 - **Hero** : grisé nettement éclairci (contour 2 px à 80 %, halo léger,
   fonds du bouton et des notes à 55 %), titre toujours lisible.
 - **Ses 4 photos du 27/09** (déposées par Allonzo le 29/09) : le tiroir
-  complet remplace l’ancienne photo du tiroir (`tiroir-couverts`, même nom,
-  boîte `libre` pour ne pas le recadrer, phrase du contenu réécrite d’après la
-  photo) ; la maison vue du jardin en fin de journée (`jardin-maison-soir`)
+  complet remplace l’ancienne photo du tiroir (`tiroir-couverts`, même nom ;
+  la galerie de la cuisine passe en format 2:1, `.gal.panoramique`, pour
+  garder presque tout le tiroir sans couper la cafetière ; phrase du contenu
+  réécrite d’après la photo) ; la maison vue du jardin en fin de journée (`jardin-maison-soir`)
   remplace la vue Airbnb dans la galerie du jardin (l’ancienne reste l’image de
   partage de Contact) ; le bac à compost (`bac-compost`, cadré carré) sous le
   paragraphe « En arrivant » d’Écologie ; la capture d’écran de l’Office de
