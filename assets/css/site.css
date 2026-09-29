@@ -314,7 +314,6 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 .a-item .box{overflow:hidden;aspect-ratio:16/9;margin:-20px -22px 16px;border-bottom:1px solid var(--ligne);background:var(--travertin-2)}
 .a-item .box img{width:100%;height:100%;object-fit:cover}
 .fig-texte{margin-top:24px}
-.fig-texte.petite{max-width:360px}
 .gal.panoramique .box{aspect-ratio:2/1}
 .fig-texte .box{overflow:hidden;border:1px solid var(--ligne);background:var(--travertin-2)}
 .fig-texte img{width:100%}
@@ -357,6 +356,9 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 .geste .ou{font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--orange-txt);display:block;margin-bottom:7px}
 .geste h3{font-size:17.5px;margin-bottom:7px}
 .geste p{font-size:14.5px;color:var(--gris)}
+.geste.avec-photo .box{overflow:hidden;aspect-ratio:16/9;margin:-22px -20px 16px;border-bottom:1px solid var(--ligne);background:var(--travertin-2)}
+.geste.avec-photo .box img{width:100%;height:100%;object-fit:cover}
+.geste.avec-photo .box picture{display:block;height:100%}
 @media(min-width:640px){.gestes{grid-template-columns:repeat(2,1fr)}}
 @media(min-width:980px){.gestes{grid-template-columns:repeat(2,1fr)}}
 

@@ -390,6 +390,16 @@ ligne définitive**.
   il faut l’original et l’accord de l’Office ou du photographe. 45 photos.
 - Le bouton « Demander des dates » reste dans le hero (tranché par Allonzo le
   29/09) ; la question du kit trilingue n’est pas relevée dans la réponse.
+- **Retours d’Allonzo du 29/09** : la photo de la chambre du second est celle
+  du site de l’Office de tourisme (`chambre-du-2e-ot`, 1 024 px, droits
+  vérifiés par Allonzo, crédit « Office de tourisme Charleville / Sedan en
+  Ardenne » dans les mentions) ; le bac à compost seul en haut d’Écologie
+  faisait pauvre : les quatre gestes reçoivent chacun une photo en tête de
+  carte (`.geste.avec-photo`, 16:9), salle de bain, cuisine, couvercle du
+  bac à compost cadré paysage, salon vers le jardin, grille 2 × 2 équilibrée.
+  Hero : composite « 23/09 / actuel / test plus clair » envoyé à Allonzo pour
+  montrer à Claire ; la version actuelle est le compromis retenu, le test
+  plus clair rend l’encadré des notes illisible.
 
 ## Reste à obtenir
 
