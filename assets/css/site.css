@@ -333,6 +333,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 .savoir dd{font-size:15px;color:var(--gris)}
 .savoir dd.vide{display:none}
 .savoir dd figure{margin:14px 0 0}.savoir dd figure.deux{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(min-width:820px){.savoir dl>div:has(figure.deux){display:flex;flex-direction:column}.savoir dl>div:has(figure.deux) dd{display:flex;flex-direction:column;flex:1}.savoir dd figure.deux{flex:1;min-height:0}.savoir dd figure.deux .box{aspect-ratio:auto;height:100%}}
 .savoir dd .box{overflow:hidden;border:1px solid var(--ligne);aspect-ratio:1/1;background:var(--travertin-2)}
 .savoir dd .box picture{display:block;height:100%}
 .savoir dd .box img{width:100%;height:100%;object-fit:cover;object-position:center 40%}
