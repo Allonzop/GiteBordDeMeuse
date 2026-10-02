@@ -466,6 +466,13 @@ retirée, carte compost sans étiquette et photo sous le texte
 « Sa rénovation », « l'eau du robinet pour la boisson », épicerie associative
 La Marcasserie et ses 70 producteurs.
 
-Reste : ses nouvelles photos (sablier, carafe, stick sur le radiateur, lavabo
-du haut) à placer dès qu'elles sont récupérées ; la tuile « + 1 bébé » et la
-meta description n'ont pas été touchées (elle n'a parlé que de l'intro).
+Ses photos du 01/10 sont placées dans la foulée (13h30-14h00) : lavabo du
+second sous « La chambre du second a son lavabo », à côté du WC du jardin
+(`figure.deux`, les deux vignettes remplissent la hauteur de la rangée) ;
+sablier sur la paroi de douche, carafe sur le rebord de la fenêtre et stick
+sur le radiateur en tête des cartes d'Écologie, recadrés en 16:9 autour des
+stickers. Gardées dans les originaux sans être placées : la vue large de la
+chambre du second (fenêtre cintrée, placards rouges) et l'interrupteur avec
+son stick, qu'elle juge elle-même « peut-être pas nécessaire ». La tuile
+« + 1 bébé » et la meta description n'ont pas été touchées (elle n'a parlé
+que de l'intro).
