@@ -452,3 +452,20 @@ Le site est vérifié à chaque génération :
 
 Le formulaire, lui, n’est pas testable ici : il ne fonctionnera que sur Netlify.
 Il reste à essayer le menu sur un vrai téléphone, iOS et Android.
+
+## 02/10 — retouches manuscrites de Claire (mail du 01/10), avant le RDV de 14h15
+
+Claire a envoyé ses modifications en deux pages manuscrites photographiées.
+Tout est appliqué en FR et EN (commit `0ecf64e`) : intro sans « + 1 bébé »,
+« Un espace relaxant », « Un coin pour se détendre », « J'ai travaillé de
+nombreuses années dans le tourisme », paragraphe du tiroir retiré, carte
+« Les boucles de la Meuse » en pleine largeur en bas de la grille
+(`.liste-a .a-item.large`), Écologie : « sticks », phrase du kit trilingue
+retirée, carte compost sans étiquette et photo sous le texte
+(`.geste.photo-bas`), carte « Chambres », « Ardennes françaises »,
+« Sa rénovation », « l'eau du robinet pour la boisson », épicerie associative
+La Marcasserie et ses 70 producteurs.
+
+Reste : ses nouvelles photos (sablier, carafe, stick sur le radiateur, lavabo
+du haut) à placer dès qu'elles sont récupérées ; la tuile « + 1 bébé » et la
+meta description n'ont pas été touchées (elle n'a parlé que de l'intro).
