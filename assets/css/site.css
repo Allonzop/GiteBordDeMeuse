@@ -322,7 +322,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 .fig-texte figcaption{margin-top:8px;font-size:12.5px;color:var(--gris);letter-spacing:.03em}
 .liens-off{margin-top:26px;font-size:14.5px;color:var(--gris-clair)}
 .liens-off a{color:#fff;text-decoration-color:var(--orange-c)}
-@media(min-width:700px){.liste-a{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:700px){.liste-a{grid-template-columns:repeat(2,1fr)}.liste-a .a-item.large{grid-column:1/-1}}
 
 /* ---------- bon à savoir ---------- */
 .savoir{background:#fff;border:1px solid var(--ligne);border-top:3px solid var(--brique);padding:28px 26px}
@@ -359,6 +359,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 .geste.avec-photo .box{overflow:hidden;aspect-ratio:16/9;margin:-22px -20px 16px;border-bottom:1px solid var(--ligne);background:var(--travertin-2)}
 .geste.avec-photo .box img{width:100%;height:100%;object-fit:cover}
 .geste.avec-photo .box picture{display:block;height:100%}
+.geste.avec-photo.photo-bas .box{margin:16px -20px -22px;border-bottom:0;border-top:1px solid var(--ligne)}
 @media(min-width:640px){.gestes{grid-template-columns:repeat(2,1fr)}}
 @media(min-width:980px){.gestes{grid-template-columns:repeat(2,1fr)}}
 
