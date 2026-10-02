@@ -177,7 +177,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 
 /* hero court, pour les pages intérieures */
 .hero.court{padding:48px 0 50px}
-.hero.court h1{font-size:clamp(28px,5.6vw,44px);max-width:20ch}
+.hero.court h1{font-size:clamp(28px,5.6vw,44px);max-width:none}
 .hero.court .hero-grid{grid-template-columns:1fr}
 @media(min-width:900px){.hero.court .hero-grid{grid-template-columns:1fr}}
 
@@ -267,7 +267,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 .section.sombre .duo h2,.section.sombre .duo h3{color:#fff}
 .section.sombre .duo .sur{color:var(--ocre-c)}
 .section.sombre .duo .ph{border-color:var(--ligne-sombre)}
-@media(min-width:880px){.duo{grid-template-columns:1fr 1fr;gap:48px}.duo.inverse .ph{order:2}}
+@media(min-width:880px){.duo{grid-template-columns:1fr 1fr;gap:48px}.duo.haut{align-items:start}.duo.inverse .ph{order:2}}
 
 /* ---------- saisons : la même vue, trois saisons ----------
    Les trois saisons sont empilées dans un cadre au format fixe ; seule l'active
@@ -314,7 +314,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 .a-item .box{overflow:hidden;aspect-ratio:16/9;margin:-20px -22px 16px;border-bottom:1px solid var(--ligne);background:var(--travertin-2)}
 .a-item .box img{width:100%;height:100%;object-fit:cover}
 .fig-texte{margin-top:24px}
-.gal.panoramique .box{aspect-ratio:2/1}
+.gal.panoramique .box{aspect-ratio:2/1}.gal.dans-texte{margin-top:22px;gap:12px}
 .fig-texte .box{overflow:hidden;border:1px solid var(--ligne);background:var(--travertin-2)}
 .fig-texte img{width:100%}
 .eq .fig-texte .box{aspect-ratio:4/3}
@@ -332,8 +332,8 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 .savoir dt{font-weight:600;font-size:15.5px;margin-bottom:4px;color:var(--brique)}
 .savoir dd{font-size:15px;color:var(--gris)}
 .savoir dd.vide{display:none}
-.savoir dd figure{margin:14px 0 0}.savoir dd figure.deux{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-@media(min-width:820px){.savoir dl>div:has(figure.deux){display:flex;flex-direction:column}.savoir dl>div:has(figure.deux) dd{display:flex;flex-direction:column;flex:1}.savoir dd figure.deux{flex:1;min-height:0}.savoir dd figure.deux .box{aspect-ratio:auto;height:100%}}
+.savoir dd figure{margin:14px 0 0}.savoir dd figure.tiers{display:grid;gap:12px}.savoir dd figure.tiers .box{aspect-ratio:4/3}.savoir dd figure.tiers .box+.box{aspect-ratio:1/1}
+@media(min-width:820px){.savoir dl>div.large{grid-column:1/-1}.savoir dd figure.tiers{grid-template-columns:2fr 1fr}.savoir dd figure.tiers .box+.box{aspect-ratio:2/3}}
 .savoir dd .box{overflow:hidden;border:1px solid var(--ligne);aspect-ratio:1/1;background:var(--travertin-2)}
 .savoir dd .box picture{display:block;height:100%}
 .savoir dd .box img{width:100%;height:100%;object-fit:cover;object-position:center 40%}
@@ -360,7 +360,6 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 .geste.avec-photo .box{overflow:hidden;aspect-ratio:16/9;margin:-22px -20px 16px;border-bottom:1px solid var(--ligne);background:var(--travertin-2)}
 .geste.avec-photo .box img{width:100%;height:100%;object-fit:cover}
 .geste.avec-photo .box picture{display:block;height:100%}
-.geste.avec-photo.photo-bas .box{margin:16px -20px -22px;border-bottom:0;border-top:1px solid var(--ligne)}
 @media(min-width:640px){.gestes{grid-template-columns:repeat(2,1fr)}}
 @media(min-width:980px){.gestes{grid-template-columns:repeat(2,1fr)}}
 

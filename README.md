@@ -476,3 +476,30 @@ chambre du second (fenêtre cintrée, placards rouges) et l'interrupteur avec
 son stick, qu'elle juge elle-même « peut-être pas nécessaire ». La tuile
 « + 1 bébé » et la meta description n'ont pas été touchées (elle n'a parlé
 que de l'intro).
+
+## 02/10 soir — les 12 modifications validées avec Claire au RDV de 14h15
+
+Accueil : plus de « + 1 bébé » (tuile des repères, meta description, JSON-LD) ;
+Airbnb 4,78 ; « Réserver en direct, sans commission » sur une ligne (le bloc
+passe de 52ch à 760px) ; section « Une rue qui mène aux berges » illustrée par
+`voie-verte-saule` (la photo `1790008100495.jpg` de Claire était déjà dans les
+originaux sous ce nom, `meuse-bateaux` sort du site) ; « Votre hôte » illustrée
+par les brochures touristiques (`brochures-serre`, `salle-a-manger-lambris`
+sort du site).
+
+La maison : les deux photos horizontales de la cuisine sous le texte, colonne
+de gauche (`.gal.dans-texte`), la grande photo reste à droite ; photo de
+l'intérieur du second WC sous la phrase du bloc salle de bain
+(`wc-jardin-interieur`) ; « Pour les familles ou les amis » aligné en haut
+(`.duo.haut`) ; « Bon à savoir » refait d'après le schéma : « La chambre du
+second a son lavabo » garde son titre, perd sa phrase et n'a qu'une photo
+(`chambre-second-lavabo`) ; nouveau bloc pleine largeur « Un second WC et un
+lavabo sont accessibles du jardin » avec `acces-wc-jardin` sur 2/3 et
+`wc-exterieur` sur 1/3 (`figure.tiers`, hauteurs égales à 4:3 et 2:3).
+`lavabo-2e` sort du site.
+
+Écologie : titres des pages intérieures sans largeur maximale (une ligne sur
+ordinateur, vérifié à 1024 et 1440 sur les quatre pages) ; chapô « … des gestes
+simples. À prendre comme un petit défi pour la nature, le temps du séjour. » ;
+carte compost avec la photo en haut comme les trois autres (demande manuscrite
+du 01/10 annulée par Allonzo).
