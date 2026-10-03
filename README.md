@@ -503,3 +503,20 @@ ordinateur, vérifié à 1024 et 1440 sur les quatre pages) ; chapô « … des 
 simples. À prendre comme un petit défi pour la nature, le temps du séjour. » ;
 carte compost avec la photo en haut comme les trois autres (demande manuscrite
 du 01/10 annulée par Allonzo).
+
+## 03/10 — relecture d'Allonzo et revue globale sur téléphone
+
+Relecture : « taux de réponse 100 % » retiré du chapô du formulaire (Contact) ;
+photo de l'intérieur du second WC centrée sous le bloc salle de bain
+(`figure.fig-centre`) ; les deux photos de la cuisine l'une sous l'autre,
+pleine largeur de la colonne (`.gal.dans-texte`, exclue de l'élargissement
+≥ 1400 px qui la faisait déborder).
+
+Revue globale (6 pages × FR/EN × 390/768/1440) : pas de débordement
+horizontal, aucune image cassée, aucune erreur console propre au site, un seul
+h1 par page, `noindex` présent partout, bascule de langue, tiroir du menu,
+onglets des saisons et repli du formulaire OK, liens externes en 200 (Instagram
+répond 429 aux robots, pas un lien mort). Les plus petites étiquettes passent de
+10 à 11-11,5 px (labels du formulaire, clés du bloc contact direct, titres du
+pied de page, étiquettes des cartes d'Écologie). La carte Google Maps ne se
+charge pas dans le bac à sable de test, à vérifier sur un vrai téléphone.
