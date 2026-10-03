@@ -520,3 +520,13 @@ répond 429 aux robots, pas un lien mort). Les plus petites étiquettes passent 
 10 à 11-11,5 px (labels du formulaire, clés du bloc contact direct, titres du
 pied de page, étiquettes des cartes d'Écologie). La carte Google Maps ne se
 charge pas dans le bac à sable de test, à vérifier sur un vrai téléphone.
+
+Décisions d'Allonzo du 03/10 sur les six points relevés : « + 1 bébé » reste
+sur Contact ; l'accueil garde ses « 100 % » ; **plus aucune adresse e-mail sur
+le site tant que le domaine n'existe pas** (pied de page, bloc contact direct,
+message d'échec du formulaire, mentions légales, JSON-LD : les phrases
+renvoient au formulaire ou au téléphone) ; le lien `@gite_ardennes` reste ;
+« Allonzo Pensa » devient « Allonzo Pensabene » dans les mentions légales ; le
+carrousel des saisons garde son bord qui dépasse. Au lancement : remettre une
+adresse sur le domaine (`contact@gitesaintaubin.fr` ou équivalent) aux cinq
+endroits ci-dessus, FR et EN.
