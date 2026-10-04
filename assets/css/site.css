@@ -321,9 +321,14 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 .eq .fig-texte .box{aspect-ratio:4/3}
 .eq .fig-texte img{height:100%;object-fit:cover;object-position:center 42%}
 .fig-texte figcaption{margin-top:8px;font-size:12.5px;color:var(--gris);letter-spacing:.03em}
-.liens-off{margin-top:26px;font-size:14.5px;color:var(--gris-clair)}
-.liens-off a{color:#fff;text-decoration-color:var(--orange-c)}
-@media(min-width:700px){.liste-a{grid-template-columns:repeat(2,1fr)}.liste-a .a-item.large{grid-column:1/-1}}
+.liens-off{margin-top:26px;font-size:14.5px;color:var(--gris)}
+.liens-off a{color:var(--encre);text-decoration-color:var(--orange-c)}
+.section.sombre .liens-off{color:var(--gris-clair)}.section.sombre .liens-off a{color:#fff}
+.liste-a.suite{margin-top:36px}
+@media(min-width:700px){.liste-a{grid-template-columns:repeat(2,1fr)}.liste-a .a-item.large{grid-column:1/-1}
+  .liste-a .a-item.avec-photo.large{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,3fr);grid-template-rows:1fr auto auto auto 1fr;column-gap:26px}
+  .liste-a .a-item.avec-photo.large .box{grid-column:1;grid-row:1/-1;aspect-ratio:auto;min-height:280px;height:calc(100% + 40px);margin:-20px 0 -20px -22px;border-bottom:0;border-right:1px solid var(--ligne)}
+  .liste-a .a-item.avec-photo.large .d{grid-column:2;grid-row:2}.liste-a .a-item.avec-photo.large h3{grid-column:2;grid-row:3}.liste-a .a-item.avec-photo.large p{grid-column:2;grid-row:4}}
 
 /* ---------- bon à savoir ---------- */
 .savoir{background:#fff;border:1px solid var(--ligne);border-top:3px solid var(--brique);padding:28px 26px}

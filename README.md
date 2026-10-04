@@ -530,3 +530,18 @@ renvoient au formulaire ou au téléphone) ; le lien `@gite_ardennes` reste ;
 carrousel des saisons garde son bord qui dépasse. Au lancement : remettre une
 adresse sur le domaine (`contact@gitesaintaubin.fr` ou équivalent) aux cinq
 endroits ci-dessus, FR et EN.
+
+## 04/10 — deux retouches de Claire (SMS du 03/10)
+
+Le lien « À découvrir autour → » de l'accueil arrive sur la section des
+environs (`le-jardin.html#autour`) et non en haut de la page jardin ; grâce au
+`scroll-margin-top` des sections, le titre se pose 11 px sous la barre collante,
+téléphone compris. Sur la page jardin, la carte « Les boucles de la Meuse » et
+le paragraphe des liens (ADT, Office de tourisme, VisitArdenne) passent en tout
+dernier, après la bande des trois photos (port, Voie Verte, quais), juste avant
+« Demander des dates » : le paragraphe de liens existe désormais en version
+claire (`.liens-off`, la version blanche restant pour les sections sombres).
+La liste des environs garde cinq cartes : pour que la dernière (base nautique
+et Mont-Olympe) ne reste pas seule sur une colonne, elle s'étire sur les deux
+colonnes avec sa photo à gauche et son texte à droite (`.a-item.avec-photo.large`,
+≥ 700 px). Vérifié à 390, 820, 1024 et 1440 px, FR et EN.
