@@ -545,3 +545,18 @@ La liste des environs garde cinq cartes : pour que la dernière (base nautique
 et Mont-Olympe) ne reste pas seule sur une colonne, elle s'étire sur les deux
 colonnes avec sa photo à gauche et son texte à droite (`.a-item.avec-photo.large`,
 ≥ 700 px). Vérifié à 390, 820, 1024 et 1440 px, FR et EN.
+
+## 07/10 — deux suggestions de la fille de Claire (SMS du 07/10)
+
+Logo Instagram : un glyphe en SVG inline (`.ig`, contour en `currentColor`,
+donc de la couleur du lien) précède `@gite_ardennes` dans le bloc contact
+direct de la page Contact et dans le pied de page ; le texte reste pour la
+lisibilité et les lecteurs d'écran. Flèche « remonter en haut » : un lien
+`a.haut` fixé en bas à droite, caché tant que l'on n'a pas déroulé un écran
+(sentinelle + `IntersectionObserver` avec une marge haute de 100 %, comme
+l'ombre de la barre), qui remonte en douceur (sauf `prefers-reduced-motion`)
+et rend le focus clavier à la marque en haut. Sans JavaScript, le lien
+pointe sur `#top` (la barre haute) mais reste invisible. Sur téléphone, la
+flèche se place 14 px au-dessus de la barre Appeler / Demander des dates ;
+elle passe sous le voile du menu. Libellé accessible FR/EN
+(`commun.haut`). Vérifié à 390 et 1440 px.

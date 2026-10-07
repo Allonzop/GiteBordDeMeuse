@@ -47,6 +47,25 @@
     }
   }
 
+  /* ---- flèche « remonter en haut » : apparaît après un écran de défilement ----
+     Même principe que l'ombre de la barre : une sentinelle en haut de page et
+     un IntersectionObserver dont la marge haute vaut une hauteur d'écran. */
+  var haut = document.querySelector('a.haut');
+  if (haut && 'IntersectionObserver' in window) {
+    var repere = document.createElement('div');
+    repere.className = 'sentinelle';
+    document.body.insertBefore(repere, document.body.firstChild);
+    new IntersectionObserver(function (e) {
+      haut.classList.toggle('visible', !e[0].isIntersecting);
+    }, { rootMargin: '100% 0px 0px 0px' }).observe(repere);
+    haut.addEventListener('click', function (e) {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: doux ? 'auto' : 'smooth' });
+      var marque = document.querySelector('.topbar .marque');
+      if (marque) marque.focus({ preventScroll: true });   /* le clavier repart du haut */
+    });
+  }
+
   /* ---- menu mobile : tiroir latéral ----
      Ouvert : la page ne défile plus, le focus reste dans le tiroir (et sur le
      burger, qui reste visible au-dessus), Échap ou le voile ferment, et le

@@ -27,7 +27,7 @@
 </head>
 <body>
 <a class="saut" href="#contenu" data-i18n="commun.saut">Aller au contenu</a>
-<header class="topbar">
+<header class="topbar" id="top">
   <div class="wrap">
     <a href="index.html" class="marque">
       <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M4 15 L16 5 L28 15 v11 a1 1 0 0 1-1 1 H5 a1 1 0 0 1-1-1z" fill="none" stroke="#E28B4C" stroke-width="2" stroke-linejoin="round"/></svg>
@@ -204,7 +204,7 @@
         <h2 data-i18n="pied.contact">Contact</h2>
         <ul>
           <li><a href="tel:+33648904509" data-i18n="commun.tel">06&nbsp;48&nbsp;90&nbsp;45&nbsp;09</a></li>
-          <li><a href="https://www.instagram.com/gite_ardennes/" target="_blank" rel="noopener">@gite_ardennes</a></li>
+          <li><a href="https://www.instagram.com/gite_ardennes/" class="insta" target="_blank" rel="noopener"><svg class="ig" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="2.6" y="2.6" width="18.8" height="18.8" rx="5.2"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r="1.15" fill="currentColor" stroke="none"/></svg>@gite_ardennes</a></li>
         </ul>
       </div>
       <div>
@@ -229,6 +229,8 @@
   <a class="res" href="contact.html" data-i18n="commun.demander" aria-describedby="reassure-barre">Demander des dates</a>
   <span class="masque" id="reassure-barre" data-i18n="commun.reassure">Réponse rapide, avec les disponibilités et le tarif.</span>
 </nav>
+
+<a class="haut" href="#top" aria-label="Remonter en haut de la page" data-i18n-aria="commun.haut"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 19V6M6 12l6-6 6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
 
 <script src="assets/js/i18n.js"></script>
 <script src="assets/js/site.js"></script>

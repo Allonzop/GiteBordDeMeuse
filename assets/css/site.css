@@ -448,6 +448,18 @@ footer.pied{background:var(--nuit);color:var(--gris-clair);padding:48px 0 26px}
 @media(max-width:999px){footer.pied{padding-bottom:104px}}  /* la place de la barre, sans liseré clair sous le pied */
 @media(min-width:1000px){.barre{display:none}}
 
+/* ---------- flèche « remonter en haut » ---------- */
+.haut{position:fixed;right:16px;bottom:22px;z-index:60;width:46px;height:46px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+  background:var(--nuit);color:#fff;border:1px solid rgba(255,255,255,.4);box-shadow:0 3px 12px rgba(43,23,18,.32);
+  opacity:0;visibility:hidden;transform:translateY(8px);transition:opacity .25s,transform .25s,visibility 0s .25s,background .2s}
+.haut.visible{opacity:1;visibility:visible;transform:none;transition:opacity .25s,transform .25s,background .2s}
+.haut:hover{background:var(--orange);border-color:var(--orange)}
+.haut svg{width:20px;height:20px}
+@media(max-width:999px){.haut{right:12px;bottom:calc(85px + env(safe-area-inset-bottom))}}
+
+/* ---------- glyphe Instagram ---------- */
+.ig{width:1.15em;height:1.15em;vertical-align:-.22em;margin-right:.45em;fill:none;stroke:currentColor;stroke-width:1.9}
+
 
 /* ------------------------------------------------------------------
    Animations
