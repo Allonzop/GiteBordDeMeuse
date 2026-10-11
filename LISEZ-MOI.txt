@@ -1,0 +1,63 @@
+GÎTE SAINT-AUBIN — VOTRE SITE INTERNET
+Fichiers remis par Allonzo Pensabene (KRAON), le 11 octobre 2026.
+
+Ce dossier contient l'intégralité de votre site. Il vous appartient.
+Vous n'avez rien à faire avec ces fichiers : ils sont là pour que vous
+les ayez, chez vous, et qu'un autre prestataire puisse un jour les
+reprendre sans dépendre de moi.
+
+
+CE QU'IL Y A DEDANS
+
+  index.html             la page d'accueil
+  la-maison.html         la page « La maison »
+  le-jardin.html         la page « Le jardin et les environs »
+  ecologie.html          la page « Écologie »
+  contact.html           la page « Contact »
+  mentions-legales.html  les mentions légales (obligation légale)
+
+  assets/
+    css/site.css         la mise en forme (couleurs, polices, tailles)
+    js/                  les petits mécanismes : bascule français / anglais,
+                         menu, saisons, formulaire
+    i18n/fr.json         tous les textes en français
+    i18n/en.json         tous les textes en anglais
+
+  photos/                vos 50 photos, chacune en plusieurs tailles
+                         (800, 1200 et 1600 px) pour s'adapter au téléphone,
+                         à la tablette et à l'ordinateur
+
+
+POUR LE VOIR SUR VOTRE ORDINATEUR
+
+Ouvrez le dossier et double-cliquez sur index.html : le site s'ouvre dans
+votre navigateur. Une seule chose ne marche pas de cette façon : le bouton
+français / anglais, qui a besoin d'être sur internet pour fonctionner.
+Sur le vrai site, en ligne, tout fonctionne.
+
+
+OÙ EST LE SITE EN LIGNE
+
+Le site est hébergé chez Netlify, un hébergeur gratuit pour ce type de
+site, sans publicité. Adresse actuelle :
+
+  https://gite-saint-aubin.netlify.app
+
+Vendredi 16 octobre, nous achetons votre nom de domaine (par exemple
+gitesaintaubin.fr) et nous le raccordons à cette adresse. Le nom de
+domaine sera à votre nom, payé par vous, renouvelé chaque année : c'est
+lui qui garantit que le site est à vous.
+
+
+SI VOUS VOULEZ MODIFIER UN TEXTE
+
+Tous les textes sont dans assets/i18n/fr.json (et en.json pour
+l'anglais). Mais le plus simple reste de m'envoyer la modification par
+écrit : je la fais et je la mets en ligne.
+
+
+ME JOINDRE
+
+Allonzo Pensabene — KRAON
+07 71 26 65 79
+allonzopensa@gmail.com
