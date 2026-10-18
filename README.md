@@ -560,3 +560,29 @@ pointe sur `#top` (la barre haute) mais reste invisible. Sur téléphone, la
 flèche se place 14 px au-dessus de la barre Appeler / Demander des dates ;
 elle passe sous le voile du menu. Libellé accessible FR/EN
 (`commun.haut`). Vérifié à 390 et 1440 px.
+
+## 18/10 — commit de lancement : le site sur son domaine, ouvert à Google
+
+Le site est en ligne sur `https://gitedecharmebordemeuse.fr/` (domaine acheté
+chez LWS le 16/10, hébergement sur le compte Netlify de Claire, déployé depuis
+la branche `production` ; `www` redirige vers l'adresse sans `www`). Dans ce
+commit : `noindex` retiré des six pages ; `<link rel="canonical">`, `og:url` et
+`og:image` sur le domaine ; `robots.txt` (tout autorisé, lien vers le sitemap)
+et `sitemap.xml` (six pages) ; l'adresse `contact@gitedecharmebordemeuse.fr`
+remise aux cinq endroits prévus le 03/10 (pied de page, bloc contact direct,
+message d'échec du formulaire, mentions légales, JSON-LD), FR et EN ; titre de
+l'accueil « Gîte en bord de Meuse à Charleville-Mézières · Gîte Saint-Aubin »
+(option A du 30/09), « en bord de Meuse » glissé dans la meta description et
+le h1 (« Une maison ouverte sur un grand jardin, en bord de Meuse ») ; mention
+de l'hébergeur passée de GitHub Pages à Netlify. Le formulaire n'est pas
+touché (la notification se règle dans Netlify).
+
+Le générateur Python (dossier `build/` du scratchpad de la session Claude) a
+disparu avec le conteneur : ces modifications sont faites directement dans
+les six pages HTML et dans `assets/i18n/fr.json` et `en.json`, qui restent la
+source des textes. Toute retouche ultérieure se fait de la même façon, en
+gardant le HTML (FR) et `fr.json` identiques.
+
+`production` reçoit uniquement les fichiers du site : les six pages,
+`assets/`, `photos/`, `robots.txt`, `sitemap.xml`. Ni ce README, ni
+`gite-saint-aubin/`, ni `QUESTIONS-POUR-CLAIRE.md`, ni la maquette.
