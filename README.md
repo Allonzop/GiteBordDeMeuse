@@ -586,3 +586,16 @@ gardant le HTML (FR) et `fr.json` identiques.
 `production` reçoit uniquement les fichiers du site : les six pages,
 `assets/`, `photos/`, `robots.txt`, `sitemap.xml`. Ni ce README, ni
 `gite-saint-aubin/`, ni `QUESTIONS-POUR-CLAIRE.md`, ni la maquette.
+
+## 18/10 (soir) — demandes de Claire et mots-clés
+
+« Ardenne Ecotourism » sans accent partout, FR et EN (nom officiel, remplace la
+règle du 27/09). La page « Écologie » devient « Environnement » (menu,
+sur-titre « Environnement : nos valeurs », `<title>`), le fichier reste
+`ecologie.html`. Deux cartes de plus dans « Sa rénovation » : « Isolation en
+fibre de bois » (isolant naturel, confort d'été et d'hiver en mots simples) et
+« Voiture électrique » (bornes à proximité, sans lieu ni distance). Avec huit
+cartes, la dernière s'étire sur deux colonnes en trois colonnes
+(`.equip .eq:last-child:nth-child(3n+2)`). Les mots-clés de Claire vont
+uniquement dans `<title>`, meta description, og:*, textes alternatifs et
+JSON-LD ; aucun texte visible n'a changé pour eux.

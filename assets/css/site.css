@@ -304,7 +304,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 .eq p{font-size:14.5px;color:var(--gris)}
 .gal figure .eq{margin-top:14px;border:1px solid var(--ligne)}
 @media(min-width:640px){.equip{grid-template-columns:repeat(2,1fr)}}
-@media(min-width:980px){.equip{grid-template-columns:repeat(3,1fr)}}
+@media(min-width:980px){.equip{grid-template-columns:repeat(3,1fr)}.equip .eq:last-child:nth-child(3n+2){grid-column:span 2}}
 
 .liste-a{display:grid;gap:16px}
 .a-item{background:#fff;border:1px solid var(--ligne);border-left:3px solid var(--ocre);padding:20px 22px}
