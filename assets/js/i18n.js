@@ -99,6 +99,9 @@
       var m = localStorage.getItem(CLE);
       if (m && LANGUES.indexOf(m) > -1) return m;
     } catch (e) { /* ignore */ }
+    /* Les robots d’indexation (Googlebot navigue en anglais) voient le
+       français écrit dans la page : c’est lui qui doit être indexé. */
+    if (/bot|crawl|spider|slurp/i.test(navigator.userAgent)) return DEFAUT;
     var n = (navigator.language || DEFAUT).slice(0, 2).toLowerCase();
     return LANGUES.indexOf(n) > -1 ? n : DEFAUT;
   }
