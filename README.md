@@ -599,3 +599,15 @@ cartes, la dernière s'étire sur deux colonnes en trois colonnes
 (`.equip .eq:last-child:nth-child(3n+2)`). Les mots-clés de Claire vont
 uniquement dans `<title>`, meta description, og:*, textes alternatifs et
 JSON-LD ; aucun texte visible n'a changé pour eux.
+
+## 24/11 — formulaire : des demandes qui arrivent complètes
+
+Claire recevait des demandes « vides ». Cause : les dates étaient pré-remplies
+(arrivée à J+7, départ à J+10), si bien qu'un nom et un e-mail suffisaient pour
+envoyer une demande, sur des dates que le voyageur n'avait pas choisies, et sans
+message. Les dates ne sont plus pré-remplies : le voyageur les choisit (elles
+étaient déjà obligatoires). Le message reste facultatif, mais une aide sous
+l'étiquette (`contact.f.aide`) et un exemple dans le champ (`contact.f.exemple`)
+invitent à se présenter. Chaque champ obligatoire laissé vide affiche son propre
+message en clair, en français ou en anglais (`contact.f.err.*`, attribut
+`data-err` traduit par `i18n.js`), à la place du message générique du navigateur.

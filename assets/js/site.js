@@ -1,4 +1,4 @@
-/* Gîte Saint-Aubin — animations, tiroir de navigation, saisons, formulaire, dates par défaut. */
+/* Gîte Saint-Aubin — animations, tiroir de navigation, saisons, formulaire, bornes des dates. */
 (function () {
   'use strict';
   document.documentElement.classList.add('js');
@@ -154,7 +154,10 @@
     });
   }
 
-  /* ---- dates par défaut : arrivée dans 7 jours, départ 3 nuits plus tard ---- */
+  /* ---- dates : pas de valeur par défaut (24/11) ----
+     Des dates pré-remplies laissaient partir une demande avec seulement un nom
+     et un e-mail, sur des dates que le voyageur n’avait pas choisies. Le
+     voyageur les saisit lui-même ; on garde les bornes et le départ recalé. */
   var jour = 86400000;
   var arr = document.getElementById('champ-arrivee');
   var dep = document.getElementById('champ-depart');
@@ -162,14 +165,15 @@
   if (arr && dep) {
     var t = Date.now();
     arr.min = iso(t);
-    arr.value = iso(t + 7 * jour);
     dep.min = iso(t + jour);
-    dep.value = iso(t + 10 * jour);
     arr.addEventListener('change', function () {
       if (!arr.value) return;
       var lendemain = iso(new Date(arr.value).getTime() + jour);
       dep.min = lendemain;
-      if (dep.value <= arr.value) dep.value = lendemain;
+      if (dep.value <= arr.value) {
+        dep.value = lendemain;
+        dep.setCustomValidity('');   /* « choisissez votre date de départ » n’a plus lieu d’être */
+      }
     });
   }
 
@@ -181,6 +185,16 @@
   if (!form) return;
   var retour = document.getElementById('retour');
   var bouton = form.querySelector('button[type=submit]');
+
+  /* champ obligatoire laissé vide : message en clair (data-err, traduit par
+     i18n.js) à la place du message générique du navigateur */
+  form.querySelectorAll('[data-err]').forEach(function (c) {
+    c.addEventListener('invalid', function () {
+      c.setCustomValidity('');
+      if (c.validity.valueMissing) c.setCustomValidity(c.getAttribute('data-err'));
+    });
+    c.addEventListener('input', function () { c.setCustomValidity(''); });
+  });
 
   form.addEventListener('submit', function (e) {
     e.preventDefault();

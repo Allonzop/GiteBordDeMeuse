@@ -142,7 +142,7 @@
   "contact.f.depart": "Departure",
   "contact.f.email": "E-mail",
   "contact.f.envoyer": "Send my enquiry",
-  "contact.f.exemple": "We are coming by bike along the greenway — is there somewhere to store them?",
+  "contact.f.exemple": "Hello Claire, there are two of us, arriving around 6 pm…",
   "contact.f.ko": "The enquiry could not be sent. Try again in a moment, call +33&nbsp;6&nbsp;48&nbsp;90&nbsp;45&nbsp;09 or write to contact@gitedecharmebordemeuse.fr.",
   "contact.f.message": "Your message",
   "contact.f.nom": "Name",
@@ -352,5 +352,10 @@
   "eco.m7.t": "Wood fibre insulation",
   "eco.m7.p": "The walls are insulated with wood fibre, a natural material. Making it releases far less CO₂ than conventional insulation. Together with the thick walls, heat takes several hours to pass through them: the house stays cool in summer and keeps its warmth in winter.",
   "eco.m8.t": "Electric car",
-  "eco.m8.p": "Charging points for electric cars can be found near the gîte. We will gladly point you to the most convenient one."
+  "eco.m8.p": "Charging points for electric cars can be found near the gîte. We will gladly point you to the most convenient one.",
+  "contact.f.aide": "Tell us a little about your stay: who’s coming, your expected arrival time, any questions. The reply will be all the more precise.",
+  "contact.f.err.arrivee": "Choose your arrival date.",
+  "contact.f.err.depart": "Choose your departure date.",
+  "contact.f.err.nom": "Enter your name.",
+  "contact.f.err.email": "Enter your e-mail address: that’s where the reply will go."
 }
