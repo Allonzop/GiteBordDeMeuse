@@ -611,3 +611,6 @@ l'étiquette (`contact.f.aide`) et un exemple dans le champ (`contact.f.exemple`
 invitent à se présenter. Chaque champ obligatoire laissé vide affiche son propre
 message en clair, en français ou en anglais (`contact.f.err.*`, attribut
 `data-err` traduit par `i18n.js`), à la place du message générique du navigateur.
+
+Variante (branche `formulaire-message-obligatoire`) : le message devient
+obligatoire, avec son propre message d'erreur (`contact.f.err.message`).

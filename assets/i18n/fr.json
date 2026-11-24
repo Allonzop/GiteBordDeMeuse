@@ -357,5 +357,6 @@
   "contact.f.err.arrivee": "Choisissez votre date d’arrivée.",
   "contact.f.err.depart": "Choisissez votre date de départ.",
   "contact.f.err.nom": "Indiquez votre nom.",
-  "contact.f.err.email": "Indiquez votre adresse e-mail : c’est là que vous recevrez la réponse."
+  "contact.f.err.email": "Indiquez votre adresse e-mail : c’est là que vous recevrez la réponse.",
+  "contact.f.err.message": "Écrivez quelques mots : qui vient, l’heure d’arrivée prévue, vos questions."
 }
