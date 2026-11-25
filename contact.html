@@ -90,8 +90,8 @@
         <input type="hidden" name="form-name" value="demande">
         <p class="pot" aria-hidden="true"><label>Ne pas remplir&nbsp;: <input type="text" name="societe" tabindex="-1" autocomplete="off"></label></p>
         <div class="trio">
-          <div class="champ"><label for="champ-arrivee" data-i18n="contact.f.arrivee">Arrivée</label><input id="champ-arrivee" name="arrivee" type="date" required></div>
-          <div class="champ"><label for="champ-depart" data-i18n="contact.f.depart">Départ</label><input id="champ-depart" name="depart" type="date" required></div>
+          <div class="champ"><label for="champ-arrivee" data-i18n="contact.f.arrivee">Arrivée</label><input id="champ-arrivee" name="arrivee" type="date" required data-i18n-err="contact.f.err.arrivee" data-err="Choisissez votre date d’arrivée."></div>
+          <div class="champ"><label for="champ-depart" data-i18n="contact.f.depart">Départ</label><input id="champ-depart" name="depart" type="date" required data-i18n-err="contact.f.err.depart" data-err="Choisissez votre date de départ."></div>
           <div class="champ"><label for="champ-personnes" data-i18n="contact.f.personnes">Personnes</label>
             <select id="champ-personnes" name="personnes">
               <option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option>
@@ -99,12 +99,12 @@
           </div>
         </div>
         <div class="duo-c">
-          <div class="champ"><label for="champ-nom" data-i18n="contact.f.nom">Nom</label><input id="champ-nom" name="nom" type="text" autocomplete="name" required></div>
-          <div class="champ"><label for="champ-email" data-i18n="contact.f.email">E-mail</label><input id="champ-email" name="email" type="email" autocomplete="email" required></div>
+          <div class="champ"><label for="champ-nom" data-i18n="contact.f.nom">Nom</label><input id="champ-nom" name="nom" type="text" autocomplete="name" required data-i18n-err="contact.f.err.nom" data-err="Indiquez votre nom."></div>
+          <div class="champ"><label for="champ-email" data-i18n="contact.f.email">E-mail</label><input id="champ-email" name="email" type="email" autocomplete="email" required data-i18n-err="contact.f.err.email" data-err="Indiquez votre adresse e-mail&nbsp;: c’est là que vous recevrez la réponse."></div>
         </div>
         <div class="champ">
           <label for="champ-message" data-i18n="contact.f.message">Votre message</label>
-          <textarea id="champ-message" name="message" data-i18n-ph="contact.f.exemple" placeholder="Nous venons à vélo par la Voie Verte&nbsp;: y a-t-il un endroit où ranger les vélos&nbsp;?"></textarea>
+          <textarea id="champ-message" name="message" data-i18n-ph="contact.f.exemple" placeholder="Facultatif"></textarea>
         </div>
         <button type="submit" data-i18n="contact.f.envoyer">Envoyer ma demande</button>
         <p class="rgpd" data-i18n="contact.f.rgpd">Vos coordonnées servent uniquement à répondre à cette demande. Elles ne sont ni revendues, ni réutilisées.</p>
