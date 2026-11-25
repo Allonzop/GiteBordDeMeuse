@@ -388,7 +388,6 @@ form.demande{background:var(--nuit-2);padding:26px 23px;border:1px solid rgba(25
 .champ input,.champ select,.champ textarea{width:100%;background:var(--nuit);border:1px solid rgba(255,255,255,.24);
   color:#fff;font-family:var(--sans);font-size:15.5px;padding:12px 13px;border-radius:3px}
 .champ textarea{min-height:82px;resize:vertical}
-.champ .aide{font-size:13.5px;line-height:1.45;color:var(--gris-clair);margin:-2px 0 8px}
 .champ input::placeholder,.champ textarea::placeholder{color:#9C8574}
 .trio,.duo-c{display:grid;gap:15px}
 .pot{position:absolute;left:-9999px}

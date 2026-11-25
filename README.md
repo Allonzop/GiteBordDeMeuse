@@ -611,3 +611,11 @@ l'étiquette (`contact.f.aide`) et un exemple dans le champ (`contact.f.exemple`
 invitent à se présenter. Chaque champ obligatoire laissé vide affiche son propre
 message en clair, en français ou en anglais (`contact.f.err.*`, attribut
 `data-err` traduit par `i18n.js`), à la place du message générique du navigateur.
+
+## 25/11 — formulaire selon le souhait de Claire (branche `formulaire-hugerot`)
+
+Réponse de Claire du 25/11 : le voyageur remplit lui-même dates, nom et e-mail,
+et le message seulement s'il le souhaite, sans phrase d'invitation. L'aide sous
+« Votre message » est retirée et l'exemple du champ devient un simple
+« Facultatif » (EN « Optional »). Dates non pré-remplies et messages d'erreur en
+clair, comme sur `formulaire-demande`.
